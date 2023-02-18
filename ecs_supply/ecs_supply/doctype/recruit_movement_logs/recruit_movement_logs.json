@@ -1,0 +1,49 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-01-09 14:27:43.732669",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "movement_type",
+  "notes",
+  "movement_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "movement_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Movement Type",
+   "read_only": 1
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Notes",
+   "read_only": 1
+  },
+  {
+   "fieldname": "movement_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Movement Date",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-01-09 14:27:43.732669",
+ "modified_by": "Administrator",
+ "module": "Ecs Supply",
+ "name": "Recruit Movement Logs",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

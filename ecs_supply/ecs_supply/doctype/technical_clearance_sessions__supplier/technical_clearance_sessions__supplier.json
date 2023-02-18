@@ -1,0 +1,52 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2022-09-03 02:11:04.332390",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "supplier",
+  "supplier_name",
+  "result"
+ ],
+ "fields": [
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Supplier",
+   "options": "Supplier"
+  },
+  {
+   "fetch_from": "supplier.supplier_name",
+   "fieldname": "supplier_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Supplier Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "result",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Result",
+   "options": "\n\u0645\u0642\u0628\u0648\u0644\n\u0645\u0631\u0641\u0648\u0636"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-11-05 00:10:31.084191",
+ "modified_by": "Administrator",
+ "module": "Ecs Supply",
+ "name": "Technical Clearance Sessions  Supplier",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

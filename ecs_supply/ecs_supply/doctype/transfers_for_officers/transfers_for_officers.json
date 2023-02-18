@@ -1,0 +1,170 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-11-01 16:47:21.393534",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "officers",
+  "employee_name",
+  "seniority_number",
+  "rank",
+  "cb1",
+  "transfer_date",
+  "employment_type",
+  "sb1_section",
+  "main_department",
+  "new_main_department",
+  "column_break_3",
+  "sub_department",
+  "new_sub_department",
+  "section_break_5",
+  "transfer_reason",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fetch_from": "officers.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cb1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "transfer_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Transfer Date"
+  },
+  {
+   "fieldname": "employment_type",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Employment Type",
+   "options": "Employment Type",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sb1_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "officers.main_department",
+   "fieldname": "main_department",
+   "fieldtype": "Link",
+   "label": "Main Department",
+   "options": "Main Department",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "officers.sup_department",
+   "fieldname": "sub_department",
+   "fieldtype": "Link",
+   "label": "Sub Department",
+   "options": "Sub Department",
+   "read_only": 1
+  },
+  {
+   "fieldname": "new_sub_department",
+   "fieldtype": "Link",
+   "label": "New Sub Department",
+   "options": "Sub Department"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "transfer_reason",
+   "fieldtype": "Small Text",
+   "label": "Transfer Reason "
+  },
+  {
+   "fieldname": "seniority_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Seniority Number",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "officers.rank",
+   "fieldname": "rank",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Rank",
+   "read_only": 1
+  },
+  {
+   "default": "OFT-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "OFT-"
+  },
+  {
+   "fieldname": "officers",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Officers",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "new_main_department",
+   "fieldtype": "Link",
+   "label": "New Main Department",
+   "options": "Main Department"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Transfers for Officers",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-01-18 11:36:39.978513",
+ "modified_by": "Administrator",
+ "module": "Ecs Supply",
+ "name": "Transfers for Officers",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

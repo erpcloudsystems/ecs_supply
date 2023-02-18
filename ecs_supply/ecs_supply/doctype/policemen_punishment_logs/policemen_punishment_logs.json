@@ -1,0 +1,49 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-01-05 12:28:16.892372",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "punishment_type",
+  "notes",
+  "punishment_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "punishment_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Punishment Type",
+   "read_only": 1
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Notes",
+   "read_only": 1
+  },
+  {
+   "fieldname": "punishment_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Punishment Date",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-01-05 12:28:16.892372",
+ "modified_by": "Administrator",
+ "module": "Ecs Supply",
+ "name": "Policemen Punishment Logs",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

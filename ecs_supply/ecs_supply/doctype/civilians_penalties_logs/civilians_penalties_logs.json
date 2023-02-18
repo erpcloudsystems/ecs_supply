@@ -1,0 +1,49 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-01-05 17:25:51.943455",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "penalty_type",
+  "reason",
+  "penalty_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "penalty_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Penalty Type",
+   "read_only": 1
+  },
+  {
+   "fieldname": "reason",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Reason",
+   "read_only": 1
+  },
+  {
+   "fieldname": "penalty_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Penalty Date",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-01-05 17:25:51.943455",
+ "modified_by": "Administrator",
+ "module": "Ecs Supply",
+ "name": "Civilians Penalties Logs",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

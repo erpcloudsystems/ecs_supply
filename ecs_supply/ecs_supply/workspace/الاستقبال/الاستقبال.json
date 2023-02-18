@@ -1,0 +1,60 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"cb1ooLWHWh\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">\u0627\u0644\u0627\u0633\u062a\u0642\u0628\u0627\u0644</span>\",\"col\":12}},{\"id\":\"h3W2hzXbsX\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Daily Visit\",\"col\":3}},{\"id\":\"wUe9EMMeTo\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Daily Visitors\",\"col\":3}},{\"id\":\"Xrl8OBs7zf\",\"type\":\"card\",\"data\":{\"card_name\":\"\u062a\u0642\u0631\u064a\u0631 \u0627\u0644\u0632\u0627\u0626\u0631\u064a\u0646\",\"col\":4}}]",
+ "creation": "2023-01-28 10:51:55.747728",
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 1,
+ "icon": "clipboard",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "\u0627\u0644\u0627\u0633\u062a\u0642\u0628\u0627\u0644",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u062a\u0642\u0631\u064a\u0631 \u0627\u0644\u0632\u0627\u0626\u0631\u064a\u0646",
+   "link_count": 1,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "\u062a\u0642\u0631\u064a\u0631 \u0627\u0644\u0632\u0627\u0626\u0631\u064a\u0646",
+   "link_count": 0,
+   "link_to": "Daily Visit",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2023-02-05 16:49:11.150613",
+ "modified_by": "Administrator",
+ "module": "Ecs Supply",
+ "name": "\u0627\u0644\u0627\u0633\u062a\u0642\u0628\u0627\u0644",
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 17.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Daily Visit",
+   "link_to": "Daily Visit",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Daily Visitors",
+   "link_to": "Daily Visitors",
+   "type": "DocType"
+  }
+ ],
+ "title": "\u0627\u0644\u0627\u0633\u062a\u0642\u0628\u0627\u0644"
+}

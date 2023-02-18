@@ -1,0 +1,161 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:lab_item_group",
+ "creation": "2022-11-28 11:57:40.583862",
+ "description": "Item Classification",
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "engine": "InnoDB",
+ "field_order": [
+  "lab_item_group",
+  "is_group",
+  "lft",
+  "rgt",
+  "parent_lab_item_group"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Is Group"
+  },
+  {
+   "fieldname": "lft",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Left",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "rgt",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Right",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "lab_item_group",
+   "fieldtype": "Data",
+   "label": "Lab Item Group",
+   "unique": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Is Group"
+  },
+  {
+   "fieldname": "parent_lab_item_group",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Parent Lab Item Group",
+   "options": "Lab Item Group"
+  },
+  {
+   "fieldname": "parent_lab_item_group",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Parent Lab Item Group",
+   "options": "Lab Item Group"
+  }
+ ],
+ "icon": "fa fa-sitemap",
+ "is_tree": 1,
+ "links": [],
+ "max_attachments": 3,
+ "modified": "2022-11-28 12:25:55.888399",
+ "modified_by": "Administrator",
+ "module": "Ecs Supply",
+ "name": "Lab Item Group",
+ "name_case": "Title Case",
+ "naming_rule": "By fieldname",
+ "nsm_parent_field": "parent_lab_item_group",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Stock Manager"
+  },
+  {
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Stock User"
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Item Manager",
+   "set_user_permissions": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales User"
+  },
+  {
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Purchase User"
+  },
+  {
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts User"
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "report": 1,
+   "role": "All",
+   "select": 1,
+   "share": 1
+  }
+ ],
+ "show_name_in_global_search": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

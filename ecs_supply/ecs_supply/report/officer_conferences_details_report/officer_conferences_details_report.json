@@ -1,0 +1,32 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2023-01-16 16:16:36.109608",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "modified": "2023-01-16 16:16:36.109608",
+ "modified_by": "Administrator",
+ "module": "Ecs Supply",
+ "name": "Officer Conferences Details Report",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Officer Conferences Details",
+ "report_name": "Officer Conferences Details Report",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "HR Manager"
+  },
+  {
+   "role": "Officer"
+  }
+ ]
+}

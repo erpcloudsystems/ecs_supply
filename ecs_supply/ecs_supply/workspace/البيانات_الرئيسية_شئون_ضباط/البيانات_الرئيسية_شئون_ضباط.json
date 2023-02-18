@@ -1,0 +1,373 @@
+{
+ "charts": [],
+ "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h3\\\">\u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u0631\u0626\u064a\u0633\u064a\u0629 \u0634\u0626\u0648\u0646 \u0636\u0628\u0627\u0637</span><br>\",\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"\u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u0627\u0633\u0627\u0633\u064a\u0629\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"\u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u0627\u0633\u0627\u0633\u064a\u0629 \u0644\u0644\u062d\u0631\u0643\u0627\u062a\",\"col\":4}}]",
+ "creation": "2023-01-03 14:49:49.378445",
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 1,
+ "icon": "folder-normal",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "\u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u0631\u0626\u064a\u0633\u064a\u0629 \u0634\u0626\u0648\u0646 \u0636\u0628\u0627\u0637",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u0627\u0633\u0627\u0633\u064a\u0629",
+   "link_count": 16,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0631\u0642\u0645 \u0627\u0644\u0627\u0642\u062f\u0645\u064a\u0629",
+   "link_count": 0,
+   "link_to": "Seniority Number",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0627\u0644\u0631\u062a\u0628\u0629",
+   "link_count": 0,
+   "link_to": "Officer Rank",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0627\u0633\u0645 ( \u0627\u0644\u0645\u0639\u0647\u062f/ \u0627\u0644\u0643\u0644\u064a\u0629 )",
+   "link_count": 0,
+   "link_to": "Institute Name",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u062c\u0647\u0629 \u0627\u0644\u0639\u0645\u0644",
+   "link_count": 0,
+   "link_to": "Entities",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0646\u0648\u0639 \u0642\u0631\u0627\u0631 \u0627\u0644\u062a\u0639\u064a\u064a\u0646",
+   "link_count": 0,
+   "link_to": "Joining Decision Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0627\u0644\u0645\u0633\u0645\u064a \u0627\u0644\u0648\u0638\u064a\u0641\u064a",
+   "link_count": 0,
+   "link_to": "Designation Filed",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0645\u062d\u0627\u0641\u0638\u0629 \u0627\u0644\u0639\u0646\u0648\u0627\u0646",
+   "link_count": 0,
+   "link_to": "Governorate Address",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0645\u0631\u0643\u0632/\u0642\u0633\u0645 \u0627\u0644\u0639\u0646\u0648\u0627\u0646",
+   "link_count": 0,
+   "link_to": "Address Place",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0627\u0644\u0633\u062c\u0644 \u0627\u0644\u0645\u062f\u0646\u064a",
+   "link_count": 0,
+   "link_to": "Civil Registry",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0645\u062d\u0627\u0641\u0638\u0647 \u0627\u0644\u0645\u064a\u0644\u0627\u062f",
+   "link_count": 0,
+   "link_to": "Governorate Of Birth",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0645\u0631\u0643\u0632/\u0642\u0633\u0645 \u0627\u0644\u0645\u064a\u0644\u0627\u062f",
+   "link_count": 0,
+   "link_to": "Territory Of Birth",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0627\u0644\u062f\u064a\u0627\u0646\u0629",
+   "link_count": 0,
+   "link_to": "Religion",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u062d\u0627\u0644\u0629 \u062d\u0645\u0644 \u0627\u0644\u0633\u0644\u0627\u062d",
+   "link_count": 0,
+   "link_to": "Gun Carrying Case",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0646\u0648\u0639 \u0627\u0644\u0633\u0644\u0627\u062d",
+   "link_count": 0,
+   "link_to": "Gun Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0631\u0642\u0645 \u0627\u0644\u0633\u0644\u0627\u062d",
+   "link_count": 0,
+   "link_to": "Weapon Number",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0631\u0642\u0645 \u0627\u0644\u062f\u0641\u0639\u0629/\u0633\u0646\u0629 \u0627\u0644\u062a\u062e\u0631\u062c",
+   "link_count": 0,
+   "link_to": "Batch Number",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u0627\u0633\u0627\u0633\u064a\u0629 \u0644\u0644\u062d\u0631\u0643\u0627\u062a",
+   "link_count": 17,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0646\u0648\u0639 \u0627\u0644\u0639\u0644\u0627\u0648\u0629",
+   "link_count": 0,
+   "link_to": "Bonus Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0646\u0648\u0639 \u0627\u0644\u062c\u0632\u0627\u0621",
+   "link_count": 0,
+   "link_to": "Penalty Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0646\u0648\u0639 \u0627\u0644\u062a\u0639\u062f\u064a\u0644",
+   "link_count": 0,
+   "link_to": "Modified Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0627\u0644\u062a\u0642\u062f\u064a\u0631",
+   "link_count": 0,
+   "link_to": "Estimation",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0627\u0644\u0639\u0645\u0644 \u0627\u0644\u0645\u0633\u0646\u062f \u0627\u0644\u064a\u0647",
+   "link_count": 0,
+   "link_to": "Work Assigned To Officers",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0646\u0648\u0639 \u0627\u0644\u062a\u0643\u0631\u064a\u0645",
+   "link_count": 0,
+   "link_to": "Type of Honor",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0646\u0648\u0639 \u0627\u0644\u0645\u062d\u0627\u0643\u0645\u0647",
+   "link_count": 0,
+   "link_to": "Trial Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0646\u0648\u0639 \u0627\u0644\u062f\u0648\u0631\u0629",
+   "link_count": 0,
+   "link_to": "Course Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0646\u0648\u0639 \u0627\u0644\u0627\u0635\u0627\u0628\u0647",
+   "link_count": 0,
+   "link_to": "Injury Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u062f\u0631\u062c\u0629 \u0627\u0644\u0639\u062c\u0632",
+   "link_count": 0,
+   "link_to": "Disability Degree",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0645\u0643\u0627\u0646 \u0627\u0644\u0639\u0631\u0636 \u0644\u0644\u0642\u0648\u0645\u0633\u064a\u0648\u0646",
+   "link_count": 0,
+   "link_to": "Presentation Place",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u062d\u0627\u0644\u0629 \u0627\u0644\u0639\u0631\u0636",
+   "link_count": 0,
+   "link_to": "Presentation Case",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u062c\u0647\u0629 \u0627\u0644\u0645\u0624\u062a\u0645\u0631",
+   "link_count": 0,
+   "link_to": "Conference Side",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0627\u0633\u0645 \u0627\u0644\u0645\u0624\u062a\u0645\u0631",
+   "link_count": 0,
+   "link_to": "Conference Name",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0646\u0648\u0639 \u0627\u0644\u0645\u0624\u062a\u0645\u0631",
+   "link_count": 0,
+   "link_to": "Conference Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0646\u0648\u0639 \u0627\u0644\u0639\u0642\u0648\u0628\u0629",
+   "link_count": 0,
+   "link_to": "Punishment Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0646\u0648\u0639 \u062a\u0643\u0631\u064a\u0645 (\u0627\u0644\u062a\u0642\u0631\u064a\u0631)",
+   "link_count": 0,
+   "link_to": "Evaluation Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2023-02-05 14:52:10.575810",
+ "modified_by": "Administrator",
+ "module": "Ecs Supply",
+ "name": "\u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u0631\u0626\u064a\u0633\u064a\u0629 \u0634\u0626\u0648\u0646 \u0636\u0628\u0627\u0637",
+ "owner": "Administrator",
+ "parent_page": "\u0634\u0626\u0648\u0646 \u0627\u0644\u062e\u062f\u0645\u0629",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 10.0,
+ "shortcuts": [],
+ "title": "\u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u0631\u0626\u064a\u0633\u064a\u0629 \u0634\u0626\u0648\u0646 \u0636\u0628\u0627\u0637"
+}

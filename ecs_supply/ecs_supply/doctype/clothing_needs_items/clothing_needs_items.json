@@ -1,0 +1,65 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2022-11-02 14:28:43.801906",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item",
+  "item_name",
+  "uom",
+  "qty"
+ ],
+ "fields": [
+  {
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "\u0627\u0644\u0635\u0646\u0641",
+   "options": "Item"
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "\u0648\u062d\u062f\u0629 \u0627\u0644\u0642\u064a\u0627\u0633",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "\u0627\u0644\u0643\u0645\u064a\u0629"
+  },
+  {
+   "fetch_from": "item.item_name",
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "\u0627\u0633\u0645 \u0627\u0644\u0635\u0646\u0641",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-11-02 14:48:42.891097",
+ "modified_by": "Administrator",
+ "module": "Ecs Supply",
+ "name": "Clothing Needs Items",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

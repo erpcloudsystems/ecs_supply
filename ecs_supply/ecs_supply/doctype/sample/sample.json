@@ -1,0 +1,234 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:code",
+ "creation": "2022-09-18 18:37:05.451256",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "section_break_2",
+  "code",
+  "lab",
+  "lab_name",
+  "column_break_5",
+  "analysis_site",
+  "section_break_7",
+  "item",
+  "item_name",
+  "column_break_22",
+  "price",
+  "qty",
+  "section_break_18",
+  "sample_no1",
+  "sample_receipt",
+  "\u0627\u0644\u0645\u0646\u062f\u0648\u0628",
+  "sample_recipient",
+  "sample_condition",
+  "column_break_13",
+  "sample_receipt_date",
+  "sample_no2",
+  "analysis_type",
+  "section_break_21",
+  "required_examination",
+  "section_break_25",
+  "rec_no"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "naming_series",
+   "options": "SIMP-",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "analysis_site",
+   "fieldtype": "Select",
+   "label": " \u0645\u0648\u0642\u0639 \u0627\u0644\u062a\u062d\u0644\u064a\u0644",
+   "options": "\n\u062f\u0627\u062e\u0644 \u0645\u0639\u0627\u0645\u0644 \u0627\u0644\u0627\u0645\u062f\u0627\u062f\n\u062e\u0627\u0631\u062c \u0645\u0639\u0627\u0645\u0644 \u0627\u0644\u0627\u0645\u062f\u0627\u062f",
+   "reqd": 1
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "\u0627\u0644\u0635\u0646\u0641",
+   "options": "Lab Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sample_receipt",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": " \u062c\u0647\u0629 \u062a\u0648\u0631\u064a\u062f \u0627\u0644\u0639\u064a\u0646\u0629",
+   "options": "Entities"
+  },
+  {
+   "fieldname": "sample_receipt_date",
+   "fieldtype": "Date",
+   "label": "\u062a\u0627\u0631\u064a\u062e \u062a\u0648\u0631\u064a\u062f \u0627\u0644\u0639\u064a\u0646\u0629"
+  },
+  {
+   "fieldname": "sample_no1",
+   "fieldtype": "Data",
+   "label": " \u0631\u0642\u0645 \u0627\u0644\u0639\u064a\u0646\u0629 \u0628\u0627\u0644\u062c\u0647\u06291"
+  },
+  {
+   "fieldname": "sample_no2",
+   "fieldtype": "Data",
+   "label": " \u0631\u0642\u0645 \u0627\u0644\u0639\u064a\u0646\u0629 \u0628\u0627\u0644\u062c\u0647\u06292"
+  },
+  {
+   "fieldname": "sample_recipient",
+   "fieldtype": "Data",
+   "label": "\u0645\u0633\u062a\u0644\u0645 \u0627\u0644\u0639\u064a\u0646\u0629"
+  },
+  {
+   "fieldname": "analysis_type",
+   "fieldtype": "Data",
+   "label": "\u0646\u0648\u0639 \u0627\u0644\u062a\u062d\u0644\u064a\u0644"
+  },
+  {
+   "fieldname": "required_examination",
+   "fieldtype": "Small Text",
+   "label": "\u0627\u0644\u0641\u062d\u0635 \u0627\u0644\u0645\u0637\u0644\u0648\u0628"
+  },
+  {
+   "fieldname": "sample_condition",
+   "fieldtype": "Data",
+   "label": "\u062d\u0627\u0644\u0629 \u0627\u0644\u0639\u064a\u0646\u0629"
+  },
+  {
+   "fieldname": "lab",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "\u0627\u0644\u0645\u0639\u0645\u0644",
+   "options": "Lab",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_18",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "item.price",
+   "fieldname": "price",
+   "fieldtype": "Currency",
+   "label": "\u0627\u0644\u062a\u0643\u0644\u0641\u0629"
+  },
+  {
+   "fetch_from": "item.quantity",
+   "fieldname": "qty",
+   "fieldtype": "Data",
+   "label": "\u0627\u0644\u0643\u0645\u064a\u0629",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "item.name1",
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "label": "\u0627\u0633\u0645 \u0627\u0644\u0635\u0646\u0641",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_22",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_21",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "lab.name1",
+   "fieldname": "lab_name",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "\u0627\u0633\u0645 \u0627\u0644\u0645\u0639\u0645\u0644",
+   "read_only": 1
+  },
+  {
+   "fieldname": "code",
+   "fieldtype": "Data",
+   "ignore_user_permissions": 1,
+   "label": "\u0627\u0644\u0643\u0648\u062f",
+   "no_copy": 1,
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "section_break_25",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "rec_no",
+   "fieldtype": "Data",
+   "label": "\u0631\u0642\u0645 \u0627\u0644\u0627\u064a\u0635\u0627\u0644"
+  },
+  {
+   "fieldname": "\u0627\u0644\u0645\u0646\u062f\u0648\u0628",
+   "fieldtype": "Link",
+   "label": "\u0627\u0644\u0645\u0646\u062f\u0648\u0628",
+   "options": "Visitors"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-01-28 17:10:19.625025",
+ "modified_by": "Administrator",
+ "module": "Ecs Supply",
+ "name": "Sample",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}

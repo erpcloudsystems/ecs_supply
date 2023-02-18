@@ -1,0 +1,66 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2022-09-18 12:45:39.249246",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "purchase_invoice",
+  "buying_order",
+  "supplier",
+  "total"
+ ],
+ "fields": [
+  {
+   "fetch_from": "purchase_invoice.supplier",
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Supplier",
+   "options": "Supplier"
+  },
+  {
+   "fetch_from": "purchase_invoice.grand_total",
+   "fieldname": "total",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Total"
+  },
+  {
+   "fieldname": "purchase_invoice",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Purchase Invoice",
+   "options": "Purchase Invoice"
+  },
+  {
+   "fieldname": "buying_order",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Buying Order",
+   "options": "Buying Order"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-09-18 13:06:13.977972",
+ "modified_by": "Administrator",
+ "module": "Ecs Supply",
+ "name": "Form Invoices",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

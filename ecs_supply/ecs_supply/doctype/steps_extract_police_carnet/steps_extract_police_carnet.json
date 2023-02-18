@@ -1,0 +1,126 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-10-26 17:30:26.835649",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "officers",
+  "employee_name",
+  "seniority_number",
+  "rank",
+  "employment_type",
+  "column_break_5",
+  "send_picture_date",
+  "series",
+  "receive_carnet_date",
+  "reason",
+  "notes",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "officers",
+   "fieldtype": "Link",
+   "label": "Officers",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "officers.seniority_number",
+   "fieldname": "seniority_number",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Seniority Number",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "officers.rank",
+   "fieldname": "rank",
+   "fieldtype": "Data",
+   "label": "Rank",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "officers.employment_type",
+   "fieldname": "employment_type",
+   "fieldtype": "Link",
+   "label": "Employment Type",
+   "options": "Employment Type",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "send_picture_date",
+   "fieldtype": "Date",
+   "label": "Send Picture Date"
+  },
+  {
+   "fieldname": "series",
+   "fieldtype": "Data",
+   "label": "Series"
+  },
+  {
+   "fieldname": "receive_carnet_date",
+   "fieldtype": "Date",
+   "label": "Receive Carnet Date"
+  },
+  {
+   "fieldname": "reason",
+   "fieldtype": "Data",
+   "label": "Reason"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Steps Extract Police Carnet",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "officers.first_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Employee Name",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-10-27 14:02:13.924621",
+ "modified_by": "Administrator",
+ "module": "Ecs Supply",
+ "name": "Steps Extract Police Carnet",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}

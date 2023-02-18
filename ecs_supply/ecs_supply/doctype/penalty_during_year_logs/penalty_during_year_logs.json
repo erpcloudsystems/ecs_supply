@@ -1,0 +1,79 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-01-19 13:19:58.933237",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "absent_days_during_year",
+  "violation_during_year",
+  "delays_during_year",
+  "penalty_during_year",
+  "erase_penalty",
+  "year"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "absent_days_during_year",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Absent Days During Year",
+   "read_only": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "violation_during_year",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Violation During Year",
+   "read_only": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "delays_during_year",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Delays During Year",
+   "read_only": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "penalty_during_year",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Penalty During Year",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "erase_penalty",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Erase Penalty",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "year",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Year",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-01-19 15:27:17.551358",
+ "modified_by": "Administrator",
+ "module": "Ecs Supply",
+ "name": "Penalty During Year Logs",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,124 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-09-15 13:25:26.793952",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "policemen",
+  "employee_name",
+  "employment_type",
+  "bonus_date",
+  "column_break_5",
+  "bonus_type",
+  "year",
+  "amended_from",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "bonus_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Bonus Date"
+  },
+  {
+   "fieldname": "bonus_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Bonus Type",
+   "options": "Bonus Type"
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Data",
+   "label": "Year"
+  },
+  {
+   "fieldname": "policemen",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Policemen",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Policemen Bonus",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  },
+  {
+   "fetch_from": "policemen.employment_type",
+   "fieldname": "employment_type",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Employment Type",
+   "options": "Employment Type",
+   "read_only": 1
+  },
+  {
+   "default": "PB-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming series",
+   "options": "PB-"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "policemen.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Employee Name",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-01-19 12:46:12.594166",
+ "modified_by": "Administrator",
+ "module": "Ecs Supply",
+ "name": "Policemen Bonus",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}

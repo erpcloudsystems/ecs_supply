@@ -1,0 +1,106 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-11-01 15:39:25.444751",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "policemen",
+  "employee_name",
+  "from_date",
+  "current_designation",
+  "new_designation",
+  "column_break_5",
+  "employment_type",
+  "notes",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "policemen",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "policemen",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "officers.first_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "Promotion Date"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "policemen.employment_type",
+   "fieldname": "employment_type",
+   "fieldtype": "Link",
+   "label": "Employment Type",
+   "options": "Employment Type"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  },
+  {
+   "fetch_from": "policemen.designation",
+   "fieldname": "current_designation",
+   "fieldtype": "Link",
+   "label": "Current Designation",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "new_designation",
+   "fieldtype": "Link",
+   "label": "New Designation",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Policemen Training",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-11-01 17:03:50.341411",
+ "modified_by": "Administrator",
+ "module": "Ecs Supply",
+ "name": "Policemen Training",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}

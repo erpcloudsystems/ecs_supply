@@ -1,0 +1,99 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-09-14 14:47:18.840941",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "civilians",
+  "penalty_date",
+  "penalty_type",
+  "reason",
+  "reporting_status",
+  "reporting_date",
+  "penalty_value",
+  "notes",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "civilians",
+   "fieldtype": "Link",
+   "label": "Civilians",
+   "options": "Civilians"
+  },
+  {
+   "fieldname": "penalty_date",
+   "fieldtype": "Date",
+   "label": "Penalty Date"
+  },
+  {
+   "fieldname": "penalty_type",
+   "fieldtype": "Data",
+   "label": "Penalty Type"
+  },
+  {
+   "fieldname": "reason",
+   "fieldtype": "Small Text",
+   "label": "Reason"
+  },
+  {
+   "fieldname": "reporting_status",
+   "fieldtype": "Select",
+   "label": "Reporting Status",
+   "options": "\n\u0646\u0639\u0645\n\u0644\u0627"
+  },
+  {
+   "fieldname": "reporting_date",
+   "fieldtype": "Date",
+   "label": "Reporting Date"
+  },
+  {
+   "fieldname": "penalty_value",
+   "fieldtype": "Data",
+   "label": "Penalty Value"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Penalties",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-09-14 14:47:18.840941",
+ "modified_by": "Administrator",
+ "module": "Ecs Supply",
+ "name": "Penalties",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}

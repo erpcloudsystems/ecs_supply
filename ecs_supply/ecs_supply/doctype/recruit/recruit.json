@@ -1,0 +1,494 @@
+{
+ "actions": [],
+ "allow_events_in_timeline": 1,
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-09-18 17:03:50.868819",
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "recruit_information_tab",
+  "recruit",
+  "naming_series",
+  "first_name",
+  "last_name",
+  "employee_name",
+  "employee_number",
+  "date_of_joining",
+  "installation_status",
+  "packing",
+  "image",
+  "column_break1",
+  "company",
+  "status",
+  "work_side",
+  "work_before_enlistment",
+  "work_assigned_to_employee",
+  "recruits_captured",
+  "appointments",
+  "fellowship_fund",
+  "covenant_system",
+  "recruit_detail_tab",
+  "gender",
+  "religion",
+  "marital_status",
+  "insurance_number",
+  "children_number",
+  "educational_qualification",
+  "military_service_certificate_number",
+  "rest_system",
+  "backwardness_case",
+  "write_off_status",
+  "record_type",
+  "reserve_date",
+  "column_break_29",
+  "date_of_birth",
+  "place_of_birth",
+  "governorate_of_birth",
+  "territory_of_birth",
+  "id_issue_date",
+  "id_number",
+  "civil_registry",
+  "finance_notification_date",
+  "cultural_level",
+  "subscription_date",
+  "proficiency_degree",
+  "contact_details_tab",
+  "current_address",
+  "governorate_address",
+  "address_place",
+  "column_break_44",
+  "cell_number",
+  "home_phone",
+  "other_phone",
+  "personal_email",
+  "reports_to",
+  "exit_tab",
+  "relieving_date",
+  "reason_for_leaving",
+  "exit_interview_details",
+  "feedback"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "no_copy": 1,
+   "oldfieldname": "naming_series",
+   "oldfieldtype": "Select",
+   "options": "HR-EMP-",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "Recruit Name",
+   "reqd": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Full Name",
+   "oldfieldname": "employee_name",
+   "oldfieldtype": "Data",
+   "read_only": 1
+  },
+  {
+   "fieldname": "employee_number",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "label": "Recruit Number",
+   "oldfieldname": "employee_number",
+   "oldfieldtype": "Data"
+  },
+  {
+   "fieldname": "date_of_joining",
+   "fieldtype": "Date",
+   "label": "Date of Joining Recruit",
+   "oldfieldname": "date_of_joining",
+   "oldfieldtype": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "installation_status",
+   "fieldtype": "Data",
+   "label": "Installation Status"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "column_break1",
+   "fieldtype": "Column Break",
+   "width": "50%"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Company",
+   "options": "Company",
+   "print_hide": 1,
+   "remember_last_selected_value": 1
+  },
+  {
+   "default": "Active",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "oldfieldname": "status",
+   "oldfieldtype": "Select",
+   "options": "Active\nInactive\nSuspended\nLeft",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "work_side",
+   "fieldtype": "Data",
+   "label": "Work Side"
+  },
+  {
+   "fieldname": "work_assigned_to_employee",
+   "fieldtype": "Data",
+   "label": "Work Assigned To Employee"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Link",
+   "label": "Gender",
+   "oldfieldname": "gender",
+   "oldfieldtype": "Select",
+   "options": "Gender",
+   "reqd": 1
+  },
+  {
+   "fieldname": "religion",
+   "fieldtype": "Data",
+   "label": "Religion"
+  },
+  {
+   "fieldname": "marital_status",
+   "fieldtype": "Select",
+   "label": "Marital Status",
+   "options": "\nSingle\nMarried\nDivorced\nWidowed"
+  },
+  {
+   "fieldname": "insurance_number",
+   "fieldtype": "Data",
+   "label": "Insurance Number"
+  },
+  {
+   "fieldname": "children_number",
+   "fieldtype": "Data",
+   "label": "Children Number"
+  },
+  {
+   "fieldname": "educational_qualification",
+   "fieldtype": "Data",
+   "label": "Educational Qualification"
+  },
+  {
+   "fieldname": "column_break_29",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth",
+   "oldfieldname": "date_of_birth",
+   "oldfieldtype": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "place_of_birth",
+   "fieldtype": "Data",
+   "label": "Place Of Birth"
+  },
+  {
+   "fieldname": "governorate_of_birth",
+   "fieldtype": "Data",
+   "label": "Governorate Of Birth"
+  },
+  {
+   "fieldname": "territory_of_birth",
+   "fieldtype": "Data",
+   "label": "Territory Of Birth"
+  },
+  {
+   "fieldname": "id_issue_date",
+   "fieldtype": "Data",
+   "label": "ID Issue Date"
+  },
+  {
+   "fieldname": "id_number",
+   "fieldtype": "Data",
+   "label": "ID Number"
+  },
+  {
+   "fieldname": "civil_registry",
+   "fieldtype": "Data",
+   "label": "Civil Registry"
+  },
+  {
+   "fieldname": "contact_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Contact And Address Details"
+  },
+  {
+   "fieldname": "current_address",
+   "fieldtype": "Small Text",
+   "label": "Current Address"
+  },
+  {
+   "fieldname": "governorate_address",
+   "fieldtype": "Data",
+   "label": "Governorate Address"
+  },
+  {
+   "fieldname": "address_place",
+   "fieldtype": "Data",
+   "label": "Address Place"
+  },
+  {
+   "fieldname": "column_break_44",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cell_number",
+   "fieldtype": "Data",
+   "label": "Mobile",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "home_phone",
+   "fieldtype": "Data",
+   "label": "Home Phone"
+  },
+  {
+   "fieldname": "other_phone",
+   "fieldtype": "Data",
+   "label": "Other Phone"
+  },
+  {
+   "fieldname": "personal_email",
+   "fieldtype": "Data",
+   "label": "Personal Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "reports_to",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Reports to",
+   "oldfieldname": "reports_to",
+   "oldfieldtype": "Link",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "exit_tab",
+   "fieldtype": "Tab Break",
+   "label": "Exit"
+  },
+  {
+   "fieldname": "relieving_date",
+   "fieldtype": "Date",
+   "label": "Relieving Date",
+   "mandatory_depends_on": "eval:doc.status == \"Left\"",
+   "oldfieldname": "relieving_date",
+   "oldfieldtype": "Date"
+  },
+  {
+   "fieldname": "reason_for_leaving",
+   "fieldtype": "Small Text",
+   "label": "Reason for Leaving",
+   "oldfieldname": "reason_for_leaving",
+   "oldfieldtype": "Data"
+  },
+  {
+   "fieldname": "exit_interview_details",
+   "fieldtype": "Column Break",
+   "oldfieldname": "col_brk6",
+   "oldfieldtype": "Column Break",
+   "width": "50%"
+  },
+  {
+   "fieldname": "feedback",
+   "fieldtype": "Small Text",
+   "label": "Feedback",
+   "oldfieldname": "feedback",
+   "oldfieldtype": "Text"
+  },
+  {
+   "fieldname": "recruit",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Recruit",
+   "no_copy": 1,
+   "print_hide": 1,
+   "report_hide": 1
+  },
+  {
+   "fieldname": "packing",
+   "fieldtype": "Data",
+   "label": "packing"
+  },
+  {
+   "fieldname": "work_before_enlistment",
+   "fieldtype": "Data",
+   "label": "Work Before Enlistment"
+  },
+  {
+   "fieldname": "recruits_captured",
+   "fieldtype": "Data",
+   "label": "Recruits Captured"
+  },
+  {
+   "fieldname": "appointments",
+   "fieldtype": "Data",
+   "label": "Appointments"
+  },
+  {
+   "fieldname": "fellowship_fund",
+   "fieldtype": "Data",
+   "label": "Fellowship Fund"
+  },
+  {
+   "fieldname": "covenant_system",
+   "fieldtype": "Data",
+   "label": "Covenant System"
+  },
+  {
+   "fieldname": "military_service_certificate_number",
+   "fieldtype": "Data",
+   "label": "Military Service Certificate Number"
+  },
+  {
+   "fieldname": "rest_system",
+   "fieldtype": "Data",
+   "label": "Rest System"
+  },
+  {
+   "fieldname": "backwardness_case",
+   "fieldtype": "Data",
+   "label": "Backwardness Case"
+  },
+  {
+   "fieldname": "write_off_status",
+   "fieldtype": "Data",
+   "label": "Write_off Status"
+  },
+  {
+   "fieldname": "reserve_date",
+   "fieldtype": "Date",
+   "label": "Reserve Date"
+  },
+  {
+   "fieldname": "record_type",
+   "fieldtype": "Select",
+   "label": "Record Type"
+  },
+  {
+   "fieldname": "finance_notification_date",
+   "fieldtype": "Date",
+   "label": "Finance Notification Date"
+  },
+  {
+   "fieldname": "subscription_date",
+   "fieldtype": "Date",
+   "label": "Subscription Date"
+  },
+  {
+   "fieldname": "cultural_level",
+   "fieldtype": "Data",
+   "label": "Cultural level"
+  },
+  {
+   "fieldname": "proficiency_degree",
+   "fieldtype": "Data",
+   "label": "Proficiency Degree"
+  },
+  {
+   "fieldname": "recruit_information_tab",
+   "fieldtype": "Tab Break",
+   "label": "Recruit Information"
+  },
+  {
+   "fieldname": "recruit_detail_tab",
+   "fieldtype": "Tab Break",
+   "label": "Recruit Detail"
+  }
+ ],
+ "icon": "fa fa-user",
+ "image_field": "image",
+ "links": [],
+ "modified": "2022-09-19 16:33:39.370272",
+ "modified_by": "Administrator",
+ "module": "Ecs Supply",
+ "name": "Recruit",
+ "name_case": "Title Case",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Employee"
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "set_user_permissions": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "employee_name",
+ "show_name_in_global_search": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "employee_name",
+ "track_changes": 1,
+ "track_seen": 1
+}

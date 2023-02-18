@@ -1,0 +1,96 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-09-14 14:57:00.214665",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "civilians",
+  "employment_type",
+  "amended_from",
+  "bonus_date",
+  "bonus_type",
+  "notes"
+ ],
+ "fields": [
+  {
+   "default": "CB-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "CB-"
+  },
+  {
+   "fieldname": "civilians",
+   "fieldtype": "Link",
+   "label": "Civilians",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "civilians.employment_type",
+   "fieldname": "employment_type",
+   "fieldtype": "Link",
+   "label": "Employment Type",
+   "options": "Employment Type",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Civilians Bonus",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "bonus_date",
+   "fieldtype": "Date",
+   "label": "Bonus Date"
+  },
+  {
+   "fieldname": "bonus_type",
+   "fieldtype": "Link",
+   "label": "Bonus Type",
+   "options": "Bonus Type"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-01-09 17:55:26.465185",
+ "modified_by": "Administrator",
+ "module": "Ecs Supply",
+ "name": "Civilians Bonus",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}

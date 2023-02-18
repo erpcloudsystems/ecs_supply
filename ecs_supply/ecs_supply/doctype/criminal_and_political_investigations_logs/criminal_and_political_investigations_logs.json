@@ -1,0 +1,79 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-01-09 14:21:58.093314",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "political_investigation_date",
+  "receipt_the_result_of_political_investigation_date",
+  "political_investigation_result",
+  "criminal_investigation_date",
+  "receipt_the_result_of_criminal_investigation_date",
+  "criminal_investigation_result"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "fieldname": "political_investigation_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Political Investigation Date",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "receipt_the_result_of_political_investigation_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Receipt The result Of Political Investigation Date",
+   "read_only": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "political_investigation_result",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Political Investigation Result",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "criminal_investigation_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Criminal Investigation Date",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "receipt_the_result_of_criminal_investigation_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Receipt The result Of Criminal Investigation Date",
+   "read_only": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "criminal_investigation_result",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Criminal Investigation Result",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-01-19 15:36:34.629086",
+ "modified_by": "Administrator",
+ "module": "Ecs Supply",
+ "name": "Criminal And Political Investigations Logs",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

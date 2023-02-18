@@ -1,0 +1,75 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"4Jcxp4i6YD\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">\u0627\u0644\u0645\u064a\u0632\u0627\u0646\u064a\u0629</span>\",\"col\":12}},{\"id\":\"1D9kqnM-Eg\",\"type\":\"card\",\"data\":{\"card_name\":\"\u0627\u0644\u0645\u064a\u0632\u0627\u0646\u064a\u0629\",\"col\":4}}]",
+ "creation": "2022-10-20 10:21:24.374303",
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 1,
+ "icon": "table_2",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "\u0627\u0644\u0645\u064a\u0632\u0627\u0646\u064a\u0629",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0627\u0644\u0645\u064a\u0632\u0627\u0646\u064a\u0629",
+   "link_count": 4,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0628\u0646\u0648\u062f \u0627\u0644\u0645\u064a\u0632\u0627\u0646\u064a\u0629",
+   "link_count": 0,
+   "link_to": "Mode of Payment",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0627\u0644\u062a\u0639\u0632\u064a\u0632\u0627\u062a",
+   "link_count": 0,
+   "link_to": "Payment Entry",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0627\u0644\u0627\u0631\u062a\u0628\u0627\u0637 \u0627\u0644\u0645\u0627\u0644\u064a",
+   "link_count": 0,
+   "link_to": "Financial Approval",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0627\u0631\u0635\u062f\u0629 \u0627\u0644\u0628\u0646\u0648\u062f",
+   "link_count": 0,
+   "link_to": "General Ledger",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2023-02-05 14:52:08.820265",
+ "modified_by": "Administrator",
+ "module": "Ecs Supply",
+ "name": "\u0627\u0644\u0645\u064a\u0632\u0627\u0646\u064a\u0629",
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 3.0,
+ "shortcuts": [],
+ "title": "\u0627\u0644\u0645\u064a\u0632\u0627\u0646\u064a\u0629"
+}

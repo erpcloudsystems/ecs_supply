@@ -1,0 +1,116 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-09-15 13:32:57.824812",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "officers",
+  "employee_name",
+  "seniority_number",
+  "rank",
+  "date",
+  "type_of_honor",
+  "column_break_6",
+  "employment_type",
+  "notes",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "officers",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Officers",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "type_of_honor",
+   "fieldtype": "Select",
+   "label": "Type of Honor",
+   "options": "\n\u0627\u0644\u0645\u0648\u0638\u0641 \u0627\u0644\u0645\u062b\u0627\u0644\u064a\n\u0627\u0644\u0627\u0645 \u0627\u0644\u0645\u062b\u0627\u0644\u064a\u0629\n\u0639\u064a\u062f \u0627\u0644\u0634\u0631\u0637\u0647\n\u062a\u0643\u0631\u064a\u0645 \u062f\u0627\u062e\u0644 \u0627\u0644\u0627\u062f\u0627\u0631\u0629"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Officer Honors",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "officers.employment_type",
+   "fieldname": "employment_type",
+   "fieldtype": "Link",
+   "label": "Employment Type",
+   "options": "Employment Type"
+  },
+  {
+   "fetch_from": "officers.seniority_number",
+   "fieldname": "seniority_number",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Seniority Number",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "officers.rank",
+   "fieldname": "rank",
+   "fieldtype": "Data",
+   "label": "Rank",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "officers.first_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Employee Name",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-10-27 13:27:43.005245",
+ "modified_by": "Administrator",
+ "module": "Ecs Supply",
+ "name": "Officer Honors",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}

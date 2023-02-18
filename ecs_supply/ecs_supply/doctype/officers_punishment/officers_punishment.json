@@ -1,0 +1,146 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-09-15 13:17:13.810295",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "officers",
+  "employee_name",
+  "seniority_number",
+  "rank",
+  "punishment_type",
+  "punishment_date",
+  "referral_decision_number",
+  "column_break_5",
+  "employment_type",
+  "referral_date",
+  "call_number",
+  "notes",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "punishment_type",
+   "fieldtype": "Link",
+   "label": "Punishment Type",
+   "options": "Punishment Type"
+  },
+  {
+   "fieldname": "punishment_date",
+   "fieldtype": "Date",
+   "label": "Punishment Date"
+  },
+  {
+   "fieldname": "referral_decision_number",
+   "fieldtype": "Data",
+   "label": "Referral Decision Number"
+  },
+  {
+   "fieldname": "officers",
+   "fieldtype": "Link",
+   "label": "Officers",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Officers Punishment",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "officers.employment_type",
+   "fieldname": "employment_type",
+   "fieldtype": "Link",
+   "label": "Employment Type",
+   "options": "Employment Type",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "officers.seniority_number",
+   "fieldname": "seniority_number",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Seniority Number",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "officers.rank",
+   "fieldname": "rank",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Rank",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "officers.first_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "referral_date",
+   "fieldtype": "Date",
+   "label": "Referral Date"
+  },
+  {
+   "fieldname": "call_number",
+   "fieldtype": "Data",
+   "label": "Call Number"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  },
+  {
+   "default": "OPU-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "OPU-"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-12-18 12:57:18.506190",
+ "modified_by": "Administrator",
+ "module": "Ecs Supply",
+ "name": "Officers Punishment",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}

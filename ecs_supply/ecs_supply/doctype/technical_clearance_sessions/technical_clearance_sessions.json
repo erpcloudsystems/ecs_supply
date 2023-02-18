@@ -1,0 +1,45 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2022-09-03 02:01:48.258506",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "rank",
+  "name1",
+  "adjective"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u0627\u0644\u0627\u0633\u0645"
+  },
+  {
+   "fieldname": "rank",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u0627\u0644\u0631\u062a\u0628\u0629"
+  },
+  {
+   "fieldname": "adjective",
+   "fieldtype": "Data",
+   "label": "\u0627\u0644\u0635\u0641\u0629"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-09-04 11:14:19.158089",
+ "modified_by": "Administrator",
+ "module": "Ecs Supply",
+ "name": "Technical clearance sessions",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

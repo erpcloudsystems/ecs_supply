@@ -1,0 +1,137 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-11-01 17:07:14.565252",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "officers",
+  "employee_name",
+  "seniority_number",
+  "rank",
+  "promotion_date",
+  "current_rank",
+  "new_rank",
+  "column_break_5",
+  "employment_type",
+  "notes",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "officers",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Officers",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "officers.first_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "officers.employment_type",
+   "fieldname": "employment_type",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Employment Type",
+   "options": "Employment Type",
+   "read_only": 1
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Officers Promotion",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "officers.seniority_number",
+   "fieldname": "seniority_number",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Seniority Number",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "officers.rank_date",
+   "fieldname": "rank",
+   "fieldtype": "Data",
+   "label": "Rank",
+   "read_only": 1
+  },
+  {
+   "default": "OFP-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "OFP-"
+  },
+  {
+   "fetch_from": "officers.rank",
+   "fieldname": "current_rank",
+   "fieldtype": "Link",
+   "label": "Current Rank",
+   "options": "Officer Rank",
+   "read_only": 1
+  },
+  {
+   "fieldname": "new_rank",
+   "fieldtype": "Link",
+   "label": "New Rank",
+   "options": "Officer Rank"
+  },
+  {
+   "fieldname": "promotion_date",
+   "fieldtype": "Date",
+   "label": "Promotion Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-01-16 16:46:24.412455",
+ "modified_by": "Administrator",
+ "module": "Ecs Supply",
+ "name": "Officers Promotion",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}

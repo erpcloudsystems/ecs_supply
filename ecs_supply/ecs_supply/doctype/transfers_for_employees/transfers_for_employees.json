@@ -1,0 +1,156 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-11-01 16:47:21.393534",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "employee_name",
+  "cb1",
+  "transfer_date",
+  "employment_type",
+  "sb1_section",
+  "main_department",
+  "new_main_department",
+  "column_break_3",
+  "sub_department",
+  "new_sub_department",
+  "section_break_5",
+  "transfer_reason",
+  "column_break_7",
+  "notes",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Employee",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee.employment_type",
+   "fieldname": "employment_type",
+   "fieldtype": "Link",
+   "label": "Employment Type",
+   "options": "Employment Type",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "transfer_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Transfer Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Transfers for Employees",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "transfer_reason",
+   "fieldtype": "Text",
+   "label": "Transfer Reason ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "employee.first_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.main_department",
+   "fieldname": "main_department",
+   "fieldtype": "Link",
+   "label": "Main Department",
+   "options": "Main Department",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "new_main_department",
+   "fieldtype": "Link",
+   "label": "New Main Department",
+   "options": "Main Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sb1_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "cb1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "employee.sup_department",
+   "fieldname": "sub_department",
+   "fieldtype": "Link",
+   "label": "Sub Department",
+   "options": "Sub Department",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "new_sub_department",
+   "fieldtype": "Link",
+   "label": "New Sub Department",
+   "options": "Sub Department",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-11-01 17:22:16.112486",
+ "modified_by": "Administrator",
+ "module": "Ecs Supply",
+ "name": "Transfers for Employees",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

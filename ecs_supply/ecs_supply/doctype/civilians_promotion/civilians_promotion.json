@@ -1,0 +1,156 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-11-01 17:11:58.811797",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "civilians",
+  "employee_name",
+  "promotion_date",
+  "current_designation",
+  "new_designation",
+  "column_break_5",
+  "employment_type",
+  "current_civilians_degree",
+  "new_civilians_degree",
+  "current_sub_degree",
+  "new_sub_degree",
+  "notes",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "civilians",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Civilians",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "civilians.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "civilians.designation",
+   "fieldname": "current_designation",
+   "fieldtype": "Link",
+   "label": "Current Designation",
+   "options": "Designation",
+   "read_only": 1
+  },
+  {
+   "fieldname": "new_designation",
+   "fieldtype": "Link",
+   "label": "New Designation",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "civilians.employment_type",
+   "fieldname": "employment_type",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Employment Type",
+   "options": "Employment Type",
+   "read_only": 1
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  },
+  {
+   "default": "CPR-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "CPR-"
+  },
+  {
+   "fetch_from": "civilians.civilians_degree",
+   "fieldname": "current_civilians_degree",
+   "fieldtype": "Link",
+   "label": "Current Civilians Degree",
+   "options": "Civilians Degree",
+   "read_only": 1
+  },
+  {
+   "fieldname": "new_civilians_degree",
+   "fieldtype": "Link",
+   "label": "New Civilians Degree",
+   "options": "Civilians Degree"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Civilians Promotion",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "promotion_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Promotion Date"
+  },
+  {
+   "fetch_from": "civilians.sub_degree",
+   "fieldname": "current_sub_degree",
+   "fieldtype": "Link",
+   "label": "Current Sub Degree",
+   "options": "Sub Degree",
+   "read_only": 1
+  },
+  {
+   "fieldname": "new_sub_degree",
+   "fieldtype": "Link",
+   "label": "New Sub Degree",
+   "options": "Sub Degree"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-01-23 12:52:47.640604",
+ "modified_by": "Administrator",
+ "module": "Ecs Supply",
+ "name": "Civilians Promotion",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}

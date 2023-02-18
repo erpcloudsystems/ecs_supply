@@ -1,0 +1,147 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-11-01 17:28:23.479040",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "policemen",
+  "employee_name",
+  "policemen_rank",
+  "transfer_date",
+  "employment_type",
+  "current_main_department",
+  "new_main_department",
+  "column_break_8",
+  "current_sub_department",
+  "new_sub_department",
+  "transfer_reason",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fetch_from": "policemen.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "transfer_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Transfer Date"
+  },
+  {
+   "fieldname": "employment_type",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Employment Type",
+   "options": "Employment Type",
+   "read_only": 1
+  },
+  {
+   "fieldname": "transfer_reason",
+   "fieldtype": "Small Text",
+   "label": "Transfer Reason "
+  },
+  {
+   "default": "PT-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "PT-"
+  },
+  {
+   "fieldname": "policemen",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Policemen",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Transfers for Policemen",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "policemen.main_department",
+   "fieldname": "current_main_department",
+   "fieldtype": "Link",
+   "label": "Current Main Department",
+   "options": "Main Department",
+   "read_only": 1
+  },
+  {
+   "fieldname": "new_main_department",
+   "fieldtype": "Link",
+   "label": "New Main Department",
+   "options": "Main Department"
+  },
+  {
+   "fetch_from": "policemen.sup_department",
+   "fieldname": "current_sub_department",
+   "fieldtype": "Link",
+   "label": "Current Sub Department",
+   "options": "Sub Department",
+   "read_only": 1
+  },
+  {
+   "fieldname": "new_sub_department",
+   "fieldtype": "Link",
+   "label": "New Sub Department",
+   "options": "Sub Department"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "policemen.policemen_rank",
+   "fieldname": "policemen_rank",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Policemen Rank",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-01-23 13:07:46.242309",
+ "modified_by": "Administrator",
+ "module": "Ecs Supply",
+ "name": "Transfers for Policemen",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

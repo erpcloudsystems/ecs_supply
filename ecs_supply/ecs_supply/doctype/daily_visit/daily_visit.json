@@ -1,0 +1,155 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "autoincrement",
+ "creation": "2023-01-28 10:50:35.535680",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "amended_from",
+  "section_break_3",
+  "visitors",
+  "no_old",
+  "visit_type",
+  "visit_depart",
+  "column_break_11",
+  "visit_date",
+  "time",
+  "visiting_responsible",
+  "section_break_9",
+  "visit_reason"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "naming_series",
+   "options": "VISIT-",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Visit",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "visitors",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "\u0627\u0644\u0632\u0627\u0626\u0631",
+   "options": "Daily Visitors"
+  },
+  {
+   "fetch_from": "visitors.card_id",
+   "fieldname": "no_old",
+   "fieldtype": "Data",
+   "label": "\u0631\u0642\u0645 \u0627\u0644\u0628\u0637\u0627\u0642\u0629",
+   "read_only": 1
+  },
+  {
+   "fieldname": "visit_type",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "\u0646\u0648\u0639 \u0627\u0644\u0632\u064a\u0627\u0631\u0629",
+   "options": "Visit Type"
+  },
+  {
+   "fieldname": "visit_depart",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": " \u062c\u0647\u0629 \u0627\u0644\u0632\u064a\u0627\u0631\u0629",
+   "options": "Visit Depart"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "visit_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "\u062a\u0627\u0631\u064a\u062e \u0627\u0644\u0632\u064a\u0627\u0631\u0629"
+  },
+  {
+   "default": "Now",
+   "fieldname": "time",
+   "fieldtype": "Time",
+   "label": "\u0648\u0642\u062a \u0627\u0644\u0632\u064a\u0627\u0631\u0647"
+  },
+  {
+   "fieldname": "visiting_responsible",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "\u0645\u0633\u062a\u0642\u0628\u0644 \u0627\u0644\u0632\u064a\u0627\u0631\u0629"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "visit_reason",
+   "fieldtype": "Small Text",
+   "label": " \u0633\u0628\u0628 \u0627\u0644\u0632\u064a\u0627\u0631\u0629"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Visit",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-01-28 17:44:14.964581",
+ "modified_by": "Administrator",
+ "module": "Ecs Supply",
+ "name": "Daily Visit",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

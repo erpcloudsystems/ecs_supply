@@ -1,0 +1,128 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-09-14 14:47:18.840941",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "civilians",
+  "employee_name",
+  "employment_type",
+  "penalty_date",
+  "penalty_type",
+  "reason",
+  "column_break_5",
+  "reporting_status",
+  "reporting_date",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "civilians",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Civilians",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "penalty_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Penalty Date"
+  },
+  {
+   "fieldname": "penalty_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Penalty Type",
+   "options": "Penalty Type"
+  },
+  {
+   "fieldname": "reason",
+   "fieldtype": "Small Text",
+   "label": "Reason"
+  },
+  {
+   "fieldname": "reporting_status",
+   "fieldtype": "Select",
+   "label": "Reporting Status",
+   "options": "\n\u0646\u0639\u0645\n\u0644\u0627"
+  },
+  {
+   "fieldname": "reporting_date",
+   "fieldtype": "Date",
+   "label": "Reporting Date"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Civilians Penalties",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "civilians.employment_type",
+   "fieldname": "employment_type",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Employment Type",
+   "options": "Employment Type",
+   "read_only": 1
+  },
+  {
+   "default": "CP-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "CP-"
+  },
+  {
+   "fetch_from": "civilians.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-01-23 12:49:47.155905",
+ "modified_by": "Administrator",
+ "module": "Ecs Supply",
+ "name": "Civilians Penalties",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}

@@ -1,0 +1,160 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-09-19 12:46:16.030303",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "officers",
+  "employee_name",
+  "seniority_number",
+  "rank",
+  "employment_type",
+  "reason_of_injury",
+  "injury_date",
+  "column_break_5",
+  "presentation_date",
+  "presentation_place",
+  "the_committees_decision",
+  "the_committees_date",
+  "about_the_decision",
+  "presentation_case",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "officers",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Officers",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "reason_of_injury",
+   "fieldtype": "Data",
+   "label": "Reason Of Injury"
+  },
+  {
+   "fieldname": "injury_date",
+   "fieldtype": "Date",
+   "label": "Injury Date"
+  },
+  {
+   "fieldname": "presentation_date",
+   "fieldtype": "Date",
+   "label": "Presentation Date"
+  },
+  {
+   "fieldname": "presentation_place",
+   "fieldtype": "Link",
+   "label": "Presentation Place",
+   "options": "Presentation Place"
+  },
+  {
+   "fieldname": "the_committees_decision",
+   "fieldtype": "Data",
+   "label": "The Committee's Decision"
+  },
+  {
+   "fieldname": "the_committees_date",
+   "fieldtype": "Date",
+   "label": "The Committee's Date"
+  },
+  {
+   "fieldname": "about_the_decision",
+   "fieldtype": "Data",
+   "label": "About the Decision"
+  },
+  {
+   "fieldname": "presentation_case",
+   "fieldtype": "Link",
+   "label": "Presentation Case",
+   "options": "Presentation Case"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Presentation To Medical Commission For Officers",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "officers.employment_type",
+   "fieldname": "employment_type",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Employment Type",
+   "options": "Employment Type",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "officers.seniority_number",
+   "fieldname": "seniority_number",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Seniority Number",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "officers.rank",
+   "fieldname": "rank",
+   "fieldtype": "Data",
+   "label": "Rank",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "officers.first_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "default": "OMC-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "OMC-"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-01-19 16:40:43.603614",
+ "modified_by": "Administrator",
+ "module": "Ecs Supply",
+ "name": "Presentation To Medical Commission For Officers",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}

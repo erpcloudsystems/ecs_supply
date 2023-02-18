@@ -1,0 +1,49 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-01-04 16:53:30.125056",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "bonus_type",
+  "notes",
+  "bonus_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "bonus_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Bonus Type",
+   "read_only": 1
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Notes",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bonus_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Bonus Date",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-01-04 18:01:33.649087",
+ "modified_by": "Administrator",
+ "module": "Ecs Supply",
+ "name": "Officer Bonus Logs",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

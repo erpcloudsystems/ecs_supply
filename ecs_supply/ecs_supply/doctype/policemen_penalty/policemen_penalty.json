@@ -1,0 +1,145 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-09-15 12:58:52.242373",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "policemen",
+  "employee_name",
+  "policemen_rank",
+  "employment_type",
+  "penalty_date",
+  "penalty_type",
+  "reason",
+  "column_break_5",
+  "reporting_status",
+  "reporting_date",
+  "penalty_value",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "policemen",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Policemen",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "penalty_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Penalty Date"
+  },
+  {
+   "fieldname": "penalty_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Penalty Type",
+   "options": "Penalty Type"
+  },
+  {
+   "fieldname": "reason",
+   "fieldtype": "Small Text",
+   "label": "Reason"
+  },
+  {
+   "fieldname": "reporting_status",
+   "fieldtype": "Select",
+   "label": "Reporting Status",
+   "options": "\n\u0646\u0639\u0645\n\u0644\u0627"
+  },
+  {
+   "fieldname": "reporting_date",
+   "fieldtype": "Date",
+   "label": "Reporting Date"
+  },
+  {
+   "fieldname": "penalty_value",
+   "fieldtype": "Data",
+   "label": "Penalty Value"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Policemen Penalty",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "policemen.employment_type",
+   "fieldname": "employment_type",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Employment Type",
+   "options": "Employment Type",
+   "read_only": 1
+  },
+  {
+   "default": "POP-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming series",
+   "options": "POP-"
+  },
+  {
+   "fetch_from": "policemen.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "policemen.policemen_rank",
+   "fieldname": "policemen_rank",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Policemen Rank",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-01-23 13:04:21.559155",
+ "modified_by": "Administrator",
+ "module": "Ecs Supply",
+ "name": "Policemen Penalty",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}

@@ -1,0 +1,141 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-01-09 11:28:53.733232",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "policemen",
+  "employee_name",
+  "policemen_rank",
+  "employment_type",
+  "year",
+  "column_break_5",
+  "absent_days_during_year",
+  "violation_during_year",
+  "delays_during_year",
+  "penalty_during_year",
+  "erase_penalty",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "default": "PDY-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming series",
+   "options": "PDY-"
+  },
+  {
+   "fieldname": "policemen",
+   "fieldtype": "Link",
+   "label": "Policemen",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "policemen.employment_type",
+   "fieldname": "employment_type",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Employment Type",
+   "options": "Employment Type",
+   "read_only": 1
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Year"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "absent_days_during_year",
+   "fieldtype": "Data",
+   "label": "Absent Days During Year"
+  },
+  {
+   "fieldname": "violation_during_year",
+   "fieldtype": "Data",
+   "label": "Violation During Year"
+  },
+  {
+   "fieldname": "delays_during_year",
+   "fieldtype": "Data",
+   "label": "Delays During Year"
+  },
+  {
+   "fieldname": "penalty_during_year",
+   "fieldtype": "Data",
+   "label": "Penalty During Year"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Penalty During Year",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "erase_penalty",
+   "fieldtype": "Select",
+   "label": "Erase Penalty",
+   "options": "\n\u0646\u0639\u0645\n\u0644\u0627"
+  },
+  {
+   "fetch_from": "policemen.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "policemen.policemen_rank",
+   "fieldname": "policemen_rank",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Policemen Rank",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-01-19 15:22:18.212830",
+ "modified_by": "Administrator",
+ "module": "Ecs Supply",
+ "name": "Penalty During Year",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}

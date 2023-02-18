@@ -1,0 +1,65 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-01-19 13:41:17.691946",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "leave_type",
+  "from_date",
+  "to_date",
+  "total_leave_days",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "leave_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Leave Type",
+   "read_only": 1
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "From Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "To Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_leave_days",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Total Leave Days",
+   "read_only": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Reason",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-01-19 13:41:17.691946",
+ "modified_by": "Administrator",
+ "module": "Ecs Supply",
+ "name": "Civilians Leave Application Logs",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

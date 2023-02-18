@@ -1,0 +1,57 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-01-04 17:25:50.940151",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "trial_type",
+  "trial_reason",
+  "trial_date",
+  "resumption_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "trial_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Trial Type",
+   "read_only": 1
+  },
+  {
+   "fieldname": "trial_reason",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Trial Reason",
+   "read_only": 1
+  },
+  {
+   "fieldname": "trial_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Trial Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "resumption_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Resumption Date",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-01-04 18:10:59.932058",
+ "modified_by": "Administrator",
+ "module": "Ecs Supply",
+ "name": "Officers Trials Logs",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
