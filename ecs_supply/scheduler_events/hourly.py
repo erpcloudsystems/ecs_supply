@@ -1,7 +1,8 @@
 from __future__ import unicode_literals
 import frappe
-from frappe i
 from datetime import date
+
+
 frappe.whitelist()
 def hourly():
     today = date.today()
