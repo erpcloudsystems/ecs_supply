@@ -7,7 +7,8 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "depart"
+  "depart",
+  "code"
  ],
  "fields": [
   {
@@ -15,11 +16,16 @@
    "fieldtype": "Data",
    "label": "Depart",
    "unique": 1
+  },
+  {
+   "fieldname": "code",
+   "fieldtype": "Data",
+   "label": "code"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-01-28 11:28:55.809632",
+ "modified": "2023-05-14 20:25:08.831127",
  "modified_by": "Administrator",
  "module": "Ecs Supply",
  "name": "Visit Depart",

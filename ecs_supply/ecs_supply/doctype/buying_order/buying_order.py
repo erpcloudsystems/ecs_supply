@@ -125,3 +125,16 @@ class BuyingOrder(Document):
 		doc.financial_clearance = new_doc.name
 		doc.financial_clearance_status = new_doc.workflow_state 
 		doc.save()
+
+	@frappe.whitelist()
+	def validate(doc, method=None):
+		total = 0
+		total2 = 0
+		total4 = 0
+		for x in doc.buying_order_items :
+			total4 = x.rate * x.quantity
+			x.amount = total4
+			total += x.amount
+			total2 += x.quantity
+		doc.total_quantity = total2
+		doc.total_amount = total
