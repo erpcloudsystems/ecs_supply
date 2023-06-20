@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"cb1ooLWHWh\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">\u0627\u0644\u0627\u0633\u062a\u0642\u0628\u0627\u0644</span>\",\"col\":12}},{\"id\":\"h3W2hzXbsX\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Daily Visit\",\"col\":3}},{\"id\":\"wUe9EMMeTo\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Daily Visitors\",\"col\":3}},{\"id\":\"Xrl8OBs7zf\",\"type\":\"card\",\"data\":{\"card_name\":\"\u062a\u0642\u0631\u064a\u0631 \u0627\u0644\u0632\u0627\u0626\u0631\u064a\u0646\",\"col\":4}}]",
+ "content": "[{\"id\":\"cb1ooLWHWh\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">\u0627\u0644\u0627\u0633\u062a\u0642\u0628\u0627\u0644</span>\",\"col\":12}},{\"id\":\"h3W2hzXbsX\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Daily Visit\",\"col\":4}},{\"id\":\"wUe9EMMeTo\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Daily Visitors\",\"col\":4}},{\"id\":\"5LavGDhQup\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Visitor Address\",\"col\":4}},{\"id\":\"Xrl8OBs7zf\",\"type\":\"card\",\"data\":{\"card_name\":\"\u062a\u0642\u0631\u064a\u0631 \u0627\u0644\u0632\u0627\u0626\u0631\u064a\u0646\",\"col\":4}}]",
  "creation": "2023-01-28 10:51:55.747728",
  "docstatus": 0,
  "doctype": "Workspace",
@@ -30,10 +30,11 @@
    "type": "Link"
   }
  ],
- "modified": "2023-02-05 16:49:11.150613",
+ "modified": "2023-05-21 09:46:31.734286",
  "modified_by": "Administrator",
  "module": "Ecs Supply",
  "name": "\u0627\u0644\u0627\u0633\u062a\u0642\u0628\u0627\u0644",
+ "number_cards": [],
  "owner": "Administrator",
  "parent_page": "",
  "public": 1,
@@ -46,6 +47,13 @@
    "doc_view": "List",
    "label": "Daily Visit",
    "link_to": "Daily Visit",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Visitor Address",
+   "link_to": "Visitor Address",
    "type": "DocType"
   },
   {

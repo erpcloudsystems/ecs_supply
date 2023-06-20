@@ -11,6 +11,7 @@
   "section_break_3",
   "visitors",
   "no_old",
+  "\u0627\u0644\u0648\u0638\u064a\u0641\u0629",
   "visit_type",
   "visit_depart",
   "column_break_11",
@@ -18,11 +19,11 @@
   "time",
   "entities",
   "visiting_responsible",
+  "visitor_address",
   "section_break_9",
   "visit_reason",
   "col_column",
   "notes",
-  "amended_from",
   "visitdestinations_name",
   "visitdate",
   "visitreceiver_name",
@@ -33,7 +34,8 @@
   "user_action",
   "user_name",
   "action_time",
-  "machine_name"
+  "machine_name",
+  "amended_from"
  ],
  "fields": [
   {
@@ -118,7 +120,6 @@
    "default": "Now",
    "fieldname": "time",
    "fieldtype": "Time",
-   "in_list_view": 1,
    "label": "\u0648\u0642\u062a \u0627\u0644\u0632\u064a\u0627\u0631\u0647",
    "reqd": 1
   },
@@ -229,11 +230,26 @@
    "in_standard_filter": 1,
    "label": "\u0627\u0644\u062c\u0647\u0629 \u0627\u0644\u062a\u0627\u0628\u0639 \u0644\u0647\u0627",
    "read_only": 1
+  },
+  {
+   "fetch_from": "visitors.visitor_address",
+   "fieldname": "visitor_address",
+   "fieldtype": "Data",
+   "label": "\u0639\u0646\u0648\u0627\u0646 \u0627\u0644\u0632\u0627\u0626\u0631",
+   "options": "Visitor Address",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "visitors.job",
+   "fieldname": "\u0627\u0644\u0648\u0638\u064a\u0641\u0629",
+   "fieldtype": "Link",
+   "label": "\u0627\u0644\u0648\u0638\u064a\u0641\u0629",
+   "options": "Job Code"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-05-15 13:47:40.991137",
+ "modified": "2023-06-05 09:57:18.525299",
  "modified_by": "Administrator",
  "module": "Ecs Supply",
  "name": "Daily Visit",

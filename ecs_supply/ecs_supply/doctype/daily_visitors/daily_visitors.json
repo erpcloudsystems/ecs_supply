@@ -18,6 +18,7 @@
   "card_id",
   "entities",
   "entities_address",
+  "visitor_address",
   "section_break_12",
   "notes",
   "destinationaddress",
@@ -105,6 +106,7 @@
   {
    "fieldname": "entities_address",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "\u0639\u0646\u0648\u0627\u0646 \u0627\u0644\u0632\u0627\u0626\u0631"
   },
   {
@@ -187,11 +189,17 @@
    "fieldtype": "Data",
    "hidden": 1,
    "label": "SECTION_name"
+  },
+  {
+   "fieldname": "visitor_address",
+   "fieldtype": "Link",
+   "label": "\u0639\u0646\u0648\u0627\u0646 \u0627\u0644\u0632\u0627\u0626\u0631",
+   "options": "Visitor Address"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-05-14 20:40:55.347063",
+ "modified": "2023-05-21 09:48:41.608295",
  "modified_by": "Administrator",
  "module": "Ecs Supply",
  "name": "Daily Visitors",
