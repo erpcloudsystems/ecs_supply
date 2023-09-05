@@ -1,0 +1,94 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-06-20 17:00:15.597795",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_2lrkm",
+  "voucher1_space",
+  "voucher3_space",
+  "column_break_7nvuw",
+  "voucher2_space",
+  "voucher_footer_space",
+  "section_break_0a9lr",
+  "bon_settings",
+  "column_break_jt148",
+  "footer_settings"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_0a9lr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "bon_settings",
+   "fieldtype": "Table",
+   "label": "\u0627\u0644\u0643\u0648\u0628\u0648\u0646",
+   "options": "Voucher Print Table"
+  },
+  {
+   "fieldname": "column_break_jt148",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "footer_settings",
+   "fieldtype": "Table",
+   "label": "\u0627\u0644\u0643\u0639\u0628",
+   "options": "Voucher Print Table"
+  },
+  {
+   "fieldname": "section_break_2lrkm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_7nvuw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "voucher_footer_space",
+   "fieldtype": "Int",
+   "label": " \u0627\u0644\u0645\u0633\u0627\u0641\u0629 \u0627\u0644\u0631\u0623\u0633\u064a\u0629 \u0628\u064a\u0646 \u0631\u0623\u0633 \u0627\u0644\u0648\u0631\u0642\u0629 \u0648\u0627\u0644\u0643\u0639\u0628"
+  },
+  {
+   "fieldname": "voucher2_space",
+   "fieldtype": "Int",
+   "label": " \u0627\u0644\u0645\u0633\u0627\u0641\u0629 \u0627\u0644\u0631\u0623\u0633\u064a\u0629 \u0628\u064a\u0646 \u0631\u0623\u0633 \u0627\u0644\u0648\u0631\u0642\u0629 \u0648\u0627\u0644\u0643\u0648\u0628\u0648\u0646 \u0627\u0644\u062b\u0627\u0646\u064a"
+  },
+  {
+   "fieldname": "voucher3_space",
+   "fieldtype": "Int",
+   "label": " \u0627\u0644\u0645\u0633\u0627\u0641\u0629 \u0627\u0644\u0631\u0623\u0633\u064a\u0629 \u0628\u064a\u0646 \u0631\u0623\u0633 \u0627\u0644\u0648\u0631\u0642\u0629 \u0648\u0627\u0644\u0643\u0648\u0628\u0648\u0646 \u0627\u0644\u062b\u0627\u0644\u062b"
+  },
+  {
+   "fieldname": "voucher1_space",
+   "fieldtype": "Int",
+   "label": " \u0627\u0644\u0645\u0633\u0627\u0641\u0629 \u0627\u0644\u0631\u0623\u0633\u064a\u0629 \u0628\u064a\u0646 \u0631\u0623\u0633 \u0627\u0644\u0648\u0631\u0642\u0629 \u0648\u0627\u0644\u0643\u0648\u0628\u0648\u0646 \u0627\u0644\u0623\u0648\u0644"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2023-06-21 13:41:00.931388",
+ "modified_by": "Administrator",
+ "module": "Ecs Supply",
+ "name": "Voucher Print Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,54 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-06-20 17:20:58.352747",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "id",
+  "fieldname",
+  "horizontal",
+  "vertical"
+ ],
+ "fields": [
+  {
+   "bold": 1,
+   "fieldname": "fieldname",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u0627\u0633\u0645 \u0627\u0644\u062d\u0642\u0644",
+   "read_only": 1
+  },
+  {
+   "fieldname": "horizontal",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "\u0623\u0641\u0642\u064a (\u0645\u0645)"
+  },
+  {
+   "fieldname": "vertical",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "\u0631\u0623\u0633\u064a (\u0645\u0645)"
+  },
+  {
+   "fieldname": "id",
+   "fieldtype": "Data",
+   "label": "\u0645",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-06-20 20:04:13.077114",
+ "modified_by": "Administrator",
+ "module": "Ecs Supply",
+ "name": "Voucher Print Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

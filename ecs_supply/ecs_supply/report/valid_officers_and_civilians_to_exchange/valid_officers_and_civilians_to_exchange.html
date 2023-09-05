@@ -1,0 +1,201 @@
+
+<style>
+    * {
+            margin:0;
+            padding:0;
+            direction:rtl;
+        }
+        .print-format {
+            padding:0in;
+            
+        }
+    .header {
+        margin-top:20px;
+        display:flex; 
+        flex-direction:column;
+        justify-content:center;
+    }
+    .under-header {
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+        align-items:center;
+    }
+    .esm-algeha {
+        margin-top:30px;
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+    }
+    table, th, td , th{
+        border:2px solid black;
+        border-collapse:collapse;
+        text-align:center;
+        white-space: nowrap;
+
+    }
+    .print-format th {
+        color:black;
+            text-align:center;
+            font-weight:bold;
+            background-color:lightgray;
+            white-space: nowrap;
+
+    
+    }
+    .print-format td {
+        padding: 0px !important;
+        white-space: nowrap;
+    }
+    .break {
+        flex-basis: 100%;
+        height: 0;
+      }
+      .column1 {
+        border-left: 2px solid black;
+      }
+    .table1 {
+        margin-top:5px;
+        margin-right:20px;
+        margin-left:20px;
+        display:flex; 
+        flex-direction:column;
+    
+    }
+    </style>
+    {% var numbers = ["٠","١","٢","٣","٤","٥","٦","٧","٨","٩"] %}
+
+    {% var pageNumber = 0 %}
+    {% var months = ["يناير", "فبراير", "مارس", "ابريل", "مايو", "يونيو", "يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر", "ديسمبر"]%}
+    
+<div class="header">
+
+    <div class="under-header">
+    <div style="display:flex; flex-direction:column; align-items:center; margin-right:20px;">
+        <div>
+    <img style="width:40px; height:40px; margin-top:16px;" src="/files/markabat logoce3b5ed30c07.png">
+    </div>
+    <div style="font-weight:bold;">
+        وزارة الداخلية
+    </div>
+    <div>
+    الادارة العامه لمركبات الشرطه
+    </div>
+    <div>
+    </div>
+    </div>
+           
+    <div style="font-weight: bold;
+    font-size: 12pt;
+    text-align:center;">
+        <br>
+        كشف بأسماء السادة
+        <span style="margin-right: 10px;"></span>
+        <span style="font-weight: bold;
+        font-size: 12pt;
+        text-decoration: underline;">{%= filters.title %}</span>
+        <span style="margin-right: 10px;"></span>
+        جهة
+        <span style="margin-right: 10px;"></span>
+        {%= filters.entities %}
+        
+        <span style="margin-right: 10px;"></span>
+        المنصرف لهم ملابس مدنية عن العام المالي 
+        <span style="margin-right: 10px;">{%= filters.fiscal_year %}</span>
+        
+</div>
+<hr>
+    <div>
+        <div style="display: flex; flex-direction: column; align-items: center;">
+            <div style="font-weight: bold;">تاريخ الطباعة  </div>
+            <div style="border:2px solid black; width:100px; text-align:center; margin-left:10px;margin-right:10px; font-weight:bold;">
+                {%= frappe.datetime.str_to_user(frappe.datetime.get_datetime_as_string()) %}
+                <br>
+                {{data[0].cur_user}}
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+</div>
+
+
+{% var counter = 1 %}
+
+
+<div class="table1">
+        <table style="font-family:Cairo; font-weight:bold;" dir="rtl">
+            <thead>
+                <tr>
+                    <th>{%= __("م") %}</th>
+                    <th>{%= __("الاقدمية") %}</th>
+                    <th>{%= __("الرتبة") %}</th>
+                    <th>{%= __("الجهة") %}</th>
+                    <th>{%= __("الاسم") %}</th>
+                    <th>{%= __("استحقاق الصرف") %}</th>
+                    <th>{%= __("العمل المسند") %}</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for(var i=0, f=data.length ; i<f; i++) { %}
+
+                <tr>
+                    <td>
+                        
+                        {%= i+1 %}
+                    </td>
+                    {% var id_number = [] %}
+                        {% var id_numbersplit =  data[i].id_number.toString().split("") %}
+                    {% for(var j=0, len=id_numbersplit.length; j<len; j++) { %}
+                       {% id_number.push(numbers[id_numbersplit[j]]) %}
+                    {%    } %}
+                    <td>{%= id_number.join("") %}</td>
+                    <td>{%= data[i].rank %}</td>
+                    <td>{%= data[i].entities %}</td>
+                    <td>{%= data[i].officer_name %}</td>
+                    <td>{%= data[i].reason_for_entitlement %}</td>
+                    <td>{%= data[i].assigned_work %}</td>
+                    
+
+                </tr>
+                {% } %}
+
+            </tbody>
+        </table>
+    </div>
+<br>
+    <div style="    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold; 
+    font-size: 14pt;">
+        <div>اقر انا / 
+            <span style="margin-right: 40px;"> الفوض من:</span>
+        <span style="margin-right: 80px;"></span>
+            بانني استلمت بونات الملابس المدنية للسادة 
+        <span style="margin-right: 10px;"></span>
+        <span style="font-weight: bold;
+        font-size: 12pt;
+        text-decoration: underline;">{%= filters.title %}</span>
+
+        </div>
+        <div>
+            المذكور اسمائهم عاليه وذلك بعد مراجعتها على الكشوف السابق ارسالها والمعتمدة من الجهة عملي وفقا للكتب الدورية المنظمة 
+            <br>
+            و القرارات الصادرة بشأن صرف ميزة الملابس المدنية للسادة الضباط مستحقي الصرف وهذا اقرار مني بذلك 
+            <br>
+            <br>
+            
+        </div>
+        <div style="font-weight: bold;">
+            المستلم المندوب الجهة (الرتبة و الاسم ) 
+
+        </div>
+        <div style="font-weight: bold;">
+            .....
+        </div>
+        <div style="font-weight: bold;">
+            التوقيع.....
+        </div>
+    </div>
