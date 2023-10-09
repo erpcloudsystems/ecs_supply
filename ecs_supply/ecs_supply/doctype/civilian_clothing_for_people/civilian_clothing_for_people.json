@@ -20,7 +20,10 @@
   "assigned_work",
   "reason_for_entitlement",
   "print",
-  "print_date"
+  "print_date",
+  "section_break_9h6x",
+  "reason_for_entitlement_lastyear",
+  "non_reason_for_entitlement_lastyear"
  ],
  "fields": [
   {
@@ -116,12 +119,26 @@
    "in_standard_filter": 1,
    "label": "\u0627\u0644\u0633\u0646\u0629 \u0627\u0644\u0645\u0627\u0644\u064a\u0629",
    "options": "Fiscal Year"
+  },
+  {
+   "fieldname": "section_break_9h6x",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "reason_for_entitlement_lastyear",
+   "fieldtype": "Data",
+   "label": "reason_for_entitlement_lastyear"
+  },
+  {
+   "fieldname": "non_reason_for_entitlement_lastyear",
+   "fieldtype": "Data",
+   "label": "non_reason_for_entitlement_lastyear"
   }
  ],
  "force_re_route_to_default_view": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-06-25 17:11:37.627369",
+ "modified": "2023-10-07 12:46:20.997878",
  "modified_by": "Administrator",
  "module": "Ecs Supply",
  "name": "Civilian Clothing For People",

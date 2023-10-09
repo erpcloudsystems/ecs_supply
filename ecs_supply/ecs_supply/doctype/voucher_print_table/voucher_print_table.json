@@ -9,7 +9,8 @@
   "id",
   "fieldname",
   "horizontal",
-  "vertical"
+  "vertical",
+  "example"
  ],
  "fields": [
   {
@@ -37,12 +38,18 @@
    "fieldtype": "Data",
    "label": "\u0645",
    "read_only": 1
+  },
+  {
+   "fieldname": "example",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u0645\u062b\u0627\u0644"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2023-06-20 20:04:13.077114",
+ "modified": "2023-10-07 13:10:23.293553",
  "modified_by": "Administrator",
  "module": "Ecs Supply",
  "name": "Voucher Print Table",
