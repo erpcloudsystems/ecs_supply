@@ -21,3 +21,18 @@ class CivilianClothingForPeople(Document):
 	def after_insert(self):
 		self.merge_phrases_civ_clothes("tabCivilian Clothing For People","people_name")
 		# self.merge_phrases_civ_clothes("tabCivilian Clothing For Officers", "officer_name")
+	# def before_insert(self):
+	# 	if not frappe.db.exists("Job Code", {"name": self.assigned_work}):
+	# 		assigned_work = frappe.get_doc({
+	# 			"doctype": "Job Code",
+	# 			"job": self.assigned_work,
+	# 		})
+	# 		assigned_work.insert(ignore_permissions=True)
+	# 	if not frappe.db.exists("Reason for Entitlement", {"name": self.reason_for_entitlement}):
+	# 		reason_for_entitlement = frappe.get_doc({
+	# 			"doctype": "Reason for Entitlement",
+	# 			"job": self.reason_for_entitlement,
+	# 		})
+	# 		reason_for_entitlement.insert(ignore_permissions=True)
+	# 	frappe.db.commit()
+		
