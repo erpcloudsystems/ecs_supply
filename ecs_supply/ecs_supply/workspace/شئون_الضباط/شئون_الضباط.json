@@ -1,7 +1,8 @@
 {
  "charts": [],
- "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">\u0634\u0626\u0648\u0646 \u0627\u0644\u0636\u0628\u0627\u0637</span>\",\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"\u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u0627\u0633\u0627\u0633\u064a\u0629\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"\u0627\u0644\u062d\u0631\u0643\u0627\u062a\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"\u0627\u0644\u062a\u0642\u0627\u0631\u064a\u0631\",\"col\":4}}]",
+ "content": "[{\"id\":\"bb_6h6tAJo\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">\u0634\u0626\u0648\u0646 \u0627\u0644\u0636\u0628\u0627\u0637</span>\",\"col\":12}},{\"id\":\"5od3SZK-DC\",\"type\":\"card\",\"data\":{\"card_name\":\"\u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u0627\u0633\u0627\u0633\u064a\u0629\",\"col\":4}},{\"id\":\"Ac2LY4ZtCa\",\"type\":\"card\",\"data\":{\"card_name\":\"\u0627\u0644\u062d\u0631\u0643\u0627\u062a\",\"col\":4}},{\"id\":\"sHPjcGqF6X\",\"type\":\"card\",\"data\":{\"card_name\":\"\u0627\u0644\u062a\u0642\u0627\u0631\u064a\u0631\",\"col\":4}}]",
  "creation": "2022-12-27 13:00:36.930605",
+ "custom_blocks": [],
  "docstatus": 0,
  "doctype": "Workspace",
  "for_user": "",
@@ -366,17 +367,18 @@
    "type": "Link"
   }
  ],
- "modified": "2023-02-05 14:52:09.628080",
+ "modified": "2023-11-13 14:02:40.665433",
  "modified_by": "Administrator",
  "module": "Ecs Supply",
  "name": "\u0634\u0626\u0648\u0646 \u0627\u0644\u0636\u0628\u0627\u0637",
+ "number_cards": [],
  "owner": "Administrator",
- "parent_page": "\u0634\u0626\u0648\u0646 \u0627\u0644\u062e\u062f\u0645\u0629",
+ "parent_page": "\u0627\u062f\u0627\u0631\u0629 \u0627\u0644\u0628\u062d\u062b \u0627\u0644\u062c\u0646\u0627\u0626\u064a",
  "public": 1,
  "quick_lists": [],
  "restrict_to_domain": "",
  "roles": [],
- "sequence_id": 6.0,
+ "sequence_id": 16.0,
  "shortcuts": [],
  "title": "\u0634\u0626\u0648\u0646 \u0627\u0644\u0636\u0628\u0627\u0637"
 }

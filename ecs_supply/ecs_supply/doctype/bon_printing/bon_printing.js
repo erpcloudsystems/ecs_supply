@@ -19,6 +19,18 @@ frappe.ui.form.on("Bon Printing", {
     }
 });
 
+frappe.ui.form.on("Bon Printing", "onload", function(frm) {
+    if(!cur_frm.doc.fiscal_year){
+        frappe.call({ method: "frappe.client.get_value", 
+            args: {
+                doctype: "System Defaults",
+                fieldname: "default_fiscal_year",
+            },
+            callback: function(r) { cur_frm.set_value("fiscal_year", r.message.default_fiscal_year); }
+        });
+    }
+});
+
 frappe.ui.form.on('Bon Printing', {
 	refresh:function(frm){
         // frm.set_df_property("officers_deserves_exchange_report", "cannot_delete_rows", true);

@@ -2,6 +2,7 @@
  "charts": [],
  "content": "[{\"id\":\"4Jcxp4i6YD\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">\u0627\u0644\u0645\u064a\u0632\u0627\u0646\u064a\u0629</span>\",\"col\":12}},{\"id\":\"1D9kqnM-Eg\",\"type\":\"card\",\"data\":{\"card_name\":\"\u0627\u0644\u0645\u064a\u0632\u0627\u0646\u064a\u0629\",\"col\":4}}]",
  "creation": "2022-10-20 10:21:24.374303",
+ "custom_blocks": [],
  "docstatus": 0,
  "doctype": "Workspace",
  "for_user": "",
@@ -60,10 +61,11 @@
    "type": "Link"
   }
  ],
- "modified": "2023-02-05 14:52:08.820265",
+ "modified": "2023-11-13 14:02:39.363703",
  "modified_by": "Administrator",
  "module": "Ecs Supply",
  "name": "\u0627\u0644\u0645\u064a\u0632\u0627\u0646\u064a\u0629",
+ "number_cards": [],
  "owner": "Administrator",
  "parent_page": "",
  "public": 1,

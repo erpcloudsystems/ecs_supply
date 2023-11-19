@@ -1,7 +1,7 @@
 {
  "absolute_value": 0,
  "align_labels_right": 0,
- "creation": "2023-06-20 18:43:31.334552",
+ "creation": "2023-10-23 14:46:04.696044",
  "css": "* {\n    margin: 0;\n    padding: 0;\n  }\n\n.print-format {\n    padding: 0in;\n    font-family: \"Times New Roman\", Times, serif;\n    font-size:11pt;\n\n}\n.print-format p{\n    margin: 0;\n}\n.positions {\n    position:absolute;\n    font-weight:bold;\n}",
  "custom_format": 1,
  "default_print_language": "ar",
@@ -17,7 +17,7 @@
  "margin_left": 15.0,
  "margin_right": 15.0,
  "margin_top": 15.0,
- "modified": "2023-10-07 17:35:49.919111",
+ "modified": "2023-10-23 14:46:08.403309",
  "modified_by": "Administrator",
  "module": "Ecs Supply",
  "name": "Bons Print",

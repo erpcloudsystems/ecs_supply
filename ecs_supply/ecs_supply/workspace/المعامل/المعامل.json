@@ -1,7 +1,8 @@
 {
  "charts": [],
- "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">\u0627\u0644\u0645\u0639\u0627\u0645\u0644</span>\",\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u0627\u0644\u0627\u062d\u0635\u0627\u0626\u064a\u0627\u062a\",\"col\":3}},{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b></b></span>\",\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"\u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u0627\u0633\u0627\u0633\u064a\u0629\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"\u062d\u0631\u0643\u0627\u062a \u0627\u0644\u0645\u0639\u0627\u0645\u0644\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"\u0627\u0644\u0632\u064a\u0627\u0631\u0627\u062a\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"\u0627\u0644\u062a\u0642\u0627\u0631\u064a\u0631\",\"col\":4}}]",
+ "content": "[{\"id\":\"nRaFh3FjUf\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">\u0627\u0644\u0645\u0639\u0627\u0645\u0644</span>\",\"col\":12}},{\"id\":\"XrtGY555pY\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u0627\u0644\u0627\u062d\u0635\u0627\u0626\u064a\u0627\u062a\",\"col\":3}},{\"id\":\"ub-cy6z-CS\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b></b></span>\",\"col\":12}},{\"id\":\"3QgF4NpjEO\",\"type\":\"card\",\"data\":{\"card_name\":\"\u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u0627\u0633\u0627\u0633\u064a\u0629\",\"col\":4}},{\"id\":\"-ujRwYV4_9\",\"type\":\"card\",\"data\":{\"card_name\":\"\u062d\u0631\u0643\u0627\u062a \u0627\u0644\u0645\u0639\u0627\u0645\u0644\",\"col\":4}},{\"id\":\"f6WfwGjsdS\",\"type\":\"card\",\"data\":{\"card_name\":\"\u0627\u0644\u0632\u064a\u0627\u0631\u0627\u062a\",\"col\":4}},{\"id\":\"mhpaUi8Ggs\",\"type\":\"card\",\"data\":{\"card_name\":\"\u0627\u0644\u062a\u0642\u0627\u0631\u064a\u0631\",\"col\":4}}]",
  "creation": "2022-10-20 10:23:56.998347",
+ "custom_blocks": [],
  "docstatus": 0,
  "doctype": "Workspace",
  "for_user": "",
@@ -126,7 +127,7 @@
   {
    "hidden": 0,
    "is_query_report": 1,
-   "label": "\u0627\u062d\u0635\u0627\u0621\u064a\u0627\u062a \u0627\u0644\u062a\u0642\u0627\u0631\u064a\u0631",
+   "label": "\u0627\u062d\u0635\u0627\u0626\u064a\u0627\u062a \u0627\u0644\u062a\u0642\u0627\u0631\u064a\u0631",
    "link_count": 0,
    "link_to": "Lab Sample State",
    "link_type": "Report",
@@ -134,10 +135,11 @@
    "type": "Link"
   }
  ],
- "modified": "2023-02-05 14:52:09.378904",
+ "modified": "2023-11-13 14:02:39.173334",
  "modified_by": "Administrator",
  "module": "Ecs Supply",
  "name": "\u0627\u0644\u0645\u0639\u0627\u0645\u0644",
+ "number_cards": [],
  "owner": "Administrator",
  "parent_page": "",
  "public": 1,

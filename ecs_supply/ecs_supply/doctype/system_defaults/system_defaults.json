@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2023-10-22 16:55:57.152962",
+ "creation": "2023-11-02 19:41:27.433431",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -22,7 +22,7 @@
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2023-10-22 16:56:00.516491",
+ "modified": "2023-11-02 19:41:27.433431",
  "modified_by": "Administrator",
  "module": "Ecs Supply",
  "name": "System Defaults",

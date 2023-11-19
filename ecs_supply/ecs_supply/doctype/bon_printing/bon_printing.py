@@ -18,23 +18,25 @@ class BonPrinting(Document):
 		if doc.title == "ضباط":
 			entity_data = frappe.db.sql(
 				""" select
-					name, id_number, officer_name, rank, entities, assigned_work,
+					name, id_number2, officer_name, rank, entities, assigned_work, job,
 					reason_for_entitlement, print, print_date, fiscal_year
 					from `tabCivilian Clothing For Officers` 
 					where entities = '{entity}'
 					and fiscal_year = '{fiscal_year}'
-					and reason_for_entitlement not in  ("غير مدرج", "غير مدرج للتكرار")
+					and reason_for_entitlement not in ("غير مدرج", "غير مدرج للتكرار")
 					{conditions}
+					order by num_order asc
 					LIMIT {limit}
 				""".format(conditions=conditions,limit=doc.print_count, entity=doc.entity, fiscal_year=doc.fiscal_year), as_dict=1)
 			
 			for civilian in entity_data:
 				table = doc.append("bon_printing_civilians", {})
 				table.coupon_no = civilian.name
-				table.id_number = civilian.id_number
+				table.id_number = civilian.id_number2
 				table.officer_name = civilian.officer_name
 				table.rank = civilian.rank
 				table.entities = civilian.entities
+				table.job = civilian.job
 				table.assigned_work = civilian.assigned_work
 				table.reason_for_entitlement = civilian.reason_for_entitlement
 				table.print = civilian.print

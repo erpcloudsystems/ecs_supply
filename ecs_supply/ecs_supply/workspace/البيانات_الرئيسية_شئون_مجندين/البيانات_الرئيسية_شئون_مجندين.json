@@ -2,6 +2,7 @@
  "charts": [],
  "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">\u0634\u0626\u0648\u0646 \u0627\u0644\u0645\u062c\u0646\u062f\u064a\u0646</span>\",\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"\u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u0627\u0633\u0627\u0633\u064a\u0647\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"\u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u0627\u0633\u0627\u0633\u064a\u0647 \u0644\u0644\u062d\u0631\u0643\u0627\u062a\",\"col\":4}}]",
  "creation": "2023-01-03 14:54:55.364781",
+ "custom_blocks": [],
  "docstatus": 0,
  "doctype": "Workspace",
  "for_user": "",
@@ -318,16 +319,17 @@
    "type": "Link"
   }
  ],
- "modified": "2023-02-05 14:52:10.414583",
+ "modified": "2023-11-13 14:02:40.378033",
  "modified_by": "Administrator",
  "module": "Ecs Supply",
  "name": "\u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u0631\u0626\u064a\u0633\u064a\u0629 \u0634\u0626\u0648\u0646 \u0645\u062c\u0646\u062f\u064a\u0646",
+ "number_cards": [],
  "owner": "Administrator",
  "parent_page": "\u0634\u0626\u0648\u0646 \u0627\u0644\u062e\u062f\u0645\u0629",
  "public": 1,
  "quick_lists": [],
  "roles": [],
- "sequence_id": 12.0,
+ "sequence_id": 13.0,
  "shortcuts": [],
  "title": "\u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u0631\u0626\u064a\u0633\u064a\u0629 \u0634\u0626\u0648\u0646 \u0645\u062c\u0646\u062f\u064a\u0646"
 }

@@ -27,7 +27,7 @@ frappe.query_reports["Duplicates Report"] = {
 			label: __("السنة المالية"),
 			fieldtype: "Link",
 			options: "Fiscal Year",
-			default: frappe.defaults.get_user_default("fiscal_year"),
+			default: "2023-2024",
 		},
 
 	]

@@ -13,13 +13,14 @@
   "employee_name",
   "policemen_rank",
   "employment_type",
-  "year",
   "column_break_5",
-  "absent_days_during_year",
-  "violation_during_year",
-  "delays_during_year",
-  "penalty_during_year",
+  "year",
+  "section_break_5uol",
+  "discipline",
+  "number_of_sanctions_during_the_year",
   "erase_penalty",
+  "column_break_b528",
+  "the_behavior",
   "amended_from"
  ],
  "fields": [
@@ -35,7 +36,7 @@
    "fieldname": "policemen",
    "fieldtype": "Link",
    "label": "Policemen",
-   "options": "Employee"
+   "options": "Envestigation Employee"
   },
   {
    "fetch_from": "policemen.employment_type",
@@ -55,26 +56,6 @@
   {
    "fieldname": "column_break_5",
    "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "absent_days_during_year",
-   "fieldtype": "Data",
-   "label": "Absent Days During Year"
-  },
-  {
-   "fieldname": "violation_during_year",
-   "fieldtype": "Data",
-   "label": "Violation During Year"
-  },
-  {
-   "fieldname": "delays_during_year",
-   "fieldtype": "Data",
-   "label": "Delays During Year"
-  },
-  {
-   "fieldname": "penalty_during_year",
-   "fieldtype": "Data",
-   "label": "Penalty During Year"
   },
   {
    "fieldname": "amended_from",
@@ -108,12 +89,35 @@
    "in_standard_filter": 1,
    "label": "Policemen Rank",
    "read_only": 1
+  },
+  {
+   "fieldname": "section_break_5uol",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "discipline",
+   "fieldtype": "Small Text",
+   "label": "\u0627\u0644\u0627\u0646\u0636\u0628\u0627\u0637\u064a\u0629"
+  },
+  {
+   "fieldname": "number_of_sanctions_during_the_year",
+   "fieldtype": "Int",
+   "label": "\u0639\u062f\u062f \u0627\u0644\u062c\u0632\u0627\u0621\u0627\u062a \u062e\u0644\u0627\u0644 \u0627\u0644\u0639\u0627\u0645"
+  },
+  {
+   "fieldname": "column_break_b528",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "the_behavior",
+   "fieldtype": "Small Text",
+   "label": "\u0627\u0644\u0645\u0633\u0644\u0643\u064a\u0629"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-01-19 15:22:18.212830",
+ "modified": "2023-11-15 14:34:32.070008",
  "modified_by": "Administrator",
  "module": "Ecs Supply",
  "name": "Penalty During Year",
