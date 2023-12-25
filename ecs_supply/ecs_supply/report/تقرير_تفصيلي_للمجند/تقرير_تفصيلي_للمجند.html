@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <style>
+        body {
+            text-align: center;
+            font-size: 18px;
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+        }
+
+        .header {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .under-header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .esm-algeha {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        table, th, td, th {
+            border: 2px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        .print-format th {
+            color: black;
+            text-align: center;
+            font-weight: bold;
+            background-color: lightgray;
+        }
+
+        .print-format td {
+            padding: 8px !important;
+        }
+
+        .break {
+            flex-basis: 100%;
+            height: 0;
+        }
+
+        .column1,
+        .column2 {
+            border: 0px solid black;
+            margin: 0.3em 1em;
+            display: flex;
+            flex-direction: row;
+            gap: 0px 84px;
+        }
+
+        .table1 {
+        margin-top: 10px;
+        margin-right: 20px;
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .table1 table {
+        width: 100%;
+        border: 2px solid black;
+        border-collapse: collapse;
+    }
+
+    .table1 th, .table1 td {
+        border: 2px solid black;
+        padding: 8px;
+    }
+
+    .table1 th {
+        color: black;
+        text-align: center;
+        font-weight: bold;
+        background-color: lightgray;
+    }
+
+    .table1 .print-format td {
+        padding: 8px !important;
+    }
+
+
+
+        .container-label {
+            display: block;
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            font-size: 22px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        hr {
+            margin-top: 1px !important;
+        }
+    </style>
+</head>
+<body>
+  <header class="header">
+        <div class="logo">
+            <img src="/files/لوجو قسم المعلومات.PNG" alt="Company Logo" ismap>
+        </div>
+    <h1 style="text-decoration: underline; font-weight: bold; font-size: 30px;">تقرير تفصيلي للمجند</h1>
+    <h1 style="font-weight: bold; font-size: 30px;">للعرض على السيد اللواء/ مدير إدارة البحث الجنائي</h1>
+    <h2 style="font-size: 20px;">تحية طيبة وبعد ,,,</h2>
+  </header>
+  <br>  
+  <br>
+  
+    <div style="display: flex; justify-content:center;">
+        <div style="display: flex;flex-direction: column; justify-content:center; align-items: center;margin-top:-1em">
+            <div>
+                <h3 style="border:2px solid black; background-color:lightgray;font-family:Cairo; margin: 0px 20px; width:200px;text-align:center;">البيانات الأساسية</h3>
+            </div>
+        </div>
+    </div>
+    <hr>
+    {% for(var i=0, f=data.length; i<f; i++) { %}
+    <div class="column1">
+      <div>
+            {% if (data[i].custom_file_number4) { %}
+              <div style="display:flex;">
+                <div style="border: 2px solid black; background-color:lightgray;padding: 0.2em;margin: 0.2em;font-weight: bold;white-space:nowrap;width:110px;text-align:center;">رقم الملف</div>
+                <div style="padding: 0.2em; margin: 0.2em; font-weight: bold;">{%= data[i].custom_file_number4 %} </div>
+              <div style="width: 1%;"></div>
+          </div>
+          {% } %}
+
+          {% if (data[i].employee_number) { %}
+          <div style="display:flex;">
+          <div style="border: 2px solid black; background-color:lightgray;padding: 0.2em;margin: 0.2em;font-weight: bold;white-space:nowrap;width:110px;text-align:center;">رقم الشرطة</div>
+          <div style="padding: 0.2em; margin: 0.2em; font-weight: bold;">{%= data[i].employee_number %} </div>
+          <div style="width: 1%;"></div>
+          </div>
+          {% } %}
+
+          {% if (data[i].date_of_conscription) { %}
+          <div style="display:flex;">
+          <div style="border: 2px solid black; background-color:lightgray;padding: 0.2em;margin: 0.2em;font-weight: bold;white-space:nowrap;width:110px;text-align:center;">تاريخ التجنيد</div>
+          <div style="padding: 0.2em; margin: 0.2em; font-weight: bold;">{%= data[i].date_of_conscription %} </div>
+          <div style="width: 1%;"></div>
+          </div>
+          {% } %}
+
+          {% if (data[i].the_academic_qualification) { %}
+          <div style="display:flex;">
+          <div style="border: 2px solid black; background-color:lightgray;padding: 0.2em;margin: 0.2em;font-weight: bold;white-space:nowrap;width:110px;text-align:center;">المؤهل الدراسي</div>
+          <div style="padding: 0.2em; margin: 0.2em; font-weight: bold;">{%= data[i].the_academic_qualification %} </div>
+          <div style="width: 1%;"></div>
+          </div>
+          {% } %}
+
+          {% if (data[i].first_name) { %}
+          <div style="display:flex;">
+          <div style="border: 2px solid black; background-color:lightgray;padding: 0.2em;margin: 0.2em;font-weight: bold;white-space:nowrap;width:110px;text-align:center;">الأسم</div>
+          <div style="padding: 0.2em; margin: 0.2em; font-weight: bold;">{%= data[i].first_name %} </div>
+          <div style="width: 1%;"></div>
+          </div>
+          {% } %}
+
+          {% if (data[i].current_address) { %}
+          <div style="display:flex;">
+          <div style="border: 2px solid black; background-color:lightgray;padding: 0.2em;margin: 0.2em;font-weight: bold;white-space:nowrap;width:110px;text-align:center;">محل الإقامة</div>
+          <div style="padding: 0.2em; margin: 0.2em; font-weight: bold;">{%= data[i].current_address %} </div>
+          <div style="width: 1%;"></div>
+          </div>
+          {% } %}
+
+          {% if (data[i].date_of_joining) { %}
+          <div style="display:flex;">
+          <div style="border: 2px solid black; background-color:lightgray;padding: 0.2em;margin: 0.2em;font-weight: bold;white-space:nowrap;width:110px;text-align:center;">تاريخ الالتحاق بالإدارة</div>
+          <div style="padding: 0.2em; margin: 0.2em; font-weight: bold;">{%= data[i].date_of_joining %} </div>
+          <div style="width: 1%;"></div>
+          </div>
+          {% } %}
+
+          {% if (data[i].sup_department) { %}
+          <div style="display:flex;">
+          <div style="border: 2px solid black; background-color:lightgray;padding: 0.2em;margin: 0.2em;font-weight: bold;white-space:nowrap;width:110px;text-align:center;">العمل المسند له</div>
+          <div style="padding: 0.2em;  font-weight: bold; ">{%= data[i].sup_department %} </div>
+          <div style="width: 1%;"></div>
+          </div>
+          {% } %}
+      </div>
+    </div>
+    {% } %}
+    <hr>
+    <br>  
+    <br>
+    <div style="display: flex; justify-content:center;">
+        <div style="display: flex;flex-direction: column; justify-content:center; align-items: center;margin-top:-1em">
+            <div>
+                <h3 style="border:2px solid black; background-color:lightgray;font-family:Cairo; margin: 0px 20px; width:200px;text-align:center;">الموقف من حمل السلاح</h3>
+            </div>
+        </div>
+    </div>
+    
+    <div  class="table1">
+      <table>
+          <thead>
+              <tr>
+                  <th>موقفه من حمل السلاح </th>
+                  <th>السبب</th>
+              </tr>
+          </thead>
+        {% for(var i=0, f=data.length; i<f; i++) { %}
+          <tbody>
+              <tr>
+                {% if (data[i].gun_carrying_case) { %}
+                    <td>{%= data[i].gun_carrying_case %}</td> 
+                {% } %}
+                {% if (data[i].reason) { %}    
+                    <td>{%= data[i].reason %} </td>
+                {% } %}    
+
+              </tr>
+          </tbody>
+      </table>
+    </div> 
+    {% } %}
+
+<!-- second table -->
+<div style="display: flex; justify-content:center;">
+    <div style="display: flex;flex-direction: column; justify-content:center; align-items: center;margin-top:-1em">
+        <div>
+            <h3 style="border:2px solid black; background-color:lightgray;font-family:Cairo; margin: 0px 20px; width:200px;text-align:center;">ح</h3>
+        </div>
+    </div>
+</div>
+
+<div  class="table1">
+  <table>
+      <thead>
+          <tr>
+            <th>الحالة النفسية</th>
+            <th>تفاصيل الحالة</th>
+          </tr>
+      </thead>
+    {% for(var i=0, f=data.length; i<f; i++) { %}
+      <tbody>
+          <tr>
+            {% if (data[i].health_details3) { %}
+            <td>{%= data[i].health_details3 %}</td>
+            {% } %}
+        {% if (data[i].health_details2) { %}
+            <td>{%= data[i].health_details2 %}</td>
+        {% } %}
+
+          </tr>
+      </tbody>
+  </table>
+</div> 
+{% } %}
+</body>
+</html>

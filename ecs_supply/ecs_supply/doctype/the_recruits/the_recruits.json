@@ -1,0 +1,776 @@
+{
+ "actions": [],
+ "allow_events_in_timeline": 1,
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-11-26 13:06:46.207792",
+ "default_view": "List",
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "basic_details_tab",
+  "basic_information",
+  "custom_file_number4",
+  "column_break_mtns",
+  "column_break_uufr",
+  "column_break_ymiq",
+  "column_break_lyty",
+  "section_break_0osw",
+  "employee",
+  "naming_series",
+  "first_name",
+  "religion",
+  "current_address",
+  "other_address",
+  "recruit_number",
+  "military_number",
+  "responsible_officer",
+  "middle_name",
+  "last_name",
+  "employee_name",
+  "seniority_number",
+  "marital_status",
+  "recruit_degree",
+  "civilians_degree",
+  "column_break_9",
+  "date_of_birth",
+  "territory_of_birth",
+  "territory_of_birth2",
+  "territory_of_birth3",
+  "passport_number",
+  "national_id",
+  "place_of_birth",
+  "salutation",
+  "column_break1",
+  "employment_type",
+  "gender",
+  "the_academic_qualification",
+  "governorate_of_birth",
+  "governorate_of_birth2",
+  "governorate_of_birth3",
+  "joining_decision_number",
+  "joining_decision_type",
+  "military_date",
+  "image",
+  "military_end_date",
+  "overnight",
+  "cell_number",
+  "erpnext_user",
+  "user_id",
+  "create_user",
+  "create_user_permission",
+  "department_tab",
+  "employee_number",
+  "date_of_joining",
+  "gun_carrying_case",
+  "reason",
+  "date_of_graduation",
+  "company",
+  "column_break_eng4",
+  "policemen_rank",
+  "date_of_conscription",
+  "main_department23",
+  "the_place_of_the_mission",
+  "department",
+  "designation_feiled",
+  "column_break_xvtx",
+  "custom_date_of_appointment",
+  "the_transferred_party_from_it",
+  "entity",
+  "pervious_departments1",
+  "sup_department",
+  "doing_officers_work",
+  "resolution_number",
+  "section_break_ivtj",
+  "column_break_ktlz",
+  "date_of_implementation",
+  "column_break_davj",
+  "end_of_service_by_administration",
+  "enabled",
+  "column_break_rucv",
+  "the_reason_for_leaving",
+  "column_break_kpvi",
+  "disabled",
+  "section_break_77fc",
+  "private_vehicle_for_the_individual",
+  "column_break_b5m0",
+  "column_break_ryyk",
+  "section_break_nbh1",
+  "vehicle_data",
+  "section_break_glfs",
+  "other_notes",
+  "notes",
+  "profile_tab",
+  "health_details3",
+  "health_details2",
+  "other_notes2",
+  "column_break_rkbn",
+  "exit_interview_details",
+  "health_details",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "basic_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Overview"
+  },
+  {
+   "fieldname": "basic_information",
+   "fieldtype": "Section Break",
+   "oldfieldtype": "Section Break"
+  },
+  {
+   "fieldname": "custom_file_number4",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "\u0631\u0642\u0645 \u0627\u0644\u0645\u0644\u0641",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_mtns",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_uufr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ymiq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_lyty",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_0osw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Employee",
+   "no_copy": 1,
+   "print_hide": 1,
+   "report_hide": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "no_copy": 1,
+   "oldfieldname": "naming_series",
+   "oldfieldtype": "Select",
+   "options": "HR-EMP-",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u0627\u0644\u0623\u0633\u0645 (\u0631\u0628\u0627\u0639\u0640\u0640\u0640\u064a)",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "religion",
+   "fieldtype": "Link",
+   "label": "Religion",
+   "options": "Religion"
+  },
+  {
+   "fieldname": "current_address",
+   "fieldtype": "Data",
+   "label": "\u0645\u062d\u0644 \u0627\u0644\u0627\u0642\u0627\u0645\u0629"
+  },
+  {
+   "fieldname": "other_address",
+   "fieldtype": "Data",
+   "label": "\u0627\u0642\u0627\u0645\u0629 \u0627\u062e\u0631\u064a"
+  },
+  {
+   "depends_on": "eval:doc.employment_type == \"Recruit\"",
+   "fieldname": "recruit_number",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Recruit Number",
+   "options": "Recruit Number"
+  },
+  {
+   "depends_on": "eval:doc.employment_type == \"Recruit\"",
+   "fieldname": "military_number",
+   "fieldtype": "Link",
+   "label": "Military Number",
+   "options": "Military Number"
+  },
+  {
+   "depends_on": "eval:doc.employment_type == \"Recruit\"",
+   "fieldname": "responsible_officer",
+   "fieldtype": "Link",
+   "label": "Responsible Officer",
+   "options": "Employee"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "middle_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Middle Name"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_global_search": 1,
+   "in_standard_filter": 1,
+   "label": "\u0627\u0644\u0627\u0633\u0645 \u0627\u0644\u0643\u0627\u0645\u0644",
+   "oldfieldname": "employee_name",
+   "oldfieldtype": "Data",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.employment_type == \"Officers\" || doc.employment_type == \"Policemen\"",
+   "fieldname": "seniority_number",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Seniority Number",
+   "translatable": 1
+  },
+  {
+   "fieldname": "marital_status",
+   "fieldtype": "Select",
+   "label": "Marital Status",
+   "options": "\nSingle\nMarried\nDivorced\nWidowed"
+  },
+  {
+   "depends_on": "eval:doc.employment_type == \"Recruit\"",
+   "fieldname": "recruit_degree",
+   "fieldtype": "Link",
+   "label": "Recruit Degree",
+   "options": "Recruit Degree"
+  },
+  {
+   "depends_on": "eval:doc.employment_type == \"Civilians\"",
+   "fieldname": "civilians_degree",
+   "fieldtype": "Link",
+   "label": "Civilians Degree",
+   "options": "Civilians Degree"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth",
+   "oldfieldname": "date_of_birth",
+   "oldfieldtype": "Date"
+  },
+  {
+   "fieldname": "territory_of_birth",
+   "fieldtype": "Link",
+   "label": "Territory Of Birth",
+   "options": "Territory Of Birth"
+  },
+  {
+   "fieldname": "territory_of_birth2",
+   "fieldtype": "Link",
+   "label": "\u0645\u0631\u0643\u0632/\u0642\u0633\u0645",
+   "options": "Territory Of Birth"
+  },
+  {
+   "fieldname": "territory_of_birth3",
+   "fieldtype": "Link",
+   "label": "\u0645\u0631\u0643\u0632/\u0642\u0633\u0645",
+   "options": "Territory Of Birth"
+  },
+  {
+   "depends_on": "eval:doc.employment_type != \"Civilians\"",
+   "fieldname": "passport_number",
+   "fieldtype": "Data",
+   "label": "ID Number"
+  },
+  {
+   "depends_on": "eval:doc.employment_type == \"Civilians\"",
+   "fieldname": "national_id",
+   "fieldtype": "Data",
+   "label": "National ID",
+   "translatable": 1
+  },
+  {
+   "fieldname": "place_of_birth",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Place Of Birth",
+   "options": "Place Of Birth"
+  },
+  {
+   "fieldname": "salutation",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Salutation",
+   "oldfieldname": "salutation",
+   "oldfieldtype": "Select",
+   "options": "Salutation"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "column_break1",
+   "fieldtype": "Column Break",
+   "width": "50%"
+  },
+  {
+   "default": "Policemen",
+   "fieldname": "employment_type",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "in_global_search": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Employment Type",
+   "options": "Employment Type"
+  },
+  {
+   "default": "Male",
+   "fieldname": "gender",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Gender",
+   "oldfieldname": "gender",
+   "oldfieldtype": "Select",
+   "options": "Gender",
+   "reqd": 1
+  },
+  {
+   "fieldname": "governorate_of_birth",
+   "fieldtype": "Link",
+   "label": "Governorate Of Birth",
+   "options": "Governorate Of Birth"
+  },
+  {
+   "fieldname": "governorate_of_birth2",
+   "fieldtype": "Link",
+   "label": "\u0645\u062d\u0627\u0641\u0638\u0629",
+   "options": "Governorate Of Birth"
+  },
+  {
+   "fieldname": "governorate_of_birth3",
+   "fieldtype": "Link",
+   "label": "\u0645\u062d\u0627\u0641\u0638\u0629",
+   "options": "Governorate Of Birth"
+  },
+  {
+   "depends_on": "eval:doc.employment_type != \"Recruit\"",
+   "fieldname": "joining_decision_number",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Joining Decision Number",
+   "translatable": 1
+  },
+  {
+   "depends_on": "eval:doc.employment_type != \"Recruit\"",
+   "fieldname": "joining_decision_type",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Joining Decision Type",
+   "options": "Joining Decision Type"
+  },
+  {
+   "depends_on": "eval:doc.employment_type == \"Recruit\"",
+   "fieldname": "military_date",
+   "fieldtype": "Date",
+   "label": "Military Date"
+  },
+  {
+   "fetch_from": "user_id.user_image",
+   "fetch_if_empty": 1,
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "hidden": 1,
+   "label": "Image",
+   "no_copy": 1
+  },
+  {
+   "depends_on": "eval:doc.employment_type == \"Recruit\"",
+   "fieldname": "military_end_date",
+   "fieldtype": "Date",
+   "label": "Military End Date"
+  },
+  {
+   "depends_on": "eval:doc.employment_type == \"Recruit\"",
+   "fieldname": "overnight",
+   "fieldtype": "Select",
+   "label": "Overnight",
+   "options": "\n\u0645\u0628\u064a\u062a\n\u0627\u062c\u0627\u0632\u0629 \u062f\u0648\u0631\u064a\u0629",
+   "translatable": 1
+  },
+  {
+   "fieldname": "cell_number",
+   "fieldtype": "Data",
+   "label": "\u0631\u0642\u0645 \u0627\u0644\u062a\u0644\u064a\u0641\u0648\u0646",
+   "options": "Phone"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "erpnext_user",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "User Details"
+  },
+  {
+   "description": "System User (login) ID. If set, it will become default for all HR forms.",
+   "fieldname": "user_id",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "User ID",
+   "options": "User"
+  },
+  {
+   "depends_on": "eval:(!doc.user_id)",
+   "fieldname": "create_user",
+   "fieldtype": "Button",
+   "label": "Create User"
+  },
+  {
+   "default": "1",
+   "depends_on": "user_id",
+   "description": "This will restrict user access to other employee records",
+   "fieldname": "create_user_permission",
+   "fieldtype": "Check",
+   "label": "Create User Permission"
+  },
+  {
+   "fieldname": "department_tab",
+   "fieldtype": "Tab Break",
+   "label": "Department Tab"
+  },
+  {
+   "fieldname": "employee_number",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "label": "\u0631\u0642\u0645 \u0627\u0644\u0634\u0631\u0637\u0629",
+   "oldfieldname": "employee_number",
+   "oldfieldtype": "Data",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pervious_departments1",
+   "fieldtype": "Table MultiSelect",
+   "hidden": 1,
+   "label": "\u062c\u0647\u0627\u062a \u0627\u0644\u0639\u0645\u0644 \u0627\u0644\u0633\u0627\u0628\u0642\u0629",
+   "options": "multiselect dep"
+  },
+  {
+   "depends_on": "eval:doc.employment_type != \"Civilians\"||doc.employment_type != \"Recruit\"",
+   "fieldname": "sup_department",
+   "fieldtype": "Link",
+   "label": "\u0627\u0644\u0639\u0645\u0644 \u0627\u0644\u0642\u0627\u0626\u0645 \u0628\u0647",
+   "options": "Sub Department"
+  },
+  {
+   "fieldname": "date_of_graduation",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "\u062a\u0627\u0631\u064a\u062e \u0627\u0644\u062a\u062e\u0631\u062c"
+  },
+  {
+   "default": "\u0627\u0644\u0627\u062f\u0627\u0631\u0629 \u0627\u0644\u0639\u0627\u0645\u0629 \u0644\u0627\u0645\u062f\u0627\u062f \u0627\u0644\u0634\u0631\u0637\u0629",
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Company",
+   "options": "Company",
+   "print_hide": 1,
+   "read_only": 1,
+   "remember_last_selected_value": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_eng4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.employment_type == \"Policemen\"",
+   "fieldname": "policemen_rank",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Policemen Ran",
+   "options": "Policemen Rank"
+  },
+  {
+   "fieldname": "date_of_joining",
+   "fieldtype": "Date",
+   "label": "\u062a\u0627\u0631\u064a\u062e \u0627\u0644\u0627\u0644\u062a\u062d\u0627\u0642 \u0628\u0627\u0644\u0625\u062f\u0627\u0631\u0629",
+   "oldfieldname": "date_of_joining",
+   "oldfieldtype": "Date"
+  },
+  {
+   "depends_on": "eval:doc.employment_type == \"Officers\" || doc.employment_type == \"Policemen\"",
+   "fieldname": "gun_carrying_case",
+   "fieldtype": "Link",
+   "label": "\u0645\u0648\u0642\u0641\u0647 \u0645\u0646 \u062d\u0645\u0644 \u0627\u0644\u0633\u0644\u0627\u062d",
+   "options": "Gun Carrying Case"
+  },
+  {
+   "depends_on": "eval: doc.gun_carrying_case ==\"\u063a\u064a\u0631 \u0645\u0635\u0631\u062d \u0625\u062d\u062a\u0631\u0627\u0632\u064a\" || doc.gun_carrying_case ==\"\u063a\u064a\u0631 \u0645\u0635\u0631\u062d \u0639\u0636\u0648\u064a\" || doc.gun_carrying_case ==\"\u063a\u064a\u0631 \u0645\u0635\u0631\u062d \u0646\u0641\u0633\u064a\"",
+   "fieldname": "reason",
+   "fieldtype": "Data",
+   "label": "\u0627\u0644\u0633\u0628\u0628"
+  },
+  {
+   "depends_on": "eval:doc.employment_type == \"Civilians\"",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Department",
+   "oldfieldname": "department",
+   "oldfieldtype": "Link",
+   "options": "Department"
+  },
+  {
+   "depends_on": "eval:doc.employment_type == \"Civilians\"",
+   "fieldname": "designation_feiled",
+   "fieldtype": "Link",
+   "label": "Designation Filed",
+   "options": "Designation Filed"
+  },
+  {
+   "fieldname": "column_break_xvtx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "custom_date_of_appointment",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "\u062a\u0627\u0631\u064a\u062e \u0627\u0644\u062a\u0639\u064a\u064a\u0646"
+  },
+  {
+   "fieldname": "main_department23",
+   "fieldtype": "Link",
+   "label": "\u062c\u0647\u0629 \u0627\u0644\u0639\u0645\u0644 \u0627\u0644\u062f\u0627\u062e\u0644\u064a\u0629",
+   "options": "Sub Department"
+  },
+  {
+   "fieldname": "doing_officers_work",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "\u0627\u0644\u0642\u064a\u0627\u0645 \u0628\u0623\u0639\u0645\u0627\u0644 \u0627\u0644\u0636\u0628\u0627\u0637",
+   "options": "\n\u0645\u0633\u0646\u062f\n\u063a\u064a\u0631 \u0645\u0633\u0646\u062f"
+  },
+  {
+   "depends_on": "eval:doc.doing_officers_work == \"\u0645\u0633\u0646\u062f\"",
+   "fieldname": "resolution_number",
+   "fieldtype": "Data",
+   "label": "\u0631\u0642\u0645 \u0627\u0644\u0642\u0631\u0627\u0631"
+  },
+  {
+   "fieldname": "section_break_ivtj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_ktlz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_of_implementation",
+   "fieldtype": "Date",
+   "label": "\u062a\u0627\u0631\u064a\u062e \u0627\u0644\u0646\u0642\u0644/ \u0625\u0646\u0647\u0627\u0621 \u0627\u0644\u062e\u062f\u0645\u0629"
+  },
+  {
+   "fieldname": "column_break_davj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "end_of_service_by_administration",
+   "fieldtype": "Link",
+   "label": "\u0633\u0628\u0628 \u0627\u0644\u0646\u0642\u0644/ \u0625\u0646\u0647\u0627\u0621 \u0627\u0644\u062e\u062f\u0645\u0629",
+   "options": "End Of Service By Administration"
+  },
+  {
+   "fieldname": "column_break_kpvi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_77fc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "private_vehicle_for_the_individual",
+   "fieldtype": "Select",
+   "label": "\u0627\u0644\u0645\u0631\u0643\u0628\u0629 \u0627\u0644\u062e\u0627\u0635\u0629 \u0628\u0647",
+   "options": "\n\u064a\u0648\u062c\u062f\n\u0644\u0627 \u064a\u0648\u062c\u062f"
+  },
+  {
+   "fieldname": "section_break_nbh1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_glfs",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "other_notes",
+   "fieldtype": "Check",
+   "label": "\u0645\u0644\u0627\u062d\u0638\u0627\u062a \u0627\u062e\u0631\u064a"
+  },
+  {
+   "fieldname": "profile_tab",
+   "fieldtype": "Tab Break",
+   "label": "\u0627\u0644\u062d\u0627\u0644\u0629 \u0627\u0644\u0646\u0641\u0633\u064a\u0629"
+  },
+  {
+   "fieldname": "health_details3",
+   "fieldtype": "Select",
+   "label": "\u0627\u0644\u062d\u0627\u0644\u0629 \u0627\u0644\u0646\u0641\u0633\u064a\u0629",
+   "options": "\u0637\u0628\u064a\u0639\u064a\u0629\n\u063a\u064a\u0631 \u0637\u0628\u064a\u0639\u064a\u0629"
+  },
+  {
+   "allow_on_submit": 1,
+   "depends_on": "eval: doc.health_details3 == \"\u063a\u064a\u0631 \u0637\u0628\u064a\u0639\u064a\u0629\"",
+   "fieldname": "health_details2",
+   "fieldtype": "Small Text",
+   "label": "\u062a\u0641\u0627\u0635\u064a\u0644 \u0627\u0644\u062d\u0627\u0644\u0629"
+  },
+  {
+   "fieldname": "other_notes2",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "label": "\u0645\u0644\u0627\u062d\u0638\u0627\u062a \u0627\u062e\u0631\u064a"
+  },
+  {
+   "fieldname": "column_break_rkbn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "exit_interview_details",
+   "fieldtype": "Column Break",
+   "oldfieldname": "col_brk6",
+   "oldfieldtype": "Column Break",
+   "width": "50%"
+  },
+  {
+   "description": "Here you can maintain height, weight, allergies, medical concerns etc",
+   "fieldname": "health_details",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "label": "Health Details"
+  },
+  {
+   "fieldname": "the_academic_qualification",
+   "fieldtype": "Data",
+   "label": "\u0627\u0644\u0645\u0624\u0647\u0644 \u0627\u0644\u062f\u0631\u0627\u0633\u064a"
+  },
+  {
+   "fieldname": "date_of_conscription",
+   "fieldtype": "Date",
+   "label": "\u062a\u0627\u0631\u064a\u062e \u0627\u0644\u062a\u062c\u0646\u064a\u062f"
+  },
+  {
+   "fieldname": "the_transferred_party_from_it",
+   "fieldtype": "Data",
+   "label": "\u0627\u0644\u062c\u0647\u0629 \u0627\u0644\u0645\u0646\u0642\u0648\u0644 \u0645\u0646\u0647\u0627"
+  },
+  {
+   "depends_on": "eval:doc.the_transferred_party_from_it ==\"\u0623\u062e\u0631\u064a\"",
+   "fieldname": "entity",
+   "fieldtype": "Data",
+   "label": "\u0627\u0644\u062c\u0647\u0629"
+  },
+  {
+   "depends_on": "eval:doc.end_of_service_by_administration ==\"\u0627\u0644\u0631\u0641\u062a\"",
+   "fieldname": "the_reason_for_leaving",
+   "fieldtype": "Data",
+   "label": "\u0633\u0628\u0628 \u0627\u0644\u0631\u0641\u062a"
+  },
+  {
+   "fieldname": "column_break_rucv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.main_department23 ==\"\u062e\u0627\u0631\u062c\u064a\u0629 (\u0645\u0623\u0645\u0648\u0631\u064a\u0627\u062a)\"",
+   "fieldname": "the_place_of_the_mission",
+   "fieldtype": "Link",
+   "label": "\u062a\u0627\u0631\u064a\u062e \u0648\u062c\u0647\u0629 \u0627\u0644\u0645\u0623\u0645\u0648\u0631\u064a\u0629",
+   "options": "The Place Of The Mission"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "The Recruits",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.private_vehicle_for_the_individual ==\"\u064a\u0648\u062c\u062f\"",
+   "fieldname": "vehicle_data",
+   "fieldtype": "Table",
+   "label": "Vehicle Data",
+   "options": "Vehicle Data"
+  },
+  {
+   "fieldname": "column_break_b5m0",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ryyk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "disabled",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "\u062a\u0639\u0637\u064a\u0644"
+  },
+  {
+   "depends_on": "eval: doc.other_notes == 1",
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "\u0645\u0644\u0627\u062d\u0638\u0627\u062a"
+  },
+  {
+   "default": "1",
+   "fieldname": "enabled",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "enabled",
+   "read_only": 1
+  }
+ ],
+ "icon": "fa fa-user",
+ "image_field": "image",
+ "links": [],
+ "modified": "2023-12-19 15:35:00.994781",
+ "modified_by": "Administrator",
+ "module": "Ecs Supply",
+ "name": "The Recruits",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [],
+ "search_fields": "employee_name",
+ "show_name_in_global_search": 1,
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "first_name",
+ "track_changes": 1
+}

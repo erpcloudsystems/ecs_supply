@@ -1,0 +1,69 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-11-27 16:04:19.729029",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "id",
+  "the_company_name",
+  "the_commercial_charactristic",
+  "the_owner_of_the_company",
+  "commercial_register"
+ ],
+ "fields": [
+  {
+   "fieldname": "id",
+   "fieldtype": "Data",
+   "label": "\u0645",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "the_company_name",
+   "fieldtype": "Data",
+   "ignore_user_permissions": 1,
+   "in_list_view": 1,
+   "label": "\u0627\u0633\u0645 \u0627\u0644\u0634\u0631\u0643\u0629"
+  },
+  {
+   "allow_on_submit": 1,
+   "columns": 1,
+   "fieldname": "the_owner_of_the_company",
+   "fieldtype": "Data",
+   "ignore_user_permissions": 1,
+   "in_list_view": 1,
+   "label": "\u0645\u0627\u0644\u0643 \u0627\u0644\u0634\u0631\u0643\u0629/\u0631\u0626\u064a\u0633 \u0645\u062c\u0644\u0633 \u0627\u0644\u0627\u062f\u0627\u0631\u0629"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "commercial_register",
+   "fieldtype": "Data",
+   "ignore_user_permissions": 1,
+   "in_list_view": 1,
+   "label": "\u0627\u0644\u0633\u062c\u0644 \u0627\u0644\u062a\u062c\u0627\u0631\u064a"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "the_commercial_charactristic",
+   "fieldtype": "Data",
+   "ignore_user_permissions": 1,
+   "in_list_view": 1,
+   "label": "\u0627\u0644\u0633\u0645\u0629 \u0627\u0644\u062a\u062c\u0627\u0631\u064a\u0629"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-11-27 16:10:10.628529",
+ "modified_by": "Administrator",
+ "module": "Ecs Supply",
+ "name": "Table Of Companies Prohibited To Deal With",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

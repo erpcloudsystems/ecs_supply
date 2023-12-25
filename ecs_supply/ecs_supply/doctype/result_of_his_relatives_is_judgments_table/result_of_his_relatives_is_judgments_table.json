@@ -1,0 +1,132 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-11-28 16:29:37.959011",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "id",
+  "the_convict",
+  "the_connection_of_the_kinah",
+  "the_case_number",
+  "limited_number",
+  "im_all_resumed",
+  "the_charge",
+  "the_ruling",
+  "date_of_the_session",
+  "the_punishment",
+  "acts"
+ ],
+ "fields": [
+  {
+   "fieldname": "id",
+   "fieldtype": "Data",
+   "label": "\u0645",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "columns": 1,
+   "fieldname": "the_convict",
+   "fieldtype": "Data",
+   "ignore_user_permissions": 1,
+   "in_list_view": 1,
+   "label": "\u0627\u0644\u0645\u062d\u0643\u0648\u0645 \u0639\u0644\u064a\u0647"
+  },
+  {
+   "allow_on_submit": 1,
+   "columns": 1,
+   "fieldname": "the_connection_of_the_kinah",
+   "fieldtype": "Data",
+   "ignore_user_permissions": 1,
+   "in_list_view": 1,
+   "label": "\u0635\u0644\u0647 \u0627\u0644\u0642\u0631\u0627\u0628\u0629"
+  },
+  {
+   "allow_on_submit": 1,
+   "columns": 1,
+   "fieldname": "the_case_number",
+   "fieldtype": "Data",
+   "ignore_user_permissions": 1,
+   "in_list_view": 1,
+   "label": "\u0631\u0642\u0645 \u0627\u0644\u0642\u0636\u064a\u0629"
+  },
+  {
+   "allow_on_submit": 1,
+   "columns": 1,
+   "fieldname": "limited_number",
+   "fieldtype": "Data",
+   "ignore_user_permissions": 1,
+   "in_list_view": 1,
+   "label": "\u0631\u0642\u0645 \u0627\u0644\u062d\u0635\u0631"
+  },
+  {
+   "allow_on_submit": 1,
+   "columns": 1,
+   "fieldname": "im_all_resumed",
+   "fieldtype": "Data",
+   "ignore_user_permissions": 1,
+   "in_list_view": 1,
+   "label": "\u0643\u0644\u064a \u0645\u0633\u062a\u0623\u0646\u0641"
+  },
+  {
+   "allow_on_submit": 1,
+   "columns": 1,
+   "fieldname": "the_charge",
+   "fieldtype": "Data",
+   "ignore_user_permissions": 1,
+   "in_list_view": 1,
+   "label": "\u0627\u0644\u062a\u0647\u0645\u0629"
+  },
+  {
+   "allow_on_submit": 1,
+   "columns": 1,
+   "fieldname": "the_ruling",
+   "fieldtype": "Data",
+   "ignore_user_permissions": 1,
+   "in_list_view": 1,
+   "label": "\u0627\u0644\u062d\u0643\u0645"
+  },
+  {
+   "allow_on_submit": 1,
+   "columns": 1,
+   "fieldname": "date_of_the_session",
+   "fieldtype": "Date",
+   "ignore_user_permissions": 1,
+   "in_list_view": 1,
+   "label": "\u062a\u0627\u0631\u064a\u062e \u0627\u0644\u062c\u0644\u0633\u0629"
+  },
+  {
+   "allow_on_submit": 1,
+   "columns": 1,
+   "fieldname": "the_punishment",
+   "fieldtype": "Data",
+   "ignore_user_permissions": 1,
+   "in_list_view": 1,
+   "label": "\u0627\u0644\u0639\u0642\u0648\u0628\u0629"
+  },
+  {
+   "allow_on_submit": 1,
+   "columns": 1,
+   "fieldname": "acts",
+   "fieldtype": "Data",
+   "ignore_user_permissions": 1,
+   "in_list_view": 1,
+   "label": "\u0627\u0644\u062a\u0635\u0631\u0641\u0627\u062a"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-11-28 16:29:37.959011",
+ "modified_by": "Administrator",
+ "module": "Ecs Supply",
+ "name": "Result Of His Relatives Is Judgments Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,85 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-12-10 10:56:51.247160",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "policeman_name",
+  "civil_servants_punishment_data",
+  "notes",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "default": "PPU-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "PPU-"
+  },
+  {
+   "fieldname": "policeman_name",
+   "fieldtype": "Link",
+   "label": "\u0627\u0644\u0645\u0648\u0638\u0641",
+   "options": "Human Resources"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "label": "Notes"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "options": "Punishment of civil servants"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "options": "Punishment of civil servants"
+  },
+  {
+   "fieldname": "civil_servants_punishment_data",
+   "fieldtype": "Table",
+   "label": "\u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u0645\u062e\u0627\u0644\u0641\u0629",
+   "options": "civil servants  punishment data"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-12-10 11:04:40.133020",
+ "modified_by": "Administrator",
+ "module": "Ecs Supply",
+ "name": "Punishment of civil servants",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}

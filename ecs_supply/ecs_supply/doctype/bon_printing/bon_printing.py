@@ -12,6 +12,10 @@ class BonPrinting(Document):
 		conditions = ""
 		if doc.reason_for_entitlement:
 			conditions += " and reason_for_entitlement = '{reason_for_entitlement}' ".format(reason_for_entitlement=doc.reason_for_entitlement)
+		if doc.officer_name:
+			conditions += " and officer_name LIKE '%{officer_name}%' ".format(officer_name=doc.officer_name)
+		if doc.officer_no:
+			conditions += " and id_number LIKE '%{officer_no}%' ".format(officer_no=doc.officer_no)
 		conditions += " and print = 'لم يتم الطباعه' "
 
 

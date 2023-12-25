@@ -17,7 +17,7 @@ def get_columns():
     return [
 		{
 			"label": _("اسم الفرد"),
-			"fieldname": "employee_name",
+			"fieldname": "first_name",
 			"fieldtype": "Data",
 			"width": 200
 		},
@@ -76,43 +76,45 @@ def get_data(filters, columns):
 def get_item_price_qty_data(filters):
     conditions = ""
     if filters.get("policemen"):
-        conditions += "and policemen = %(policemen)s"
-    if filters.get("policemen_rank"):
-        conditions += "and policemen_rank = %(policemen_rank)s"
-    if filters.get("position_decision"):
-        conditions += "and position_decision = %(position_decision)s"
-    if filters.get("from_date"):
-        conditions += " and position_date >= %(from_date)s"
-    if filters.get("to_date"):
-        conditions += " and position_date <= %(to_date)s"
-    if filters.get("lifting_decision"):
-        conditions += "and lifting_decision = %(lifting_decision)s"
-    if filters.get("lifting_date"):
-        conditions += "and lifting_date = %(lifting_date)s"
-    if filters.get("reason"):
-        conditions += "and reason = %(reason)s"
+        conditions += "AND policemen = %(policemen)s"
+
 
     result = []
     item_results = frappe.db.sql("""
         select
-            policemen, employee_name, policemen_rank, position_decision, position_date, lifting_decision, lifting_date, reason
+            SN.policemen,
+            SN.employee_name,
+            SN.policemen_rank,
+            EE.first_name,
+            TS.position_decision,
+            TS.position_date,
+            TS.lifting_decision,
+            TS.lifting_date,
+            TS.reason
         from
-            `tabSecret Notes`
-        where
-            `tabSecret Notes`.docstatus = 1
+            `tabSecret Notes` SN
+        Join
+            `tabThe Statement` TS
+        ON TS.parent = SN.name
+
+        Join
+            `tabEnvestigation Employee` EE
+        ON EE.name = SN.policemen
+                                 
             {conditions}
         """.format(conditions=conditions), filters, as_dict=1)
 
     for item_dict in item_results:
         data = {
             'policemen': item_dict.policemen,
-            'employee_name': item_dict.employee_name,
+            'first_name': item_dict.first_name,
             'policemen_rank': item_dict.policemen_rank,
             'position_decision': item_dict.position_decision,
             'position_date': item_dict.position_date,
             'lifting_decision': item_dict.lifting_decision,
             'lifting_date': item_dict.lifting_date,
             'reason': item_dict.reason,
+            "cur_user":frappe.session.user
         }
         result.append(data)
     return result

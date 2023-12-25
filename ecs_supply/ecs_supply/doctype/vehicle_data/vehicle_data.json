@@ -1,0 +1,80 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-11-28 14:42:27.449798",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "id",
+  "owner_name",
+  "plate_no",
+  "color_vehicle",
+  "brand",
+  "end_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "id",
+   "fieldtype": "Data",
+   "label": "\u0645",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "owner_name",
+   "fieldtype": "Data",
+   "ignore_user_permissions": 1,
+   "in_list_view": 1,
+   "label": "\u0627\u0633\u0645 \u0627\u0644\u0645\u0627\u0644\u0643"
+  },
+  {
+   "allow_on_submit": 1,
+   "columns": 1,
+   "fieldname": "plate_no",
+   "fieldtype": "Data",
+   "ignore_user_permissions": 1,
+   "in_list_view": 1,
+   "label": "\u0631\u0642\u0645 \u0627\u0644\u0644\u0648\u062d\u0629"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "color_vehicle",
+   "fieldtype": "Data",
+   "ignore_user_permissions": 1,
+   "in_list_view": 1,
+   "label": "\u0644\u0648\u0646 \u0627\u0644\u0645\u0631\u0643\u0628\u0629"
+  },
+  {
+   "allow_on_submit": 1,
+   "columns": 1,
+   "fieldname": "brand",
+   "fieldtype": "Data",
+   "ignore_user_permissions": 1,
+   "in_list_view": 1,
+   "label": "\u0627\u0644\u0645\u0627\u0631\u0643\u0629"
+  },
+  {
+   "allow_on_submit": 1,
+   "columns": 1,
+   "fieldname": "end_date",
+   "fieldtype": "Data",
+   "ignore_user_permissions": 1,
+   "in_list_view": 1,
+   "label": "\u0646\u0647\u0627\u064a\u0629 \u0627\u0644\u062a\u0631\u062e\u064a\u0635"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-11-28 14:50:46.678227",
+ "modified_by": "Administrator",
+ "module": "Ecs Supply",
+ "name": "Vehicle Data",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

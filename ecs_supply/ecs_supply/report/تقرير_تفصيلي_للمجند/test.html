@@ -1,0 +1,1911 @@
+<div class="header">
+    <div>
+    <p style="font-weight:bold; font-size:18;">
+        
+        كشف مركبة تفصيلي
+    </p>
+    </div>
+    <div>
+  {{doc.name}}
+    </div>
+  </div>
+  {% set user = frappe.db.get_value("User", frappe.session.user, ["full_name"])%}
+  <div style="display:flex; justify-content:flex-end; margin-left:20px;margin-top:-47px;margin-bottom:-43px;">
+         <div style="border:2px solid black; height:fit-content; width:fit-content; text-align:center; font-weight:bold;">
+    تاريخ الطباعة
+    <br>
+    {{ frappe.utils.today() }}
+  <br>
+  الطباعة بواسطة
+  <br>
+  {{user}}
+  </div>
+  
+  </div>
+  
+  <div class="under-header">
+  <div style="display:flex; flex-direction:column; align-items:center; margin-right:20px;">
+    <div>
+  <img style="width:40px; height:40px; margin-top:-33px;" src="/files/markabat logoce3b5ed30c07.png">
+  </div>
+  <div>
+    وزارة الداخلية
+  </div>
+  <div>
+  الادارة العامه لامداد الشرطه 
+  </div>
+  
+  </div>
+  <div>
+  
+    
+  </div>
+  </div>
+  
+  <div style="display: flex; justify-content:center;">
+    <div style=" display: flex;flex-direction: column; justify-content:center; align-items: center;margin-top:-1em">
+      <div>
+          <h3 style="border:2px solid black; background-color:lightgray;font-family:Cairo; margin: 0px 20px; width:200px;text-align:center;">البيانات الأساسية</h3>
+      </div>
+    </div>
+  </div>
+  <hr>
+  
+      <div class="column1">
+                <div>
+                            {% if doc.vehicle_no %}
+                            <div style="display:flex;">
+                                <div style="border: 2px solid black; background-color:lightgray;padding: 0.2em;margin: 0.2em;font-weight: bold;white-space:nowrap;width:110px;text-align:center;"> رقم الشرطة</div>
+                                <div style="padding: 0.2em; margin: 0.2em;">{{ doc.vehicle_no }} </div>
+                                <div style="width: 1%;"></div>
+                            </div>
+                            {%endif%}
+                            {% if doc.police_id and not doc.vehicle_no %}
+                            <div style="display:flex;">
+                                <div style="border: 2px solid black; background-color:lightgray;padding: 0.2em;margin: 0.2em;font-weight: bold;white-space:nowrap; width:110px;text-align:center;">رقم الشرطة قبل التخريد</div>
+                                <div style="padding: 0.2em;margin: 0.2em;">{{ doc.police_id }}</div>
+    
+                            </div>
+                            {%endif%}
+                          {% if  doc.vehicle_type %}
+                            <div style="display:flex;">
+                                <div style="border: 2px solid black; background-color:lightgray;padding: 0.2em;margin: 0.2em;font-weight: bold;white-space:nowrap;width:110px;text-align:center;">نوع المركبة</div>
+                                <div style="padding: 0.2em;margin: 0.2em;">{{ doc.vehicle_type }}</div>
+                            </div>
+                            {%endif%}
+  
+                          {% if  doc.group_shape %}
+                            <div style="display:flex;">
+                                <div style="border: 2px solid black; background-color:lightgray;padding: 0.2em;margin: 0.2em;font-weight: bold;white-space:nowrap;width:110px;text-align:center;">مجموعة الشكل</div>
+                                <div style="padding: 0.2em;margin: 0.2em;">{{ doc.group_shape }}</div>
+                            </div>
+                            {%endif%}
+  
+                          {% if  doc.vehicle_shape %}
+                            <div style="display:flex;">
+                                <div style="border: 2px solid black; background-color:lightgray;padding: 0.2em;margin: 0.2em;font-weight: bold;white-space:nowrap;width:110px;text-align:center;">الشكل</div>
+                                <div style="padding: 0.2em;margin: 0.2em;">{{ doc.vehicle_shape }}</div>
+                            </div>
+                            {%endif%}
+  
+                          {% if  doc.vehicle_brand %}
+                            <div style="display:flex;">
+                                <div style="border: 2px solid black; background-color:lightgray;padding: 0.2em;margin: 0.2em;font-weight: bold;width:110px;text-align:center;">الماركة</div>
+                                <div style="padding: 0.2em;margin: 0.2em;">{{ doc.vehicle_brand }}</div>
+                            </div>
+                            {%endif%}
+  
+                          {% if  doc.vehicle_style %}
+                            <div style="display:flex;">
+                                <div style="border: 2px solid black; background-color:lightgray;padding: 0.2em;margin: 0.2em;font-weight: bold;width:110px;text-align:center;">الطراز</div>
+                                <div style="padding: 0.2em;margin: 0.2em;">{{ doc.vehicle_style }}</div>
+  
+                            </div>
+                            {%endif%}
+  
+  
+  
+                            
+                          
+                          
+                        
+                        
+          </div>
+          <div >
+                          {% if  doc.chassis_no %}
+                            <div style="display:flex;">
+                                <div style="border: 2px solid black; background-color:lightgray;padding: 0.2em;margin: 0.2em;font-weight: bold;white-space:nowrap;width:110px;text-align:center;">رقم الشاسيه</div>
+                                <div style="padding: 0.2em;margin: 0.2em;">{{ doc.chassis_no }}</div>
+                            </div>
+                            {%endif%}
+  
+                            {% if  doc.motor_no %}
+  
+                            <div style="display:flex;">
+                                <div style="border: 2px solid black; background-color:lightgray;padding: 0.2em;margin: 0.2em;font-weight: bold;white-space:nowrap;width:110px;text-align:center;">رقم الموتور</div>
+                                <div style="padding: 0.2em;margin: 0.2em;">{{ doc.motor_no }}</div>                      
+                            </div>
+                             {%endif%}
+  
+                            {% if  doc.vehicle_model %}
+    
+                            <div style="display:flex;">
+                                <div style="border: 2px solid black; background-color:lightgray;padding: 0.2em;margin: 0.2em;font-weight: bold;white-space:nowrap;width:110px;text-align:center;">الموديل</div>
+                                <div style="padding: 0.2em;margin: 0.2em;">{{ doc.vehicle_model }}</div>
+        
+                            </div>
+                        {%endif%}
+  
+                        {% if  doc.vehicle_country %}
+  
+                            <div style="display:flex;">
+                                <div style="border: 2px solid black; background-color:lightgray;padding: 0.2em;margin: 0.2em;font-weight: bold;white-space:nowrap;width:110px;text-align:center;">بلد الصنع</div>
+                                <div style="padding: 0.2em;margin: 0.2em;">{{ doc.vehicle_country }}</div>
+                            </div>
+                        {%endif%}
+  
+                        {% if  doc.vehicle_status %}
+  
+                            <div style="display:flex;">
+                                <div style="border: 2px solid black; background-color:lightgray;padding: 0.2em;margin: 0.2em;font-weight: bold;white-space:nowrap;width:110px;text-align:center;">حالة المركبة</div>
+                                <div style="padding: 0.2em;margin: 0.2em;">{{ doc.vehicle_status }}</div>
+                            </div>
+                        {%endif%}
+  
+                        {% if  doc.processing_type %}
+  
+                            <div style="display:flex;">
+                              <div style="border: 2px solid black; background-color:lightgray;padding: 0.2em;margin: 0.2em;font-weight: bold;white-space:nowrap;width:110px;text-align:center;">نوع التجهيز</div>
+                              <div style="padding: 0.2em;margin: 0.2em;">{{ doc.processing_type }}</div>
+                            </div>
+                        {%endif%}
+  
+                           
+                           
+  
+                          
+                          
+          </div>
+          <div>
+                        {% if  doc.entity_name %}
+  
+                        <div style="display:flex;">
+                            <div style="border: 2px solid black; background-color:lightgray;padding: 0.2em;margin: 0.2em;font-weight: bold;width:110px;text-align:center;">الجهة</div>
+                            <div style="padding: 0.2em;margin: 0.2em;">{{ doc.entity_name }}</div>
+                        </div>
+                        {%endif%}
+  
+                        {% if  doc.exchange_allowance %}
+  
+                        <div style="display:flex;">
+                            <div style="border: 2px solid black; background-color:lightgray;padding: 0.2em;margin: 0.2em;font-weight: bold;white-space:nowrap;width:110px;text-align:center;">مخصص صرف</div>
+                            <div style="padding: 0.2em;margin: 0.2em;">{{ doc.exchange_allowance }}</div>
+                            <div ></div>
+                        </div>
+                        {%endif%}
+  
+                        {% if  doc.possession_date %}
+  
+                        <div style="display:flex;">
+                            <div style="border: 2px solid black; background-color:lightgray;padding: 0.2em;margin: 0.2em;font-weight: bold;white-space:nowrap;width:110px;text-align:center;">تاريخ  الحيازة</div>
+                            <div style="padding: 0.2em;margin: 0.2em;">{{ doc.possession_date }}</div>
+                        </div>   
+                        {%endif%}
+  
+                        {% if  doc.vehicle_color %}
+  
+                        <div style="display:flex;">
+                            <div style="border: 2px solid black; background-color:lightgray;padding: 0.2em;margin: 0.2em;font-weight: bold;width:110px;text-align:center;">اللون</div>
+                            <div style="padding: 0.2em;margin: 0.2em;">{{ doc.vehicle_color }}</div>
+                        </div>
+                        {%endif%}
+  
+                        {% if  doc.maintenance_entity %}
+  
+                        <div style="display:flex;">
+                            <div style="border: 2px solid black; background-color:lightgray;padding: 0.2em;margin: 0.2em;font-weight: bold;width:110px;text-align:center;">جهة الصيانة</div>
+                            <div style="padding: 0.2em;margin: 0.2em;">{{ doc.maintenance_entity }}</div>
+                        </div>
+                        {%endif%}
+  
+                        {% if  doc.private_no %}
+  
+                        <div style="display:flex;">
+                            <div style="border: 2px solid black; background-color:lightgray;padding: 0.2em;margin: 0.2em;font-weight: bold;white-space:nowrap;width:110px;text-align:center;">رقم الملاكي</div>
+                            <div style="padding: 0.2em;margin: 0.2em;">{{ doc.private_no }}</div>
+                        </div>
+                        <div style="display:flex;">
+                            <div style="border: 2px solid black; background-color:lightgray;padding: 0.2em;margin: 0.2em;font-weight: bold;white-space:nowrap;width:110px;text-align:center;">جهة المرور</div>
+                            <div style="padding: 0.2em;margin: 0.2em;">{{ doc.traffic_entity }}</div>
+                          </div>
+                        <div style="display:flex;">
+                          <div style="border: 2px solid black; background-color:lightgray;padding: 0.2em;margin: 0.2em;font-weight: bold;white-space:nowrap;width:110px;text-align:center;">نوع اللوحة</div>
+                          <div style="padding: 0.2em;margin: 0.2em;">{{ doc.plate_type }}</div>
+                        </div> 
+                        {%endif%}
+          </div>
+  
+      </div>
+  
+      <hr>
+  
+  <div style="height:2em;"></div>
+  
+  <div style="display: flex; justify-content:center;">
+    <div style=" display: flex;flex-direction: column; justify-content:center; align-items: center;margin-top:-1em">
+  
+      <div>
+          <h3 style="border:2px solid black; background-color:lightgray;font-family:Cairo;  margin: 0px 20px; width:200px;text-align:center;">البيانات الفنية</h3>
+      </div>
+    </div>
+  </div>
+  <hr>
+  
+  
+      <div class="column2">
+        <div>
+  
+                        {% if  doc.litre_capacity %}
+                        <div style="display:flex;">
+                            <div style="border: 2px solid black; background-color:lightgray;padding: 0.2em;margin: 0.2em;font-weight: bold;white-space:nowrap;width:110px;text-align:center;">السعة اللترية</div>
+                            <div style="padding: 0.2em; margin: 0.2em;">{{ doc.litre_capacity }} </div>
+                            <div style="width: 1%;"></div>
+                        </div>
+                        {%endif%}
+  
+                        {% if  doc.fuel_type %}
+                        <div style="display:flex;">
+                            <div style="border: 2px solid black; background-color:lightgray;padding: 0.2em;margin: 0.2em;font-weight: bold;white-space:nowrap;width:110px;text-align:center;">نوع الوقود</div>
+                            <div style="padding: 0.2em;margin: 0.2em;">{{ doc.fuel_type }}</div>
+                        </div>
+                        {%endif%}
+  
+                        {% if  doc.feeding_type %}
+                        <div style="display:flex;">
+                            <div style="border: 2px solid black; background-color:lightgray;padding: 0.2em;margin: 0.2em;font-weight: bold;white-space:nowrap;width:110px;text-align:center;">نوع التغذية</div>
+                            <div style="padding: 0.2em;margin: 0.2em;white-space:nowrap;">{{ doc.feeding_type }}</div>
+                            <div style="width:1%;"></div>
+                        </div>
+                        {%endif%}
+  
+                        {% if  doc.ignition_type %}
+                        <div style="display:flex;">
+                            <div style="border: 2px solid black; background-color:lightgray;padding: 0.2em;margin: 0.2em;font-weight: bold;white-space:nowrap;width:110px;text-align:center;">نوع الإشعال</div>
+                            <div style="padding: 0.2em;margin: 0.2em;">{{ doc.ignition_type }}</div>
+                        </div>      
+                        {%endif%}
+  
+        </div>
+        <div>
+        
+                        
+  
+                        
+        </div>
+        <div>
+            {% if  doc.cylinder_count %}
+            <div style="display:flex;">
+                <div style="border: 2px solid black; background-color:lightgray;padding: 0.2em;margin: 0.2em;font-weight: bold;white-space:nowrap;width:110px;text-align:center;">عدد السلندرات</div>
+                <div style="padding: 0.2em;margin: 0.2em;">{{ doc.cylinder_count }}</div>
+            </div>
+            {%endif%}
+            
+            {% if  doc.wheel_drive_type %}
+            <div style="display:flex;">
+                <div style="border: 2px solid black; background-color:lightgray;padding: 0.2em;margin: 0.2em;font-weight: bold;white-space:nowrap;width:110px;text-align:center;">نوع الدفع</div>
+                <div style="padding: 0.2em;margin: 0.2em;">{{ doc.wheel_drive_type }}</div>                      
+            </div>
+            {%endif%}
+            {% if  doc.transmission %}
+            <div style="display:flex;">
+                <div style="border: 2px solid black; background-color:lightgray;padding: 0.2em;margin: 0.2em;font-weight: bold;white-space:nowrap;width:110px;text-align:center;">نقل الحركة</div>
+                <div style="padding: 0.2em;margin: 0.2em;">{{ doc.transmission }}</div>
+            </div>
+            {%endif%}
+            {% if  doc.engine_strokes_count %}
+            <div style="display:flex;">
+              <div style="border: 2px solid black; background-color:lightgray;padding: 0.2em;margin: 0.2em;font-weight: bold;white-space:nowrap;width:110px;text-align:center;">عدد أشواط المحرك</div>
+              <div style="padding: 0.2em;margin: 0.2em;">{{ doc.engine_strokes_count }}</div>
+            </div>
+            {%endif%}
+  
+            </div>
+      </div>
+      <hr>
+  
+  
+  <div style="height:2em;"></div>
+  <div style="display: flex; justify-content:center;">
+    <div style=" display: flex;flex-direction: column; justify-content:center; align-items: center;margin-top:-1em">
+  
+      <div>
+          <h3 style="border:2px solid black; background-color:lightgray;font-family:Cairo; margin: 0px 20px; width:200px;text-align:center;">الكماليات</h3>
+      </div>
+    </div>
+  </div>
+  
+  <hr>
+  
+      <div class="column1">
+        <div>
+                        {% if doc.cassette %}
+                        <div style="display:flex;align-items:center;gap: 10px;">
+                          <div style="display:flex;"> 
+                            <div >&#x2611;</div>
+                          </div> 
+                            <div style="font-weight: bold;white-space:nowrap;">كاسيت</div>
+                        </div>
+                        {%else%}
+                        <div style="display:flex;align-items:center;gap: 10px;">
+                          <div style="display:flex;"> 
+                            <div >&#x2612;</div>
+                          </div> 
+                            <div style="font-weight: bold;white-space:nowrap;">كاسيت</div>
+                        </div>
+                        {% endif %}
+                        {% if doc.front_air_conditioning %}
+                        <div style="display:flex;align-items:center;gap: 10px;">
+                          <div style="display:flex;"> 
+                            <div >&#x2611;</div>
+                          </div> 
+                            <div style="font-weight: bold;white-space:nowrap;">تكييف أمامي</div>
+                        </div>
+                        {%else%}
+                        <div style="display:flex;align-items:center;gap: 10px;">
+                          <div style="display:flex;"> 
+                            <div >&#x2612;</div>
+                          </div> 
+                            <div style="font-weight: bold;white-space:nowrap;">تكييف أمامي</div>
+                        </div>
+                        {% endif %}
+  
+                        {% if doc.front_airbags %}
+                        <div style="display:flex;align-items:center;gap: 10px;">
+                          <div style="display:flex;"> 
+                            <div >&#x2611;</div>
+                          </div> 
+                            <div style="font-weight: bold;white-space:nowrap;">وسائد هوائية أمامية</div>
+                        </div>
+                        {%else%}
+                        <div style="display:flex;align-items:center;gap: 10px;">
+                          <div style="display:flex;"> 
+                            <div >&#x2612;</div>
+                          </div> 
+                            <div style="font-weight: bold;white-space:nowrap;">وسائد هوائية أمامية</div>
+                        </div>
+                        {% endif %}
+                        {% if doc.back_airbags %}
+                        <div style="display:flex;align-items:center;gap: 10px;">
+                          <div style="display:flex;"> 
+                            <div >&#x2611;</div>
+                          </div> 
+                            <div style="font-weight: bold;white-space:nowrap;">وسائد هوائية خلفية</div>
+                        </div>
+                        {%else%}
+                        <div style="display:flex;align-items:center;gap: 10px;">
+                          <div style="display:flex;"> 
+                            <div >&#x2612;</div>
+                          </div> 
+                            <div style="font-weight: bold;white-space:nowrap;">وسائد هوائية خلفية</div>
+                        </div>
+                        {% endif %}
+                        {% if doc.back_air_conditioning %}
+                        <div style="display:flex;align-items:center;gap: 10px;">
+                          <div style="display:flex;"> 
+                            <div >&#x2611;</div>
+                          </div> 
+                            <div style="font-weight: bold;white-space:nowrap;">تكييف خلفي</div>
+                        </div>
+                        {%else%}
+                        <div style="display:flex;align-items:center;gap: 10px;">
+                          <div style="display:flex;"> 
+                            <div >&#x2612;</div>
+                          </div> 
+                            <div style="font-weight: bold;white-space:nowrap;">تكييف خلفي</div>
+                        </div>
+                        {% endif %}
+                        {% if doc.tetra %}
+                        <div style="display:flex;align-items:center;gap: 10px;">
+                          <div style="display:flex;"> 
+                            <div >&#x2611;</div>
+                          </div> 
+                            <div style="font-weight: bold;white-space:nowrap;">تترا</div>
+                        </div>
+                        {%else%}
+                        <div style="display:flex;align-items:center;gap: 10px;">
+                          <div style="display:flex;"> 
+                            <div >&#x2612;</div>
+                          </div> 
+                            <div style="font-weight: bold;white-space:nowrap;">تترا</div>
+                        </div>
+                        {% endif %}
+                      </div>
+                      <div>
+                        {% if doc.four_wheel_drive_gear %}
+                        <div style="display:flex;align-items:center;gap: 10px;">
+                          <div style="display:flex;"> 
+                            <div >&#x2611;</div>
+                          </div> 
+                            <div style="font-weight: bold;white-space:nowrap;">فتيس دفع رباعي</div>
+                        </div>
+                        {%else%}
+                        <div style="display:flex;align-items:center;gap: 10px;">
+                          <div style="display:flex;"> 
+                            <div >&#x2612;</div>
+                          </div> 
+                            <div style="font-weight: bold;white-space:nowrap;">فتيس دفع رباعي</div>
+                        </div>
+                        {% endif %}
+                        {% if doc.turbo_charger %}
+                        <div style="display:flex;align-items:center;gap: 10px;">
+                          <div style="display:flex;"> 
+                            <div >&#x2611;</div>
+                          </div> 
+                            <div style="font-weight: bold;white-space:nowrap;">شاحن توربيني</div>
+                        </div>
+                        {%else%}
+                        <div style="display:flex;align-items:center;gap: 10px;">
+                          <div style="display:flex;"> 
+                            <div >&#x2612;</div>
+                          </div> 
+                            <div style="font-weight: bold;white-space:nowrap;">شاحن توربيني</div>
+                        </div>
+                        {% endif %}
+                        {% if doc.natural_gas %}
+                        <div style="display:flex;align-items:center;gap: 10px;">
+                          <div style="display:flex;"> 
+                            <div >&#x2611;</div>
+                          </div> 
+                            <div style="font-weight: bold;white-space:nowrap;">غاز طبيعي</div>
+                        </div>
+                        {%else%}
+                        <div style="display:flex;align-items:center;gap: 10px;">
+                          <div style="display:flex;"> 
+                            <div >&#x2612;</div>
+                          </div> 
+                            <div style="font-weight: bold;white-space:nowrap;">غاز طبيعي</div>
+                        </div>
+                        {% endif %}
+                        {% if doc.center_lock %}
+                        <div style="display:flex;align-items:center;gap: 10px;">
+                          <div style="display:flex;"> 
+                            <div >&#x2611;</div>
+                          </div> 
+                            <div style="font-weight: bold;white-space:nowrap;">غلق مركزي للأبواب</div>
+                        </div>
+                        {%else%}
+                        <div style="display:flex;align-items:center;gap: 10px;">
+                          <div style="display:flex;"> 
+                            <div >&#x2612;</div>
+                          </div> 
+                            <div style="font-weight: bold;white-space:nowrap;">غلق مركزي للأبواب</div>
+                        </div>
+                        {% endif %}
+                        {% if doc.glass_electricity %}
+                        <div style="display:flex;align-items:center;gap: 10px;">
+                          <div style="display:flex;"> 
+                            <div >&#x2611;</div>
+                          </div> 
+                            <div style="font-weight: bold;white-space:nowrap;">تشغيل الزجاج كهربائيا</div>
+                        </div>
+                        {%else%}
+                        <div style="display:flex;align-items:center;gap: 10px;">
+                          <div style="display:flex;"> 
+                            <div >&#x2612;</div>
+                          </div> 
+                            <div style="font-weight: bold;white-space:nowrap;">تشغيل الزجاج كهربائيا</div>
+                        </div>
+                        {% endif %}
+                        {% if doc.fanar %}
+                        <div style="display:flex;align-items:center;gap: 10px;">
+                          <div style="display:flex;"> 
+                            <div >&#x2611;</div>
+                          </div> 
+                            <div style="font-weight: bold;white-space:nowrap;">فنار</div>
+                        </div>
+                        {%else%}
+                        <div style="display:flex;align-items:center;gap: 10px;">
+                          <div style="display:flex;"> 
+                            <div >&#x2612;</div>
+                          </div> 
+                            <div style="font-weight: bold;white-space:nowrap;">فنار</div>
+                        </div>
+                        {% endif %}
+                        
+          </div>
+  <div>
+  
+  
+            {% if doc.side_mirror_electricity %}
+            <div style="display:flex;align-items:center;gap: 10px;">
+              <div style="display:flex;"> 
+                <div >&#x2611;</div>
+              </div> 
+                <div style="font-weight: bold;white-space:nowrap;">تشغيل مرايات جانب كهربائيا</div>
+            </div>
+            {%else%}
+            <div style="display:flex;align-items:center;gap: 10px;">
+              <div style="display:flex;"> 
+                <div >&#x2612;</div>
+              </div> 
+                <div style="font-weight: bold;white-space:nowrap;">تشغيل مرايات جانب كهربائيا</div>
+            </div>
+            {% endif %}
+            {% if doc.anti_skid %}
+            <div style="display:flex;align-items:center;gap: 10px;">
+              <div style="display:flex;"> 
+                <div >&#x2611;</div>
+              </div> 
+                <div style="font-weight: bold;white-space:nowrap;">مانع تزحلق</div>
+            </div>
+            {%else%}
+            <div style="display:flex;align-items:center;gap: 10px;">
+              <div style="display:flex;"> 
+                <div >&#x2612;</div>
+              </div> 
+                <div style="font-weight: bold;white-space:nowrap;">مانع تزحلق</div>
+            </div>
+            {% endif %}
+            {% if doc.hydraulic_servo_steering %}
+            <div style="display:flex;align-items:center;gap: 10px;">
+              <div style="display:flex;"> 
+                <div >&#x2611;</div>
+              </div> 
+                <div style="font-weight: bold;white-space:nowrap;">نظام توجيه بمؤازر هيدروليكي</div>
+            </div>
+            {%else%}
+            <div style="display:flex;align-items:center;gap: 10px;">
+              <div style="display:flex;"> 
+                <div >&#x2612;</div>
+              </div> 
+                <div style="font-weight: bold;white-space:nowrap;">نظام توجيه بمؤازر هيدروليكي</div>
+            </div>
+            {% endif %}
+            {% if doc.back_hoods %}
+            <div style="display:flex;align-items:center;gap: 10px;">
+              <div style="display:flex;"> 
+                <div >&#x2611;</div>
+              </div> 
+                <div style="font-weight: bold;white-space:nowrap;">شفاطات خلفية</div>
+            </div>
+            {%else%}
+            <div style="display:flex;align-items:center;gap: 10px;">
+              <div style="display:flex;"> 
+                <div >&#x2612;</div>
+              </div> 
+                <div style="font-weight: bold;white-space:nowrap;">شفاطات خلفية</div>
+            </div>
+            {% endif %}
+            {% if doc.side_airbags %}
+            <div style="display:flex;align-items:center;gap: 10px;">
+              <div style="display:flex;"> 
+                <div >&#x2611;</div>
+              </div> 
+                <div style="font-weight: bold;white-space:nowrap;">وسائد هوائية جانبية</div>
+            </div>
+            {%else%}
+            <div style="display:flex;align-items:center;gap: 10px;">
+              <div style="display:flex;"> 
+                <div >&#x2612;</div>
+              </div> 
+                <div style="font-weight: bold;white-space:nowrap;">وسائد هوائية جانبية</div>
+            </div>
+            {% endif %}
+            {% if doc.cameras %}
+                        <div style="display:flex;align-items:center;gap: 10px;">
+                          <div style="display:flex;"> 
+                            <div >&#x2611;</div>
+                          </div> 
+                            <div style="font-weight: bold;white-space:nowrap;">كاميرات</div>
+                        </div>
+                        {%else%}
+                        <div style="display:flex;align-items:center;gap: 10px;">
+                          <div style="display:flex;"> 
+                            <div >&#x2612;</div>
+                          </div> 
+                            <div style="font-weight: bold;white-space:nowrap;">كاميرات</div>
+                        </div>
+                        {% endif %}
+  
+  </div>
+      </div>
+      <hr>
+  
+  
+      <div style="height:2em;"></div>
+      <div style="display: flex; justify-content:center;">
+        <div style=" display: flex;flex-direction: column; justify-content:center; align-items: center;margin-top:-1em">
+      
+          <div>
+              <h3 style="border:2px solid black; background-color:lightgray;font-family:Cairo; margin: 0px 20px; width:200px;text-align:center;">بيانات الشراء</h3>
+          </div>
+        </div>
+      </div>
+      
+      <hr>
+      <div  class="table1">
+        <table>
+            <thead>
+                <tr>
+                    <th >نوع الحيازة</th>
+                    <th >ثمن الشراء</th>
+                    {% if doc.owner_entity == "وزارة الداخلية" %}
+                    <th >الجهة المالكة</th>
+                    {% else %}
+                    <th >اسم الجهة المالكة</th>
+                    {% endif %}
+                    <th >تاريخ التوريد</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                      <td>{{doc.possession_type}}</td>
+                      <td>{{doc.buying_price}}</td>
+                      {% if doc.owner_entity == "وزارة الداخلية" %}
+                      <td>وزارة الداخلية</td>
+                      {% else %}
+                        <td>{{doc.owner_name}}</td>
+                      {% endif %}
+                      <td>{{doc.buying_year}}</td>
+                </tr>
+               
+            </tbody>
+        </table>
+        
+        </div>
+        <div style="height:2em;"></div>
+  
+        <hr>
+  
+  
+        <div style="height:2em;"></div>
+        <div style="display: flex; justify-content:center;">
+          <div style=" display: flex;flex-direction: column; justify-content:center; align-items: center;margin-top:-1em">
+        
+            <div>
+                <h3 style="border:2px solid black; background-color:lightgray;font-family:Cairo; margin: 0px 20px; width:200px;text-align:center;">مقررات السوائل</h3>
+            </div>
+          </div>
+        </div>
+        <hr>
+      <div  class="table1">
+        <table>
+            <thead>
+                <tr>
+                    <th ></th>
+                    <th > الوقود</th>
+                    <th >الزيت </th>
+                    <th >الغاز</th>
+                    <th > الغسيل</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                      <td style="background-color: lightgray; font-weight: bolder; ">البون</td>
+                      {% if doc.fuel_voucher %}
+                      <td>{{doc.fuel_voucher}}</td>
+                      {% else %}
+                      <td><br></td>
+                      {%endif%}
+                      {% if doc.oil_type %}
+                      <td>{{doc.oil_type}}</td>
+                      {% else %}
+                      <td><br></td>
+                      {%endif%}
+                      {% if doc.gas_voucher %}
+                      <td>{{doc.gas_voucher}}</td>
+                      {% else %}
+                      <td><br></td>
+                      {%endif%}
+                      {% if doc.washing_voucher %}
+                      <td>{{doc.washing_voucher}}</td>
+                      {% else %}
+                      <td><br></td>
+                      {%endif%}
+                </tr>
+                <tr>
+                  <td style="background-color: lightgray; font-weight: bolder; ">المقرر  </td>
+                  {% if doc.litre_count %}
+                  <td>{{doc.litre_count}}</td>
+                  {% else %}
+                  <td><br></td>
+                  {%endif%}
+                  {% if doc.oil_count %}
+                  <td>{{doc.oil_count}}</td>
+                  {% else %}
+                  <td><br></td>
+                  {%endif%}
+                  {% if doc.gas_count %}
+                  <td>{{doc.gas_count}}</td>
+                  {% else %}
+                  <td><br></td>
+                  {%endif%}
+                  {% if doc.washing_count %}
+                  <td>{{doc.washing_count}}</td>
+                  {% else %}
+                  <td><br></td>
+                  {%endif%}
+            </tr>
+           
+            </tbody>
+        </table>
+        
+        </div>
+        <div style="height:2em;"></div>
+  
+        <hr>
+            <div style="height:2em;"></div>
+  
+        {% if doc.license_no %}
+        <div style="display: flex; justify-content:center;">
+          <div style=" display: flex;flex-direction: column; justify-content:center; align-items: center;margin-top:-1em">
+        
+            <div>
+                <h3 style="border:2px solid black; background-color:lightgray;font-family:Cairo;  margin: 0px 20px; width:200px;text-align:center;">بيانات الرخصة</h3>
+            </div>
+          </div>
+        </div>
+        <hr>
+        
+        <div class="column2">
+                  <div>
+                                  <div style="display:flex;">
+                                      <div style="border: 2px solid black; background-color:lightgray;padding: 0.2em;margin: 0.2em;font-weight: bold;white-space:nowrap;width:110px;text-align:center;">رقم الرخصة </div>
+                                      <div style="padding: 0.2em; margin: 0.2em;">{{ doc.license_no }} </div>
+                                      <div style="width: 1%;"></div>
+                                  </div>
+            
+                                  <div style="display:flex;">
+                                    <div style="border: 2px solid black; background-color:lightgray;padding: 0.2em;margin: 0.2em;font-weight: bold;white-space:nowrap;width:110px;text-align:center;">حالة الرخصة </div>
+                                    <div style="padding: 0.2em; margin: 0.2em;">{{ doc.license_status }} </div>
+                                    <div style="width: 1%;"></div>
+                                </div>
+                  </div>
+  
+              <div>
+          
+                <div style="display:flex;">
+                  <div style="border: 2px solid black; background-color:lightgray;padding: 0.2em;margin: 0.2em;font-weight: bold;white-space:nowrap;width:110px;text-align:center;">بداية الترخيص </div>
+                  <div style="padding: 0.2em;margin: 0.2em;">{{ doc.license_from_date }}</div>                      
+              </div>
+  
+              <div style="display:flex;">
+                <div style="border: 2px solid black; background-color:lightgray;padding: 0.2em;margin: 0.2em;font-weight: bold;white-space:nowrap;width:110px;text-align:center;">نهاية الترخيص</div>
+                <div style="padding: 0.2em;margin: 0.2em;">{{ doc.license_to_date }}</div>                      
+            </div>
+  
+  
+              </div>
+  
+              <div>
+            <div style="display:flex;">
+              <div style="border: 2px solid black; background-color:lightgray;padding: 0.2em;margin: 0.2em;font-weight: bold;white-space:nowrap;width:110px;text-align:center;">مدة الترخيص</div>
+              {% if doc.license_duration ==3 %}
+              <div style="padding: 0.2em;margin: 0.2em;">3 سنوات</div>
+              {% else %}
+              <div style="padding: 0.2em;margin: 0.2em;">سنة واحدة</div>
+  
+              {% endif%}
+          </div>
+                  </div>
+            </div>
+            <hr>
+        {% endif %}
+        <div style="height:2em;"></div>
+        
+        {% if doc.vehicle_license_logs %}
+  
+        <div style="display: flex; justify-content:center;">
+          <div style=" display: flex;flex-direction: column; justify-content:center; align-items: center;margin-top:-1em">
+        
+            <div>
+                <h3 style="border:2px solid black; background-color:lightgray;font-family:Cairo; margin: 0px 20px; width:200px;text-align:center;">بيانات تاريخية (الرخص)</h3>
+            </div>
+          </div>
+        </div>
+        <hr>
+      <div  class="table1">
+        <table>
+            <thead>
+                <tr>
+                    <th >رقم الرخصة</th>
+                    <th >حالة الإصدار</th>
+                    <th >نوع التجديد</th>
+                    <th >مدة الترخيص</th>
+                    <th >بداية الترخيص</th>
+                    <th >نهاية الترخيص</th>
+                    <th >الحالة</th>
+                </tr>
+            </thead>
+            <tbody>
+              {% for license in doc.vehicle_license_logs %}
+                <tr>
+                      <td >{{license.license_no}}</td>
+                      <td >{{license.issue_status}}</td>
+                      <td >{{license.renewal_type}}</td>
+                      <td >{{license.license_duration}}</td>
+                      <td >{{license.license_from_date}}</td>
+                      <td >{{license.license_to_date}}</td>
+                      <td >{{license.license_status}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        </div>
+        <div style="height:2em;"></div>
+  
+        <hr>
+        {%endif%}
+        <div style="height:2em;"></div>
+        
+        {% if doc.accident_logs %}
+  
+        <div style="display: flex; justify-content:center;">
+          <div style=" display: flex;flex-direction: column; justify-content:center; align-items: center;margin-top:-1em">
+        
+            <div>
+                <h3 style="border:2px solid black; background-color:lightgray;font-family:Cairo; margin: 0px 20px; width:200px;text-align:center;"> بيانات تاريخية (الحوادث)</h3>
+            </div>
+          </div>
+        </div>
+        <hr>
+      <div  class="table1">
+        <table>
+            <thead>
+                <tr>
+                    <th >كود الواقعة</th>
+                    <th > رقم الواقعة</th>
+                    <th >نوع الواقعة</th>
+                    <th >تاريخ الواقعة</th>
+                    <th > طرف الواقعة</th>
+                    <th > رقم البطاقة </th>
+  
+                </tr>
+            </thead>
+            <tbody>
+              {% for accedient in doc.accident_logs %}
+                <tr>
+                      <td >{{accedient.accident_code}}</td>
+                      <td >{{accedient.accident_no}}</td>
+                      <td >{{accedient.accident_type}}</td>
+                      <td >{{accedient.accident_date}}</td>
+                      <td >{{accedient.party_name}}</td>
+                      <td >{{accedient.party_id}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        </div>
+        <hr>
+        {%endif%}
+  
+        {% if doc.vehicle_no_table %}
+  
+        <div style="display: flex; justify-content:center;">
+          <div style=" display: flex;flex-direction: column; justify-content:center; align-items: center;margin-top:-1em">
+        
+            <div>
+                <h3 style="border:2px solid black; background-color:lightgray;font-family:Cairo; margin: 0px 20px; width:200px;text-align:center;">بيانات تاريخية (رقم الشرطة)</h3>
+            </div>
+          </div>
+        </div>
+        <hr>
+      <div  class="table1">
+        <table>
+            <thead>
+                <tr>
+                    <th >رقم الشرطة</th>
+                    <th >تاريخ التخصيص</th>
+                    <th >تم التخصيص بواسطة</th>
+                    <th >ملاحظات</th>
+                </tr>
+            </thead>
+            <tbody>
+              {% for plate_no in doc.vehicle_no_table %}
+                <tr>
+                      <td >{{plate_no.value }}</td>
+                      <td >{{plate_no.date }}</td>
+                      <td >{{plate_no.edited_by }}</td>
+                      {% if plate_no.remarks %}
+                      <td >{{ plate_no.remarks }}</td>
+                      {% else %}
+                      <td ><br></td>
+                      {%endif%}
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        </div>
+        <div style="height:2em;"></div>
+        <hr>
+        {%endif%}
+        <div style="height:2em;"></div>
+        
+        {% if doc.entity_table %}
+  
+        <div style="display: flex; justify-content:center;">
+          <div style=" display: flex;flex-direction: column; justify-content:center; align-items: center;margin-top:-1em">
+        
+            <div>
+                <h3 style="border:2px solid black; background-color:lightgray;font-family:Cairo; margin: 0px 20px; width:200px;text-align:center;">بيانات تاريخية (الجهة)</h3>
+            </div>
+          </div>
+        </div>
+        <hr>
+      <div  class="table1">
+        <table>
+            <thead>
+                <tr>
+                    <th >الجهة
+                    </th>
+                    <th >تاريخ التخصيص</th>
+                    <th >تم التخصيص بواسطة</th>
+                    <th >ملاحظات</th>
+                </tr>
+            </thead>
+            <tbody>
+              {% for plate_no in doc.entity_table %}
+                <tr>
+                      <td >{{plate_no.value }}</td>
+                      <td >{{plate_no.date }}</td>
+                      <td >{{plate_no.edited_by }}</td>
+                      {% if plate_no.remarks %}
+                      <td >{{ plate_no.remarks }}</td>
+                      {% else %}
+                      <td ><br></td>
+                      {%endif%}
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        </div>
+        <div style="height:2em;"></div>
+        <hr>
+        {%endif%}
+        <div style="height:2em;"></div>
+        
+        {% if doc.status_table %}
+  
+        <div style="display: flex; justify-content:center;">
+          <div style=" display: flex;flex-direction: column; justify-content:center; align-items: center;margin-top:-1em">
+        
+            <div>
+                <h3 style="border:2px solid black; background-color:lightgray;font-family:Cairo; margin: 0px 20px; width:200px;text-align:center;">بيانات تاريخية (حالة المركبة)</h3>
+            </div>
+          </div>
+        </div>
+        <hr>
+      <div  class="table1">
+        <table>
+            <thead>
+                <tr>
+                    <th >الحالة</th>
+                    <th >تاريخ التخصيص</th>
+                    <th >تم التخصيص بواسطة</th>
+                    <th >ملاحظات</th>
+                </tr>
+            </thead>
+            <tbody>
+              {% for plate_no in doc.status_table %}
+                <tr>
+                      <td >{{plate_no.value }}</td>
+                      <td >{{plate_no.date }}</td>
+                      <td >{{plate_no.edited_by }}</td>
+                      {% if plate_no.remarks %}
+                      <td >{{ plate_no.remarks }}</td>
+                      {% else %}
+                      <td ><br></td>
+                      {%endif%}
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        </div>
+        <div style="height:2em;"></div>
+        <hr>
+        {%endif%}
+        <div style="height:2em;"></div>
+        
+        {% if doc.motor_table %}
+  
+        <div style="display: flex; justify-content:center;">
+          <div style=" display: flex;flex-direction: column; justify-content:center; align-items: center;margin-top:-1em">
+        
+            <div>
+                <h3 style="border:2px solid black; background-color:lightgray;font-family:Cairo; margin: 0px 20px; width:200px;text-align:center;">بيانات تاريخية (رقم الموتور)</h3>
+            </div>
+          </div>
+        </div>
+        <hr>
+      <div  class="table1">
+        <table>
+            <thead>
+                <tr>
+                    <th >رقم الموتور                  </th>
+                    <th >تاريخ التخصيص</th>
+                    <th >تم التخصيص بواسطة</th>
+                    <th >ملاحظات</th>
+                </tr>
+            </thead>
+            <tbody>
+              {% for plate_no in doc.motor_table %}
+                <tr>
+                      <td >{{plate_no.value }}</td>
+                      <td >{{plate_no.date }}</td>
+                      <td >{{plate_no.edited_by }}</td>
+                      {% if plate_no.remarks %}
+                      <td >{{ plate_no.remarks }}</td>
+                      {% else %}
+                      <td ><br></td>
+                      {%endif%}
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        </div>
+        <div style="height:2em;"></div>
+        <hr>
+        {%endif%}
+        <div style="height:2em;"></div>
+        
+        {% if doc.processing_type_table %}
+  
+        <div style="display: flex; justify-content:center;">
+          <div style=" display: flex;flex-direction: column; justify-content:center; align-items: center;margin-top:-1em">
+        
+            <div>
+                <h3 style="border:2px solid black; background-color:lightgray;font-family:Cairo; margin: 0px 20px; width:200px;text-align:center;">بيانات تاريخية (نوع التجهيز)</h3>
+            </div>
+          </div>
+        </div>
+        <hr>
+      <div  class="table1">
+        <table>
+            <thead>
+                <tr>
+                    <th >نوع التجهيز                  </th>
+                    <th >تاريخ التخصيص</th>
+                    <th >تم التخصيص بواسطة</th>
+                    <th >ملاحظات</th>
+                </tr>
+            </thead>
+            <tbody>
+              {% for plate_no in doc.processing_type_table %}
+                <tr>
+                      <td >{{plate_no.value }}</td>
+                      <td >{{plate_no.date }}</td>
+                      <td >{{plate_no.edited_by }}</td>
+                      {% if plate_no.remarks %}
+                      <td >{{ plate_no.remarks }}</td>
+                      {% else %}
+                      <td ><br></td>
+                      {%endif%}
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        </div>
+        <div style="height:2em;"></div>
+        <hr>
+        {%endif%}
+        <div style="height:2em;"></div>
+        
+        {% if doc.color_table %}
+  
+        <div style="display: flex; justify-content:center;">
+          <div style=" display: flex;flex-direction: column; justify-content:center; align-items: center;margin-top:-1em">
+        
+            <div>
+                <h3 style="border:2px solid black; background-color:lightgray;font-family:Cairo; margin: 0px 20px; width:200px;text-align:center;">بيانات تاريخية (اللون)</h3>
+            </div>
+          </div>
+        </div>
+        <hr>
+      <div  class="table1">
+        <table>
+            <thead>
+                <tr>
+                    <th >اللون</th>
+                    <th >تاريخ التخصيص</th>
+                    <th >تم التخصيص بواسطة</th>
+                    <th >ملاحظات</th>
+                </tr>
+            </thead>
+            <tbody>
+              {% for plate_no in doc.color_table %}
+                <tr>
+                      <td >{{plate_no.value }}</td>
+                      <td >{{plate_no.date }}</td>
+                      <td >{{plate_no.edited_by }}</td>
+                      {% if plate_no.remarks %}
+                      <td >{{ plate_no.remarks }}</td>
+                      {% else %}
+                      <td ><br></td>
+                      {%endif%}
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        </div>
+        <div style="height:2em;"></div>
+        <hr>
+        {%endif%}
+        <div style="height:2em;"></div>
+        
+        {% if doc.maintenance_entity_table %}
+  
+        <div style="display: flex; justify-content:center;">
+          <div style=" display: flex;flex-direction: column; justify-content:center; align-items: center;margin-top:-1em">
+        
+            <div>
+                <h3 style="border:2px solid black; background-color:lightgray;font-family:Cairo; margin: 0px 20px; width:200px;text-align:center;">بيانات تاريخية (جهة الصيانة)</h3>
+            </div>
+          </div>
+        </div>
+        <hr>
+      <div  class="table1">
+        <table>
+            <thead>
+                <tr>
+                    <th >جهة الصيانة</th>
+                    <th >تاريخ التخصيص</th>
+                    <th >تم التخصيص بواسطة</th>
+                    <th >ملاحظات</th>
+                </tr>
+            </thead>
+            <tbody>
+              {% for plate_no in doc.maintenance_entity_table %}
+                <tr>
+                      <td >{{plate_no.value }}</td>
+                      <td >{{plate_no.date }}</td>
+                      <td >{{plate_no.edited_by }}</td>
+                      {% if plate_no.remarks %}
+                      <td >{{ plate_no.remarks }}</td>
+                      {% else %}
+                      <td ><br></td>
+                      {%endif%}
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        </div>
+        <div style="height:2em;"></div>
+        <hr>
+        {%endif%}
+  
+        {% if doc.private_no_table %}
+  
+        <div style="display: flex; justify-content:center;">
+          <div style=" display: flex;flex-direction: column; justify-content:center; align-items: center;margin-top:-1em">
+        
+            <div>
+                <h3 style="border:2px solid black; background-color:lightgray;font-family:Cairo; margin: 0px 20px; width:200px;text-align:center;">بيانات تاريخية (رقم الملاكي)</h3>
+            </div>
+          </div>
+        </div>
+        <hr>
+      <div  class="table1">
+        <table>
+            <thead>
+                <tr>
+                    <th >رقم الملاكي</th>
+                    <th >جهة المرور</th>
+                    <th >تاريخ التخصيص</th>
+                    <th >تم التخصيص بواسطة</th>
+                    <th >ملاحظات</th>
+                </tr>
+            </thead>
+            <tbody>
+              {% for plate_no in doc.private_no_table %}
+                <tr>
+                      <td >{{plate_no.value }}</td>
+                      <td >{{plate_no.traffic_entity }}</td>
+                      <td >{{plate_no.date }}</td>
+                      <td >{{plate_no.edited_by }}</td>
+                      {% if plate_no.remarks %}
+                      <td >{{ plate_no.remarks }}</td>
+                      {% else %}
+                      <td ><br></td>
+                      {%endif%}
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        </div>
+        <div style="height:2em;"></div>
+        <hr>
+        {%endif%}
+        <div style="height:2em;"></div>
+        
+        {% if doc.chassis_no_table %}
+  
+        <div style="display: flex; justify-content:center;">
+          <div style=" display: flex;flex-direction: column; justify-content:center; align-items: center;margin-top:-1em">
+        
+            <div>
+                <h3 style="border:2px solid black; background-color:lightgray;font-family:Cairo; margin: 0px 20px; width:200px;text-align:center;">بيانات تاريخية (رقم الشاسيه)</h3>
+            </div>
+          </div>
+        </div>
+        <hr>
+      <div  class="table1">
+        <table>
+            <thead>
+                <tr>
+                    <th >جهة الصيانة</th>
+                    <th >تاريخ التخصيص</th>
+                    <th >تم التخصيص بواسطة</th>
+                    <th >ملاحظات</th>
+                </tr>
+            </thead>
+            <tbody>
+              {% for plate_no in doc.chassis_no_table %}
+                <tr>
+                      <td >{{plate_no.value }}</td>
+                      <td >{{plate_no.date }}</td>
+                      <td >{{plate_no.edited_by }}</td>
+                      {% if plate_no.remarks %}
+                      <td >{{ plate_no.remarks }}</td>
+                      {% else %}
+                      <td ><br></td>
+                      {%endif%}
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        </div>
+        <div style="height:2em;"></div>
+        <hr>
+        {%endif%}
+        <div style="height:2em;"></div>
+        
+        {% if doc.group_shape_table %}
+  
+        <div style="display: flex; justify-content:center;">
+          <div style=" display: flex;flex-direction: column; justify-content:center; align-items: center;margin-top:-1em">
+        
+            <div>
+                <h3 style="border:2px solid black; background-color:lightgray;font-family:Cairo; margin: 0px 20px; width:200px;text-align:center;">بيانات تاريخية (مجموعة الشكل)</h3>
+            </div>
+          </div>
+        </div>
+        <hr>
+      <div  class="table1">
+        <table>
+            <thead>
+                <tr>
+                    <th >جهة الصيانة</th>
+                    <th >تاريخ التخصيص</th>
+                    <th >تم التخصيص بواسطة</th>
+                    <th >ملاحظات</th>
+                </tr>
+            </thead>
+            <tbody>
+              {% for plate_no in doc.group_shape_table %}
+                <tr>
+                      <td >{{plate_no.value }}</td>
+                      <td >{{plate_no.date }}</td>
+                      <td >{{plate_no.edited_by }}</td>
+                      {% if plate_no.remarks %}
+                      <td >{{ plate_no.remarks }}</td>
+                      {% else %}
+                      <td ><br></td>
+                      {%endif%}
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        </div>
+        <div style="height:2em;"></div>
+        <hr>
+        {%endif%}
+        <div style="height:2em;"></div>
+        
+        {% if doc.shape_table %}
+  
+        <div style="display: flex; justify-content:center;">
+          <div style=" display: flex;flex-direction: column; justify-content:center; align-items: center;margin-top:-1em">
+        
+            <div>
+                <h3 style="border:2px solid black; background-color:lightgray;font-family:Cairo; margin: 0px 20px; width:200px;text-align:center;">بيانات تاريخية (الشكل)</h3>
+            </div>
+          </div>
+        </div>
+        <hr>
+      <div  class="table1">
+        <table>
+            <thead>
+                <tr>
+                    <th >جهة الصيانة</th>
+                    <th >تاريخ التخصيص</th>
+                    <th >تم التخصيص بواسطة</th>
+                    <th >ملاحظات</th>
+                </tr>
+            </thead>
+            <tbody>
+              {% for plate_no in doc.shape_table %}
+                <tr>
+                      <td >{{plate_no.value }}</td>
+                      <td >{{plate_no.date }}</td>
+                      <td >{{plate_no.edited_by }}</td>
+                      {% if plate_no.remarks %}
+                      <td >{{ plate_no.remarks }}</td>
+                      {% else %}
+                      <td ><br></td>
+                      {%endif%}
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        </div>
+        <div style="height:2em;"></div>
+        <hr>
+        {%endif%}
+        <div style="height:2em;"></div>
+        
+        {% if doc.brand_table %}
+  
+        <div style="display: flex; justify-content:center;">
+          <div style=" display: flex;flex-direction: column; justify-content:center; align-items: center;margin-top:-1em">
+        
+            <div>
+                <h3 style="border:2px solid black; background-color:lightgray;font-family:Cairo; margin: 0px 20px"; width:200px;text-align:center;>بيانات تاريخية (الماركة)</h3>
+            </div>
+          </div>
+        </div>
+        <hr>
+      <div  class="table1">
+        <table>
+            <thead>
+                <tr>
+                    <th >جهة الصيانة</th>
+                    <th >تاريخ التخصيص</th>
+                    <th >تم التخصيص بواسطة</th>
+                    <th >ملاحظات</th>
+                </tr>
+            </thead>
+            <tbody>
+              {% for plate_no in doc.brand_table %}
+                <tr>
+                      <td >{{plate_no.value }}</td>
+                      <td >{{plate_no.date }}</td>
+                      <td >{{plate_no.edited_by }}</td>
+                      {% if plate_no.remarks %}
+                      <td >{{ plate_no.remarks }}</td>
+                      {% else %}
+                      <td ><br></td>
+                      {%endif%}
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        </div>
+        <div style="height:2em;"></div>
+        <hr>
+        {%endif%}
+  
+        <div style="height:2em;"></div>
+        
+        {% if doc.style_table %}
+  
+        <div style="display: flex; justify-content:center;">
+          <div style=" display: flex;flex-direction: column; justify-content:center; align-items: center;margin-top:-1em">
+        
+            <div>
+                <h3 style="border:2px solid black; background-color:lightgray;font-family:Cairo; margin: 0px 20px; width:200px;text-align:center;">بيانات تاريخية (الطراز)</h3>
+            </div>
+          </div>
+        </div>
+        <hr>
+      <div  class="table1">
+        <table>
+            <thead>
+                <tr>
+                    <th >جهة الصيانة</th>
+                    <th >تاريخ التخصيص</th>
+                    <th >تم التخصيص بواسطة</th>
+                    <th >ملاحظات</th>
+                </tr>
+            </thead>
+            <tbody>
+              {% for plate_no in doc.style_table %}
+                <tr>
+                      <td >{{plate_no.value }}</td>
+                      <td >{{plate_no.date }}</td>
+                      <td >{{plate_no.edited_by }}</td>
+                      {% if plate_no.remarks %}
+                      <td >{{ plate_no.remarks }}</td>
+                      {% else %}
+                      <td ><br></td>
+                      {%endif%}
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        </div>
+        <div style="height:2em;"></div>
+        <hr>
+        {%endif%}
+  
+        <div style="height:2em;"></div>
+        
+        {% if doc.model_table %}
+  
+        <div style="display: flex; justify-content:center;">
+          <div style=" display: flex;flex-direction: column; justify-content:center; align-items: center;margin-top:-1em">
+        
+            <div>
+                <h3 style="border:2px solid black; background-color:lightgray;font-family:Cairo; margin: 0px 20px; width:200px;text-align:center;">بيانات تاريخية (الموديل)</h3>
+            </div>
+          </div>
+        </div>
+        <hr>
+      <div  class="table1">
+        <table>
+            <thead>
+                <tr>
+                    <th >جهة الصيانة</th>
+                    <th >تاريخ التخصيص</th>
+                    <th >تم التخصيص بواسطة</th>
+                    <th >ملاحظات</th>
+                </tr>
+            </thead>
+            <tbody>
+              {% for plate_no in doc.model_table %}
+                <tr>
+                      <td >{{plate_no.value }}</td>
+                      <td >{{plate_no.date }}</td>
+                      <td >{{plate_no.edited_by }}</td>
+                      {% if plate_no.remarks %}
+                      <td >{{ plate_no.remarks }}</td>
+                      {% else %}
+                      <td ><br></td>
+                      {%endif%}
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        </div>
+        <div style="height:2em;"></div>
+        <hr>
+        {%endif%}
+        <div style="height:2em;"></div>
+        
+        {% if doc.country_table %}
+  
+        <div style="display: flex; justify-content:center;">
+          <div style=" display: flex;flex-direction: column; justify-content:center; align-items: center;margin-top:-1em">
+        
+            <div>
+                <h3 style="border:2px solid black; background-color:lightgray;font-family:Cairo; margin: 0px 20px; width:200;text-align:center;">بيانات تاريخية (بلد الصنع)</h3>
+            </div>
+          </div>
+        </div>
+        <hr>
+      <div  class="table1">
+        <table>
+            <thead>
+                <tr>
+                    <th >جهة الصيانة</th>
+                    <th >تاريخ التخصيص</th>
+                    <th >تم التخصيص بواسطة</th>
+                    <th >ملاحظات</th>
+                </tr>
+            </thead>
+            <tbody>
+              {% for plate_no in doc.country_table %}
+                <tr>
+                      <td >{{plate_no.value }}</td>
+                      <td >{{plate_no.date }}</td>
+                      <td >{{plate_no.edited_by }}</td>
+                      {% if plate_no.remarks %}
+                      <td >{{ plate_no.remarks }}</td>
+                      {% else %}
+                      <td ><br></td>
+                      {%endif%}
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        </div>
+        <div style="height:2em;"></div>
+        <hr>
+        {%endif%}
+        <div style="height:2em;"></div>
+        
+        {% if doc.exchange_allowance_table %}
+  
+        <div style="display: flex; justify-content:center;">
+          <div style=" display: flex;flex-direction: column; justify-content:center; align-items: center;margin-top:-1em">
+        
+            <div>
+                <h3 style="border:2px solid black; background-color:lightgray;font-family:Cairo; margin: 0px 20px; width:200;text-align:center;">بيانات تاريخية (مخصص الصرف)</h3>
+            </div>
+          </div>
+        </div>
+        <hr>
+      <div  class="table1">
+        <table>
+            <thead>
+                <tr>
+                    <th >جهة الصيانة</th>
+                    <th >تاريخ التخصيص</th>
+                    <th >تم التخصيص بواسطة</th>
+                    <th >ملاحظات</th>
+                </tr>
+            </thead>
+            <tbody>
+              {% for plate_no in doc.exchange_allowance_table %}
+                <tr>
+                      <td >{{plate_no.value }}</td>
+                      <td >{{plate_no.date }}</td>
+                      <td >{{plate_no.edited_by }}</td>
+                      {% if plate_no.remarks %}
+                      <td >{{ plate_no.remarks }}</td>
+                      {% else %}
+                      <td ><br></td>
+                      {%endif%}
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        </div>
+        <div style="height:2em;"></div>
+        <hr>
+        {%endif%}
+        <div style="height:2em;"></div>
+        
+
+
+
+
+
+
+
+        <header class="header">
+          <div class="logo">
+                  <img src="/files/لوجو قسم المعلومات.PNG" alt="Company Logo" ismap>
+          </div>
+          <h1 style="text-decoration: underline; font-weight: bold; font-size: 30px; text-align: center;">تقرير تفصيلي لمجند</h1>
+        </header>
+        <br>  
+        <br>
+      <div style="display: flex; justify-content:center;">
+              <div style="display: flex;flex-direction: column; justify-content:center; align-items: center;margin-top:-1em">
+                  <div>
+                      <h3 style="border:2px solid black; background-color:lightgray;font-family:Cairo; margin: 0px 20px; width:200px;text-align:center;">البيانات الأساسية</h3>
+                  </div>
+              </div>
+          </div>
+              <hr>
+          <div class="column1">
+            <div>
+                {% if doc.custom_file_number4 %}
+                    <div style="display:flex;">
+                      <div style="border: 2px solid black; background-color:lightgray;padding: 0.2em;margin: 0.2em;font-weight: bold;white-space:nowrap;width:110px;text-align:center;">رقم الملف</div>
+                      <div style="padding: 0.2em; margin: 0.2em; font-weight: bold;">{{ doc.custom_file_number4 }} </div>
+                    <div style="width: 1%;"></div>
+                </div>
+                {%endif%}
+
+                {% if doc.employee_number %}
+                <div style="display:flex;">
+                <div style="border: 2px solid black; background-color:lightgray;padding: 0.2em;margin: 0.2em;font-weight: bold;white-space:nowrap;width:110px;text-align:center;">رقم الشرطة</div>
+                <div style="padding: 0.2em; margin: 0.2em; font-weight: bold;">{{ doc.employee_number }} </div>
+                <div style="width: 1%;"></div>
+                </div>
+                {%endif%}
+
+                {% if doc.date_of_conscription %}
+                <div style="display:flex;">
+                <div style="border: 2px solid black; background-color:lightgray;padding: 0.2em;margin: 0.2em;font-weight: bold;white-space:nowrap;width:110px;text-align:center;">تاريخ التجنيد</div>
+                <div style="padding: 0.2em; margin: 0.2em; font-weight: bold;">{{ doc.date_of_conscription }} </div>
+                <div style="width: 1%;"></div>
+                </div>
+                {%endif%}
+                {% if doc.date_of_joining %}
+
+                <div style="display:flex;">
+                <div style="border: 2px solid black; background-color:lightgray;padding: 0.2em;margin: 0.2em;font-weight: bold;white-space:nowrap;width:110px;text-align:center;">تاريخ الالتحاق بالإدارة</div>
+                <div style="padding: 0.2em; margin: 0.2em; font-weight: bold;">{{ doc.date_of_joining }} </div>
+                <div style="width: 1%;"></div>
+                </div>
+                {%endif%}
+
+
+                {% if doc.first_name %}
+
+                <div style="display:flex;">
+                <div style="border: 2px solid black; background-color:lightgray;padding: 0.2em;margin: 0.2em;font-weight: bold;white-space:nowrap;width:110px;text-align:center;">الأسم</div>
+                <div style="padding: 0.2em; margin: 0.2em; font-weight: bold;">{{ doc.first_name }} </div>
+                <div style="width: 1%;"></div>
+                </div>
+                {%endif%}
+               
+                {% if doc.the_academic_qualification %}
+                <div style="display:flex;">
+                <div style="border: 2px solid black; background-color:lightgray;padding: 0.2em;margin: 0.2em;font-weight: bold;white-space:nowrap;width:110px;text-align:center;">المؤهل الدراسي</div>
+                <div style="padding: 0.2em; margin: 0.2em; font-weight: bold;">{{ doc.the_academic_qualification }} </div>
+                <div style="width: 1%;"></div>
+                </div>
+                {%endif%}
+                {% if doc.current_address %}
+
+                <div style="display:flex;">
+                <div style="border: 2px solid black; background-color:lightgray;padding: 0.2em;margin: 0.2em;font-weight: bold;white-space:nowrap;width:110px;text-align:center;">محل الإقامة</div>
+                <div style="padding: 0.2em; margin: 0.2em; font-weight: bold;">{{ doc.current_address }} - {{ doc.territory_of_birth2 }} - {{ doc.governorate_of_birth2 }}  </div>
+                <div style="width: 1%;"></div>
+                </div>
+
+                {%endif%}
+
+
+
+                {% if doc.main_department23 %}
+
+                <div style="display:flex;">
+                <div style="border: 2px solid black; background-color:lightgray;padding: 0.2em;margin: 0.2em;font-weight: bold;white-space:nowrap;width:110px;text-align:center;">العمل القائم به</div>
+                {% if doc.the_place_of_the_mission %}
+                <div style="font-weight: bold;">{{ doc.main_department23 }} / {{ doc.the_place_of_the_mission }} / {{ doc.sup_department }} </div>
+                {%endif%}
+
+                
+                
+                {% if doc.mandate_authority %}
+                <div style="font-weight: bold;">{{ doc.main_department23 }} / {{ doc.mandate_authority }} / {{ doc.sup_department }} </div>                
+                {%endif%}
+
+                <div style="width: 1%;"></div>
+                </div>
+                {%endif%}
+
+            </div>
+          </div>
+      <br>
+
+      {% if doc.health_details3 %}
+
+      <div style="display: flex; justify-content:center;">
+              <div style="display: flex;flex-direction: column; justify-content:center; align-items: center;margin-top:-1em">
+                  <div>
+                      <h3 style="border:2px solid black; background-color:lightgray;font-family:Cairo; margin: 0px 20px; width:200px;text-align:center;">الحالة النفسية</h3>
+                  </div>
+              </div>
+          </div>
+      <hr>
+      
+
+      <div class="table1">
+        <table>
+          <thead>
+            
+            <tr>
+                <div style="display:flex;">
+                  <th style="border: 2px solid black; background-color:lightgray;padding: 0.2em;margin: 0.2em;font-weight: bold;white-space:nowrap;width:110px;text-align:center;">الحالة النفسية</th>
+                  {% if doc.health_details2 %}
+                  <th style="border: 2px solid black; background-color:lightgray;padding: 0.2em;margin: 0.2em;font-weight: bold;white-space:nowrap;width:110px;text-align:center;">تفاصيل الحالة</th>
+                  {%endif%}
+                  <div style="width: 1%;"></div>
+                  </div>
+            </tr>    
+          </thead>
+            
+          <tbody>
+            <div style="display:flex;">
+            <td style="padding: 0.2em; margin: 0.2em; font-weight: bold;">{{ doc.health_details3 }} </td>
+            {% if doc.health_details2 %}
+            <td style="padding: 0.2em; margin: 0.2em; font-weight: bold;">{{ doc.health_details2 }} </td>
+            {%endif%}
+            <div style="width: 1%;"></div>
+            </div>
+          </tbody>
+        </table>
+      </div>
+
+      {%endif%}
+
+
+
+
+
+
+
+      {% if doc.gun_carrying_case %}
+
+      <div style="display: flex; justify-content:center;">
+              <div style="display: flex;flex-direction: column; justify-content:center; align-items: center;margin-top:-1em">
+                  <div>
+                      <h3 style="border:2px solid black; background-color:lightgray;font-family:Cairo; margin: 0px 20px; width:200px;text-align:center;">الموقف من حمل السلاح</h3>
+                  </div>
+              </div>
+          </div>
+      <hr>
+      
+
+      <div class="table1">
+        <table>
+          <thead>
+            
+            <tr>
+                <div style="display:flex;">
+                  <th style="border: 2px solid black; background-color:lightgray;padding: 0.2em;margin: 0.2em;font-weight: bold;white-space:nowrap;width:110px;text-align:center;">موقفه من حمل السلاح</th>
+                  {% if doc.reason %}
+                  <th style="border: 2px solid black; background-color:lightgray;padding: 0.2em;margin: 0.2em;font-weight: bold;white-space:nowrap;width:110px;text-align:center;">السبب</th>
+                  {%endif%}
+                  <div style="width: 1%;"></div>
+                  </div>
+            </tr>    
+          </thead>
+            
+          <tbody>
+            <div style="display:flex;">
+            <td style="padding: 0.2em; margin: 0.2em; font-weight: bold;width: auto; ">{{ doc.gun_carrying_case }} </td>
+            {% if doc.reason %}
+            <td style="padding: 0.2em; margin: 0.2em; font-weight: bold;">{{ doc.reason }} </td>
+            {%endif%}
+            <div style="width: 1%;"></div>
+            </div>
+          </tbody>
+        </table>
+      </div>
+
+      {%endif%}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <header class="header">
+        <div class="logo">
+                <img src="/files/لوجو قسم المعلومات.PNG" alt="Company Logo" ismap>
+        </div>
+        <h1 style="text-decoration: underline; font-weight: bold; font-size: 30px; text-align: center;">تقرير الكشف الجنائي</h1>
+      </header>
+      <br>  
+      <br>
+          
+            <div style="height:2em;"></div>
+            
+            {% if doc.criminal_security_for_recruits %}
+      
+            <div style="display: flex; justify-content:center;">
+              <div style=" display: flex;flex-direction: column; justify-content:center; align-items: center;margin-top:-1em">
+            
+                <div>
+                    <h3 style="border:2px solid black; background-color:lightgray;font-family:Cairo; margin: 0px 20px; width:200px;text-align:center; padding-left: 0%;">بيان المخاطبات</h3>
+                </div>
+              </div>
+            </div>
+            <hr>
+          <div  class="table1">
+            <table>
+                <thead>
+                    <tr>
+                        <th >رقم الصادر</th>
+                        <th >تاريخ الصادر</th>
+                        <th >رقم الوارد</th>
+                        <th >تاريخ الوارد</th>
+      
+                    </tr>
+                </thead>
+                <tbody>
+                  {% for license in doc.criminal_security_for_recruits %}
+                    <tr>
+                          <td >{{license.send_investigation_number}}</td>
+                          <td >{{license.criminal_investigation_date}}</td>
+                          <td >{{license.investigation_entry_number}}</td>
+                          <td >{{license.receipt_the_result_of_criminal_investigation_date}}</td>
+      
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            </div>
+            <div style="height:2em;"></div>
+      
+            <hr>
+            {%endif%}
+      
+
+
+
+
+
+            <div style="height:2em;"></div>
+            
+            {% if doc.the_result_of_the_recruiter_is_judgments_table %}
+      
+            <div style="display: flex; justify-content:center;">
+              <div style=" display: flex;flex-direction: column; justify-content:center; align-items: center;margin-top:-1em">
+            
+                <div>
+                    <h3 style="border:2px solid black; background-color:lightgray;font-family:Cairo; margin: 0px 20px; width:200px;text-align:center; padding-left: 0%;">نتيجة المجند (أحكام)</h3>
+                </div>
+              </div>
+            </div>
+            <hr>
+          <div  class="table1">
+            <table>
+                <thead>
+                    <tr>
+                        <th >رقم القضية</th>
+                        <th >رقم الحصر</th>
+                        <th >كلي مستأنف</th>
+                        <th >التهمة</th>
+
+                        <th >الحكم</th>
+                        <th >تاريخ الجلسة</th>
+                        <th >العقوبة</th>
+                        <th >التصرفات</th>
+                    </tr>
+                </thead>
+                <tbody>
+                  {% for license in doc.the_result_of_the_recruiter_is_judgments_table %}
+                    <tr>
+                          <td >{{license.the_case_number}}</td>
+                          <td >{{license.limited_number}}</td>
+                          <td >{{license.im_all_resumed}}</td>
+                          <td >{{license.the_charge}}</td>
+                          <td >{{license.the_ruling}}</td>
+                          <td >{{license.date_of_the_session}}</td>
+                          <td >{{license.the_punishment}}</td>
+                          <td >{{license.acts}}</td>
+      
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            </div>
+            <div style="height:2em;"></div>
+      
+            <hr>
+            {%endif%}

@@ -1,0 +1,111 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-11-27 15:49:27.994295",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "\u0627\u0644\u0639\u0646\u0648\u0627\u0646",
+  "naming_series",
+  "the_correspondence_number",
+  "column_break_jyjl",
+  "history_of_the_correspondence",
+  "column_break_huab",
+  "fiscal_year",
+  "section_break_88sw",
+  "table_of_companies_authorized_to_deal_with",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "\u0627\u0644\u0639\u0646\u0648\u0627\u0646",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "\u0627\u0644\u0639\u0646\u0648\u0627\u0646"
+  },
+  {
+   "default": "CATDW-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "naming_series",
+   "options": "CATDW-"
+  },
+  {
+   "fieldname": "the_correspondence_number",
+   "fieldtype": "Data",
+   "label": "\u0631\u0642\u0645 \u0627\u0644\u0645\u0643\u0627\u062a\u0628\u0629"
+  },
+  {
+   "fieldname": "column_break_jyjl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "history_of_the_correspondence",
+   "fieldtype": "Date",
+   "label": "\u062a\u0627\u0631\u064a\u062e \u0627\u0644\u0645\u0643\u0627\u062a\u0628\u0629"
+  },
+  {
+   "fieldname": "column_break_huab",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fiscal_year",
+   "fieldtype": "Link",
+   "label": "\u0627\u0644\u0633\u0646\u0629 \u0627\u0644\u0645\u0627\u0644\u064a\u0629",
+   "options": "Fiscal Year"
+  },
+  {
+   "fieldname": "section_break_88sw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "table_of_companies_authorized_to_deal_with",
+   "fieldtype": "Table",
+   "in_standard_filter": 1,
+   "label": "Table Of Companies Authorized To Deal With",
+   "options": "Table Of Companies Prohibited To Deal With"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Companies That Are Forbidden To Deal With",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-11-27 16:07:32.643401",
+ "modified_by": "Administrator",
+ "module": "Ecs Supply",
+ "name": "Companies That Are Forbidden To Deal With",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

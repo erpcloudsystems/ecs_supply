@@ -1,0 +1,28 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2023-11-29 12:03:58.388880",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "json": "{}",
+ "letter_head": "logo",
+ "letterhead": null,
+ "modified": "2023-11-29 12:48:06.549927",
+ "modified_by": "Administrator",
+ "module": "Ecs Supply",
+ "name": "\u062a\u0642\u0631\u064a\u0631 \u062a\u0641\u0635\u064a\u0644\u064a \u0644\u0644\u0645\u062c\u0646\u062f",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "The Recruits",
+ "report_name": "\u062a\u0642\u0631\u064a\u0631 \u062a\u0641\u0635\u064a\u0644\u064a \u0644\u0644\u0645\u062c\u0646\u062f",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ]
+}

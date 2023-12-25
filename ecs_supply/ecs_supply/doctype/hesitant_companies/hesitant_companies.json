@@ -1,0 +1,79 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-12-17 15:17:15.209836",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company_name",
+  "disabled",
+  "vis_data",
+  "naming_series",
+  "enabled"
+ ],
+ "fields": [
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "\u0623\u0633\u0645 \u0627\u0644\u0634\u0631\u0643\u0629"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "naming_series",
+   "options": "COMP-",
+   "read_only": 1
+  },
+  {
+   "fieldname": "vis_data",
+   "fieldtype": "Table",
+   "label": "\u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u0645\u062a\u0631\u062f\u062f\u064a\u0646",
+   "options": "Hesitant companies data"
+  },
+  {
+   "default": "0",
+   "fieldname": "disabled",
+   "fieldtype": "Check",
+   "label": "\u062a\u0639\u0637\u064a\u0644"
+  },
+  {
+   "default": "1",
+   "fieldname": "enabled",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "enabled",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-12-17 17:14:22.649297",
+ "modified_by": "Administrator",
+ "module": "Ecs Supply",
+ "name": "Hesitant companies",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

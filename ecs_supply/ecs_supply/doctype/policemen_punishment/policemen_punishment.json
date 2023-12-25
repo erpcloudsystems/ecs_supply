@@ -8,49 +8,21 @@
  "engine": "InnoDB",
  "field_order": [
   "naming_series",
-  "policemen",
+  "police_number",
   "employee_name",
+  "policeman_name",
   "policemen_rank",
   "employment_type",
-  "punishment_type",
-  "punishment_date",
-  "referral_decision_number",
-  "column_break_5",
-  "referral_date",
-  "call_number",
-  "disciplinary_board_decision",
+  "data",
   "notes",
-  "amended_from"
+  "amended_from",
+  "enabled"
  ],
  "fields": [
   {
-   "fieldname": "policemen",
-   "fieldtype": "Link",
-   "label": "Policemen",
-   "options": "Envestigation Employee"
-  },
-  {
-   "fieldname": "referral_decision_number",
-   "fieldtype": "Data",
-   "label": "Referral Decision Number"
-  },
-  {
-   "fieldname": "referral_date",
-   "fieldtype": "Date",
-   "in_list_view": 1,
-   "in_standard_filter": 1,
-   "label": "Referral Date"
-  },
-  {
-   "fieldname": "call_number",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "in_standard_filter": 1,
-   "label": "Call Number"
-  },
-  {
    "fieldname": "notes",
    "fieldtype": "Small Text",
+   "hidden": 1,
    "label": "Notes"
   },
   {
@@ -62,23 +34,6 @@
    "options": "Policemen Punishment",
    "print_hide": 1,
    "read_only": 1
-  },
-  {
-   "fieldname": "punishment_type",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "in_standard_filter": 1,
-   "label": "Punishment Type",
-   "options": "Punishment Type"
-  },
-  {
-   "fieldname": "punishment_date",
-   "fieldtype": "Date",
-   "label": "Punishment Date"
-  },
-  {
-   "fieldname": "column_break_5",
-   "fieldtype": "Column Break"
   },
   {
    "fetch_from": "policemen.employment_type",
@@ -98,11 +53,6 @@
    "options": "PPU-"
   },
   {
-   "fieldname": "disciplinary_board_decision",
-   "fieldtype": "Data",
-   "label": "Disciplinary Board Decision"
-  },
-  {
    "fetch_from": "policemen.employee_name",
    "fieldname": "employee_name",
    "fieldtype": "Data",
@@ -119,12 +69,36 @@
    "in_standard_filter": 1,
    "label": "Policemen Rank",
    "read_only": 1
+  },
+  {
+   "fieldname": "policeman_name",
+   "fieldtype": "Link",
+   "label": "\u0627\u0644\u0641\u0631\u062f",
+   "options": "Envestigation Employee"
+  },
+  {
+   "fieldname": "police_number",
+   "fieldtype": "Data",
+   "label": "\u0631\u0642\u0645 \u0627\u0644\u0634\u0631\u0637\u0629"
+  },
+  {
+   "fieldname": "data",
+   "fieldtype": "Table",
+   "label": "Data",
+   "options": "Data"
+  },
+  {
+   "fieldname": "enabled",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "enabled",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-11-15 14:34:08.922946",
+ "modified": "2023-12-14 15:13:32.654084",
  "modified_by": "Administrator",
  "module": "Ecs Supply",
  "name": "Policemen Punishment",

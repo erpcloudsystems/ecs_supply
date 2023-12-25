@@ -65,10 +65,10 @@ def get_item_price_qty_data(filters):
     conditions = ""
     if filters.get("policemen"):
         conditions += "and policemen = %(policemen)s"
-    if filters.get("from_date"):
-        conditions += " and report_date >= %(from_date)s"
-    if filters.get("to_date"):
-        conditions += " and report_date <= %(to_date)s"
+    # if filters.get("from_date"):
+    #     conditions += " and report_date >= %(from_date)s"
+    # if filters.get("to_date"):
+    #     conditions += " and report_date <= %(to_date)s"
     if filters.get("policemen_rank"):
         conditions += "and policemen_rank = %(policemen_rank)s"
     if filters.get("estimation"):

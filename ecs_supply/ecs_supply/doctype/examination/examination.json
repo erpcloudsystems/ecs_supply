@@ -1,0 +1,98 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-12-11 13:30:16.820677",
+ "default_view": "List",
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "policeman_name",
+  "column_break_wruv",
+  "column_break_edwp",
+  "section_break_oeun",
+  "custom_column_break_0io8z",
+  "the_facts_under_examination_for_individuals_data",
+  "notes",
+  "amended_from",
+  "enabled"
+ ],
+ "fields": [
+  {
+   "fieldname": "policeman_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "\u0627\u0644\u0641\u0631\u062f",
+   "options": "Envestigation Employee"
+  },
+  {
+   "fieldname": "column_break_wruv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_edwp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_oeun",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "custom_column_break_0io8z",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "the_facts_under_examination_for_individuals_data",
+   "fieldtype": "Table",
+   "label": "\u0628\u064a\u0627\u0646 \u0627\u0644\u062a\u062d\u0631\u064a\u0627\u062a",
+   "options": "The facts under examination for individuals data"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "label": "Notes"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "The facts under examination for individuals",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "enabled",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "enabled",
+   "read_only": 1
+  }
+ ],
+ "links": [],
+ "modified": "2023-12-17 14:42:18.224623",
+ "modified_by": "Administrator",
+ "module": "Ecs Supply",
+ "name": "Examination",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_name_in_global_search": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

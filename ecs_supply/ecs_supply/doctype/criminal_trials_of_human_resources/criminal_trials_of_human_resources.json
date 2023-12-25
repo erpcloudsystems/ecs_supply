@@ -1,0 +1,133 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-11-27 13:07:48.163888",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "human_resources",
+  "employee_name",
+  "column_break_a9xs",
+  "policemen_rank",
+  "employment_type",
+  "column_break_5",
+  "section_break_actd",
+  "statement_of_the_case_for_human_resources",
+  "section_break_61ja",
+  "notes",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "default": "PDY-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming series",
+   "options": "PDY-"
+  },
+  {
+   "fetch_from": "policemen.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_a9xs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "policemen.policemen_rank",
+   "fieldname": "policemen_rank",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Policemen Rank",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "policemen.employment_type",
+   "fieldname": "employment_type",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Employment Type",
+   "options": "Employment Type",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_actd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_61ja",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "\u0645\u0644\u0627\u062d\u0638\u0627\u062a"
+  },
+  {
+   "fieldname": "human_resources",
+   "fieldtype": "Link",
+   "label": "\u0627\u0644\u0645\u0648\u0638\u0641",
+   "options": "Human Resources"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Criminal Trials Of Human Resources",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "statement_of_the_case_for_human_resources",
+   "fieldtype": "Table",
+   "label": "\u0628\u064a\u0627\u0646 \u0627\u0644\u0642\u0636\u0627\u064a\u0627",
+   "options": "Statement Of The Case For Human Resources"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-11-29 16:20:49.860694",
+ "modified_by": "Administrator",
+ "module": "Ecs Supply",
+ "name": "Criminal Trials Of Human Resources",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}

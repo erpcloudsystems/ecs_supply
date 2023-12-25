@@ -4,29 +4,11 @@
 
 frappe.query_reports["Secret Notes Report"] = {
 	"filters": [
-	    {
-			fieldname: "from_date",
-			label: __("من تاريخ"),
-			fieldtype: "Date",
-			default: frappe.datetime.add_months(frappe.datetime.get_today(), -12),
-		},
-		{
-			fieldname:"to_date",
-			label: __("إلى تاريخ"),
-			fieldtype: "Date",
-			default: frappe.datetime.get_today(),
-		},
         {
 			fieldname: "policemen",
-			label: __("رقم الموظف"),
+			label: __("أسم الفرد"),
 			fieldtype: "Link",
-			options: "Employee",
-		},
-		{
-			fieldname: "policemen_rank",
-			label: __("الرتبة"),
-			fieldtype: "Link",
-			options: "Policemen Rank",
-		},
+			options: "Envestigation Employee",
+		}
 	]
 };

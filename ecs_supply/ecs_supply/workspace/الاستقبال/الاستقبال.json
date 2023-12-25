@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"cb1ooLWHWh\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">\u0627\u0644\u0627\u0633\u062a\u0642\u0628\u0627\u0644</span>\",\"col\":12}},{\"id\":\"h3W2hzXbsX\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Daily Visit\",\"col\":4}},{\"id\":\"wUe9EMMeTo\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Daily Visitors\",\"col\":4}},{\"id\":\"5LavGDhQup\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Visitor Address\",\"col\":4}},{\"id\":\"Xrl8OBs7zf\",\"type\":\"card\",\"data\":{\"card_name\":\"\u062a\u0642\u0631\u064a\u0631 \u0627\u0644\u0632\u0627\u0626\u0631\u064a\u0646\",\"col\":4}}]",
+ "content": "[{\"id\":\"cb1ooLWHWh\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">\u0627\u0644\u0627\u0633\u062a\u0642\u0628\u0627\u0644</span>\",\"col\":12}},{\"id\":\"h3W2hzXbsX\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Daily Visit\",\"col\":6}},{\"id\":\"Xrl8OBs7zf\",\"type\":\"card\",\"data\":{\"card_name\":\"\u062a\u0642\u0631\u064a\u0631 \u0627\u0644\u0632\u0627\u0626\u0631\u064a\u0646\",\"col\":6}}]",
  "creation": "2023-01-28 10:51:55.747728",
  "custom_blocks": [],
  "docstatus": 0,
@@ -25,43 +25,29 @@
    "is_query_report": 1,
    "label": "\u062a\u0642\u0631\u064a\u0631 \u0627\u0644\u0632\u0627\u0626\u0631\u064a\u0646",
    "link_count": 0,
-   "link_to": "Daily Visit",
+   "link_to": "Daily Visitors",
    "link_type": "Report",
    "onboard": 0,
    "type": "Link"
   }
  ],
- "modified": "2023-11-13 14:02:39.921624",
+ "modified": "2023-12-18 11:51:13.651605",
  "modified_by": "Administrator",
  "module": "Ecs Supply",
  "name": "\u0627\u0644\u0627\u0633\u062a\u0642\u0628\u0627\u0644",
  "number_cards": [],
  "owner": "Administrator",
- "parent_page": "",
+ "parent_page": "\u0627\u062f\u0627\u0631\u0629 \u0627\u0644\u0628\u062d\u062b \u0627\u0644\u062c\u0646\u0627\u0626\u064a",
  "public": 1,
  "quick_lists": [],
  "roles": [],
- "sequence_id": 9.0,
+ "sequence_id": 23.0,
  "shortcuts": [
   {
    "color": "Grey",
    "doc_view": "List",
    "label": "Daily Visit",
    "link_to": "Daily Visit",
-   "type": "DocType"
-  },
-  {
-   "color": "Grey",
-   "doc_view": "List",
-   "label": "Visitor Address",
-   "link_to": "Visitor Address",
-   "type": "DocType"
-  },
-  {
-   "color": "Grey",
-   "doc_view": "List",
-   "label": "Daily Visitors",
-   "link_to": "Daily Visitors",
    "type": "DocType"
   }
  ],

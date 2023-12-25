@@ -1,0 +1,116 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-11-28 12:57:21.734242",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "officers_affairs",
+  "enabled",
+  "employee_name",
+  "column_break_l8oc",
+  "column_break_niqc",
+  "policemen_rank",
+  "employment_type",
+  "data",
+  "notes",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "default": "PPU-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "PPU-"
+  },
+  {
+   "fetch_from": "policemen.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "policemen.policemen_rank",
+   "fieldname": "policemen_rank",
+   "fieldtype": "Data",
+   "label": "Policemen Rank",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "policemen.employment_type",
+   "fieldname": "employment_type",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Employment Type",
+   "options": "Employment Type",
+   "read_only": 1
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "label": "Notes"
+  },
+  {
+   "fieldname": "officers_affairs",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "\u0627\u0644\u0636\u0627\u0628\u0637",
+   "options": "Officers Affairs",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Disciplinary Councils For Officers",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "data",
+   "fieldtype": "Table",
+   "label": "Data",
+   "options": "Data"
+  },
+  {
+   "fieldname": "column_break_l8oc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_niqc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "enabled",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "enabled",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-12-14 10:15:03.784512",
+ "modified_by": "Administrator",
+ "module": "Ecs Supply",
+ "name": "Disciplinary Councils For Officers",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}

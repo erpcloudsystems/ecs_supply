@@ -1,0 +1,160 @@
+<style>
+    * {
+            margin:0;
+            padding:0;
+            direction:rtl;
+        }
+        .print-format {
+            padding:0in;
+            
+        }
+    .header {
+        margin-top:20px;
+        display:flex; 
+        flex-direction:column;
+        justify-content:center;
+    }
+    .under-header {
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+        align-items:center;
+    }
+    .esm-algeha {
+        margin-top:30px;
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+    }
+    table, th, td , th{
+        border:2px solid black;
+        border-collapse:collapse;
+        text-align:center;
+        white-space: nowrap;
+
+    }
+    .print-format th {
+        color:black;
+            text-align:center;
+            font-weight:bold;
+            background-color:lightgray;
+            white-space: nowrap;
+
+    
+    }
+    .print-format td {
+        padding: 0px !important;
+        white-space: nowrap;
+    }
+    .break {
+        flex-basis: 100%;
+        height: 0;
+      }
+      .column1 {
+        border-left: 2px solid black;
+      }
+    .table1 {
+        margin-top:5px;
+        margin-right:20px;
+        margin-left:20px;
+        display:flex; 
+        flex-direction:column;
+    
+    }
+</style>
+    {% var numbers = ["٠","١","٢","٣","٤","٥","٦","٧","٨","٩"] %}
+
+    {% var pageNumber = 0 %}
+    {% var months = ["يناير", "فبراير", "مارس", "ابريل", "مايو", "يونيو", "يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر", "ديسمبر"]%}
+    
+<div class="header">
+
+    <div class="under-header">
+    <div style="display:flex; flex-direction:column; align-items:center; margin-right:20px;">
+        <div>
+    <img style="width:40px; height:40px; margin-top:16px;" src="/files/emdadlogo.png">
+    </div>
+    <div style="font-weight:bold;
+    text-align: center;">
+        وزارة الداخلية
+        <br>
+الإدارة العامة لإمداد الشرطة
+<br>
+  إدارة البحث الجنائي    
+  <br>  
+  قسم المعلومات
+</div>
+    </div>     
+    <div style="font-weight: bold;
+    font-size: 20pt;
+   text-align: center;
+   text-decoration: underline;">
+تقرير 
+<br>
+حائزي المركبات الخاصة
+</div>
+    <div>
+        <div style="display: flex; flex-direction: row; align-items: center;">
+            <div style="font-weight: bold;">تاريخ الطباعة  </div>
+            <div style="border:2px solid black; width:100px; text-align:center; margin-left:10px;margin-right:10px; font-weight:bold;">
+                {%= frappe.datetime.str_to_user(frappe.datetime.get_datetime_as_string()) %}
+                {{data[0].cur_user}}
+            </div>
+        </div>
+
+    </div>
+    </div>
+<br>
+<br>
+<br>
+</div>
+
+    {% var counter = 1 %}
+
+    <div class="table1">
+        <table style="font-family:Cairo" dir="rtl">
+            <thead>
+                <tr>
+                    <th>م</th>
+                    <th>رقم الملف</th>
+                    <th>أسم الموظف</th>
+                    <th>العمل القائم به</th>
+                    <th>اسم المالك</th>
+                    <th>رقم اللوحة</th>
+                    <th>لون المركبة</th>
+                    <th>الماركة</th>
+                    <th>نهاية الترخيص</th>
+
+                </tr>
+            </thead>
+    
+            <tbody>
+                {% for(var i=0, f=data.length; i<f; i++) { %}
+                    <tr>
+                        {% if(!filters.filter) { %}
+                            {% var idx = [] %}
+                            {% var loopIndex = (i + 1).toString() %}
+                            {% var idxListsplit = loopIndex.split("") %}
+                            {% for(var j=0, len=idxListsplit.length; j<len; j++) { %}
+                                {% idx.push(numbers[idxListsplit[j]]) %}
+                            {% } %}
+                            <td>{%= idx.join("") %}</td>
+                            <td>{%= data[i].custom_file_number4 %}</td>
+                            <td>{%= data[i].first_name %}</td>
+                            <td>{%= data[i].main_department23 %}  / {%= data[i].sup_department %}</td>
+                            <td>{%= data[i].owner_name %}</td>
+                            <td>{%= data[i].plate_no %}</td>
+                            <td>{%= data[i].color_vehicle %}</td>
+                            <td>{%= data[i].brand %}</td>
+                            <td>{%= data[i].end_date %}</td>
+
+                        {% } %}
+                    </tr>
+                {% } %}
+            </tbody>
+        </table>
+    </div>
+        
+
+
+

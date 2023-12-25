@@ -29,11 +29,11 @@
   {
    "fetch_from": "officers.employee_name",
    "fieldname": "employee_name",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
    "in_list_view": 1,
    "in_standard_filter": 1,
-   "label": "Employee Name",
-   "read_only": 1
+   "label": "\u0623\u0633\u0645 \u0627\u0644\u0638\u0627\u0628\u0637",
+   "options": "Officers Affairs"
   },
   {
    "fieldname": "cb1",
@@ -120,10 +120,12 @@
   {
    "fieldname": "officers",
    "fieldtype": "Link",
+   "hidden": 1,
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Officers",
-   "options": "Employee"
+   "options": "Officers Affairs",
+   "read_only": 1
   },
   {
    "fieldname": "new_main_department",
@@ -144,7 +146,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-01-18 11:36:39.978513",
+ "modified": "2023-12-05 16:09:40.042420",
  "modified_by": "Administrator",
  "module": "Ecs Supply",
  "name": "Transfers for Officers",

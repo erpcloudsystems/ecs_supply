@@ -82,10 +82,11 @@ def get_item_price_qty_data(filters):
                         `tabCivilian Clothing For Officers`.reason_for_entitlement not in  ("غير مدرج", "غير مدرج للتكرار")
                     and `tabCivilian Clothing For Officers`.print = "لم يتم الطباعه"
                         {conditions}
+                    order by num_order 
                     """.format(conditions=conditions, entities=filters.get("entities")), filters, as_dict=1)
         for row in data:
             data_row = {
-                'id_number': row.id_number,
+                'id_number': row.id_number2,
                 'rank': row.rank,
                 'entities': row.entities,
                 'officer_name': row.officer_name,

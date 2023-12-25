@@ -1,0 +1,190 @@
+<style>
+    * {
+            margin:0;
+            padding:0;
+            direction:rtl;
+        }
+        .print-format {
+            padding:0in;
+            
+        }
+    .header {
+        margin-top:20px;
+        display:flex; 
+        flex-direction:column;
+        justify-content:center;
+    }
+    .under-header {
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+        align-items:center;
+    }
+    .esm-algeha {
+        margin-top:30px;
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+    }
+    table, th, td , th{
+        border:2px solid black;
+        border-collapse:collapse;
+        text-align:center;
+        white-space: nowrap;
+
+    }
+    .print-format th {
+        color:black;
+            text-align:center;
+            font-weight:bold;
+            background-color:lightgray;
+            white-space: nowrap;
+
+    
+    }
+    .print-format td {
+        padding: 0px !important;
+        white-space: nowrap;
+    }
+    .break {
+        flex-basis: 100%;
+        height: 0;
+      }
+      .column1 {
+        border-left: 2px solid black;
+      }
+    .table1 {
+        margin-top:5px;
+        margin-right:20px;
+        margin-left:20px;
+        display:flex; 
+        flex-direction:column;
+    
+    }
+</style>
+    {% var numbers = ["٠","١","٢","٣","٤","٥","٦","٧","٨","٩"] %}
+
+    {% var pageNumber = 0 %}
+    {% var months = ["يناير", "فبراير", "مارس", "ابريل", "مايو", "يونيو", "يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر", "ديسمبر"]%}
+    
+<div class="header">
+
+    <div class="under-header">
+    <div style="display:flex; flex-direction:column; align-items:center; margin-right:20px;">
+        <div>
+    <img style="width:40px; height:40px; margin-top:16px;" src="/files/emdadlogo.png">
+    </div>
+    <div style="font-weight:bold;
+    text-align: center;">
+        وزارة الداخلية
+        <br>
+الإدارة العامة لإمداد الشرطة
+<br>
+  إدارة البحث الجنائي    
+  <br>  
+  قسم المعلومات
+</div>
+    </div>
+
+                        
+    <div style="font-weight: bold;
+    font-size: 20pt;
+   text-align: center;
+   text-decoration: underline;">
+تقرير 
+<br>
+
+الكشف السياسي 
+</div>
+    <div>
+        <div style="display: flex; flex-direction: row; align-items: center;">
+            <div style="font-weight: bold;">تاريخ الطباعة  </div>
+            <div style="border:2px solid black; width:100px; text-align:center; margin-left:10px;margin-right:10px; font-weight:bold;">
+                {%= frappe.datetime.str_to_user(frappe.datetime.get_datetime_as_string()) %}
+                {{data[0].cur_user}}
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+</div>
+
+{% var counter = 1 %}
+<br>
+<br>
+<br>
+<div class="table1">
+    <table style="font-family:Cairo" dir="rtl">
+        <thead>
+            <tr>
+                {% if(!filters.filter) { %}
+                    <th>م</th>
+                    <th>الإسم</th>
+                    <th>رقم الصادر الأمن الوطني</th>
+                    <th>تاريخ الصادر الأمن الوطني</th>
+                    <th>رقم الوارد الأمن الوطني</th>
+                    <th>تاريخ الوارد الأمن الوطني</th>
+                    <th>النتيجة</th>
+                    {% } else { %} 
+                    <th>م</th>
+                    <th>الرتبة</th>
+                    <th>الإسم</th>
+                   
+                    {% if(filters.filter != "لم يرد") {  %}
+                    <th>تاريخ الوارد</th>
+                    {% } else { %} 
+                    <th>تاريخ الصادر </th>
+                    {% } %}
+                    
+
+                    <th>النتيجة</th>
+                    {% } %}
+                </tr>
+        </thead>
+        <tbody>
+            <tr>
+                {% for(var i=0, f=data.length; i<f; i++) { %}
+                {% if(!filters.filter) { %} 
+                {% var idx = [] %}
+                {% var loopIndex = (i + 1).toString() %}
+                {% var idxListsplit = loopIndex.split("") %}
+                {% for(var j=0, len=idxListsplit.length; j<len; j++) { %} {% idx.push(numbers[idxListsplit[j]]) %} {% }
+                    %} 
+
+                    <td>{%= idx.join("") %}</td>
+                    <td>{%= data[i].first_name %}</td>
+                    <td>{%= data[i].send_investigation_number %}</td>
+                    <td>{%= data[i].criminal_investigation_date %}</td>
+                    <td>{%= data[i].investigation_entry_number %}</td>
+                    <td>{%= data[i].receipt_the_result_of_criminal_investigation_date %}</td>
+                    <td>{%= data[i].the_result %}</td>
+            
+                    {% } else { %} 
+            
+                    {% var idx = [] %}
+                    {% var loopIndex = (i + 1).toString() %}
+                    {% var idxListsplit = loopIndex.split("") %}
+                    {% for(var j=0, len=idxListsplit.length; j<len; j++) { %} {% idx.push(numbers[idxListsplit[j]]) %} {% }
+                        %} 
+                        <td>{%= idx.join("") %}</td>
+                        <td>{%= data[i].policemen_rank %}</td>
+                        <td>{%= data[i].first_name %}</td>
+                       
+                        {% if(filters.filter != "لم يرد") {  %}
+                        <td>{%= data[i].receipt_the_result_of_criminal_investigation_date %}</td>
+                        {% } else { %} 
+                        <td>{%= data[i].criminal_investigation_date %}</td>
+                        
+                        {% } %}
+
+                        <td>{%= data[i].the_result %}</td>
+
+                        {% } %}
+
+                    </tr>
+                    {% } %}
+    
+                </tbody>
+            </table>
+</div>

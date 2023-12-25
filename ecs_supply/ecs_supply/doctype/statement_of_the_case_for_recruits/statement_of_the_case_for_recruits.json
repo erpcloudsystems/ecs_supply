@@ -1,0 +1,103 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-11-29 16:09:07.978459",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "id",
+  "the_case_number",
+  "the_charge",
+  "public_prosecution_decision",
+  "date_of_the_decision",
+  "the_courts_decision",
+  "date_of_the_decision2",
+  "his_attitude_to_work"
+ ],
+ "fields": [
+  {
+   "fieldname": "id",
+   "fieldtype": "Data",
+   "label": "\u0645",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "columns": 1,
+   "fieldname": "the_case_number",
+   "fieldtype": "Data",
+   "ignore_user_permissions": 1,
+   "in_list_view": 1,
+   "label": " \u0631\u0642\u0645 \u0627\u0644\u0642\u0636\u064a\u0629"
+  },
+  {
+   "allow_on_submit": 1,
+   "columns": 1,
+   "fieldname": "the_charge",
+   "fieldtype": "Data",
+   "ignore_user_permissions": 1,
+   "in_list_view": 1,
+   "label": "\u0627\u0644\u062a\u0647\u0645\u0629"
+  },
+  {
+   "allow_on_submit": 1,
+   "columns": 1,
+   "fieldname": "public_prosecution_decision",
+   "fieldtype": "Data",
+   "ignore_user_permissions": 1,
+   "in_list_view": 1,
+   "label": "\u0642\u0631\u0627\u0631 \u0627\u0644\u0646\u064a\u0627\u0628\u0629 \u0627\u0644\u0639\u0627\u0645\u0629"
+  },
+  {
+   "allow_on_submit": 1,
+   "columns": 1,
+   "fieldname": "date_of_the_decision",
+   "fieldtype": "Date",
+   "ignore_user_permissions": 1,
+   "in_list_view": 1,
+   "label": "\u062a\u0627\u0631\u064a\u062e \u0627\u0644\u0642\u0631\u0627\u0631"
+  },
+  {
+   "allow_on_submit": 1,
+   "columns": 1,
+   "fieldname": "the_courts_decision",
+   "fieldtype": "Data",
+   "ignore_user_permissions": 1,
+   "in_list_view": 1,
+   "label": "\u0642\u0631\u0627\u0631 \u0627\u0644\u0645\u062d\u0643\u0645\u0629"
+  },
+  {
+   "allow_on_submit": 1,
+   "columns": 1,
+   "fieldname": "date_of_the_decision2",
+   "fieldtype": "Date",
+   "ignore_user_permissions": 1,
+   "in_list_view": 1,
+   "label": "\u062a\u0627\u0631\u064a\u062e \u0627\u0644\u0642\u0631\u0627\u0631"
+  },
+  {
+   "allow_on_submit": 1,
+   "columns": 1,
+   "fieldname": "his_attitude_to_work",
+   "fieldtype": "Select",
+   "ignore_user_permissions": 1,
+   "in_list_view": 1,
+   "label": "\u0645\u0648\u0642\u0641\u0647 \u0645\u0646 \u0627\u0644\u0639\u0645\u0644",
+   "options": "\n\u0627\u0633\u062a\u0645\u0631\u0627\u0631 \u0628\u0627\u0644\u0639\u0645\u0644\n\u0625\u064a\u0642\u0627\u0641 \u0639\u0646 \u0627\u0644\u0639\u0645\u0644\n\u0625\u062d\u0627\u0644\u0629 \u0644\u0644\u0625\u062d\u062a\u064a\u0627\u0637\n\u0625\u0646\u0647\u0627\u0621 \u062e\u062f\u0645\u062a\u0647"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-11-29 16:09:07.978459",
+ "modified_by": "Administrator",
+ "module": "Ecs Supply",
+ "name": "Statement Of The Case For Recruits",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,198 @@
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        direction: rtl;
+    }
+
+    .print-format {
+        padding: 0in;
+    }
+
+    .header {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .under-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .esm-algeha {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    table,
+    th,
+    td,
+    th {
+        border: 2px solid black;
+        border-collapse: collapse;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .print-format th {
+        color: black;
+        text-align: center;
+        font-weight: bold;
+        background-color: lightgray;
+        white-space: nowrap;
+    }
+
+    .print-format td {
+        padding: 0px !important;
+        white-space: normal; /* Allow text to wrap */
+        word-wrap: break-word; /* Break long words and wrap onto the next line */
+    }
+
+    .break {
+        flex-basis: 100%;
+        height: 0;
+    }
+
+    .column1 {
+        border-left: 2px solid black;
+    }
+
+    .table1 {
+        margin-top: 5px;
+        margin-right: 20px;
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+</style>
+    {% var numbers = ["٠","١","٢","٣","٤","٥","٦","٧","٨","٩"] %}
+
+    {% var pageNumber = 0 %}
+    {% var months = ["يناير", "فبراير", "مارس", "ابريل", "مايو", "يونيو", "يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر", "ديسمبر"]%}
+    
+<div class="header">
+
+    <div class="under-header">
+    <div style="display:flex; flex-direction:column; align-items:center; margin-right:20px;">
+        <div>
+            <img style="width:40px; height:40px; margin-top:16px;" src="/files/emdadlogo.png">
+        </div>
+    <div style="font-weight:bold;
+    text-align: center;">
+        وزارة الداخلية
+        <br>
+الإدارة العامة لإمداد الشرطة
+<br>
+  إدارة البحث الجنائي    
+  <br>  
+  قسم المعلومات
+</div>
+    </div>     
+    <div style="font-weight: bold;
+    font-size: 20pt;
+   text-align: center;
+   text-decoration: underline;">
+تقرير 
+<br>
+الشركات المترددة
+</div>
+    <div>
+        <div style="display: flex; flex-direction: row; align-items: center;">
+            <div style="font-weight: bold;">تاريخ الطباعة  </div>
+            <div style="border:2px solid black; width:100px; text-align:center; margin-left:10px;margin-right:10px; font-weight:bold;">
+                {%= frappe.datetime.str_to_user(frappe.datetime.get_datetime_as_string()) %}
+                {{data[0].cur_user}}
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+</div>
+<br>
+<br>
+        
+    <div class="table1">
+        <table style="font-family:Cairo" dir="rtl">
+            <thead>
+                <tr>
+                    <th>م</th>
+                    <th> أسم الشركة</th>
+                    <th>الأسم</th>
+                    <th>تاريخ الميلاد</th>
+                    <th>محل الأقامة</th>
+                    <th>تاريخ العمل بالإدارة</th>
+                    <th>طبيعة العمل</th>
+                    <th>الكشف الجنائي</th>
+                    <th>الكشف السياسي</th>
+                    <th>ملاحظات</th>
+                </tr>
+            </thead>
+    
+            <tbody>
+                {% for(var i=0, f=data.length; i<f; i++) { %}
+                <tr>
+                    {% var idx = [] %}
+                    {% var loopIndex = (i + 1).toString() %}
+                    {% var idxListsplit = loopIndex.split("") %}
+                    {% for(var j=0, len=idxListsplit.length; j<len; j++) { %}
+                    {% idx.push(numbers[idxListsplit[j]]) %}
+                    {% } %}
+                    <td>{%= idx.join("") %}</td>
+                    <td>{%= data[i].company_name %}</td>
+                    <td>{%= data[i].vis_name %}</td>
+                    {% var arabicDate1 = [] %}
+                    {% var dateSegments = data[i].vis_birthday.split("-") %}
+                    
+                    {% for (var segmentIndex = dateSegments.length - 1; segmentIndex >= 0; segmentIndex--) { %}
+                        {% var digitList = dateSegments[segmentIndex].split("") %}
+                    
+                        {% for (var digitIndex = 0; digitIndex < digitList.length; digitIndex++) { %}
+                            {% arabicDate1.push(numbers[digitList[digitIndex]]) %}
+                        {% } %}
+                    
+                        {% if (segmentIndex > 0) { %}
+                            {% arabicDate1.push("-") %}
+                        {% } %}
+                    {% } %}
+                    
+                    {% var formattedDate = arabicDate1.join("") %}
+                    <td>{%= formattedDate.replace(/-+$/, '') %}</td>
+                
+                    
+                    <td>{%= data[i].vis_address %}</td>
+                    
+                    
+                    {% var arabicDate = [] %}
+                    {% var dateSegments = data[i].working_date.split("-") %}
+                    
+                    {% for (var segmentIndex = dateSegments.length - 1; segmentIndex >= 0; segmentIndex--) { %}
+                        {% var digitList = dateSegments[segmentIndex].split("") %}
+                    
+                        {% for (var digitIndex = 0; digitIndex < digitList.length; digitIndex++) { %}
+                            {% arabicDate.push(numbers[digitList[digitIndex]]) %}
+                        {% } %}
+                    
+                        {% if (segmentIndex > 0) { %}
+                            {% arabicDate.push("-") %}
+                        {% } %}
+                    {% } %}
+                    
+                    {% var formattedDate = arabicDate.join("") %}
+                    <td>{%= formattedDate.replace(/-+$/, '') %}</td>
+                    <td>{%= data[i].working_type %}</td>
+                    <td>{%= data[i].vis_crime %}</td>  
+                    <td>{%= data[i].vis_poli %}</td>
+                    <td>{%= data[i].vis_notes %}</td>
+                </tr>
+                {% } %}
+            </tbody>
+        </table>
+    </div>
+    
